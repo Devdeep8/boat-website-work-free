@@ -1,0 +1,96 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: crm-postgres
+    restart: always
+    environment:
+      POSTGRES_DB: crmdb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - '5432:5432'
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d crmdb"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      start_period: 5s
+    networks:
+      - app-network
+
+  redis:
+    image: redis:7-alpine
+    container_name: crm-redis
+    restart: always
+    ports:
+      - '6379:6379'
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+      start_period: 5s
+    networks:
+      - app-network
+
+  backend:
+    build:
+      context: ../user-backend
+      dockerfile: Dockerfile
+    container_name: crm-backend
+    restart: always
+    env_file:
+      - ../user-backend/.env
+    environment:
+      DB_WRITE_HOST: postgres
+      REDIS_HOST: redis
+      CHOKIDAR_USEPOLLING: true
+      PORT: 3004
+    ports:
+      - "3004:3004"
+    volumes:
+      - ../user-backend:/app
+      - /app/node_modules
+    command: npm run dev:nodemon
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    networks:
+      - app-network
+
+  frontend:
+    build:
+      context: ../user-frontend
+      dockerfile: Dockerfile
+    container_name: crm-frontend
+    restart: always
+    ports:
+      - "3005:3000"
+    volumes:
+      - ../user-frontend:/app
+      - /app/node_modules
+      - /app/.next
+    environment:
+      NODE_ENV: development
+      NEXT_PUBLIC_API_URL: http://backend:3004
+      PORT: 3000
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+volumes:
+  postgres_data:
+  redis_data:
+
+networks:
+  app-network:
+    driver: bridge
