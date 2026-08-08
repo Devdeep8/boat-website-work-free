@@ -1,0 +1,171 @@
+@import "tailwindcss";
+
+/* ==========================================
+   DESIGN TOKENS - Color System
+   Change these colors to customize the entire theme
+   ========================================== */
+
+@theme {
+  /* Brand Colors - Main accent color */
+  --color-primary: #d4a574;
+  --color-primary-hover: #c49464;
+  --color-primary-light: #e5c49a;
+
+  /* Background Colors */
+  --color-bg-primary: #0a1628;
+  --color-bg-secondary: #162944;
+  --color-bg-tertiary: #1a2744;
+  --color-bg-quaternary: #0d1f3c;
+
+  /* Text Colors */
+  --color-text-primary: #f8f9fa;
+  --color-text-secondary: #9ca3af;
+  --color-text-tertiary: #6b7280;
+
+  /* Functional Colors */
+  --color-success: #25d366;
+  --color-success-hover: #20bd5a;
+  --color-danger: #ef4444;
+  --color-warning: #f59e0b;
+
+  /* Spacing */
+  --spacing-section: 5rem;
+
+  /* Border Radius */
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 150ms;
+  --transition-normal: 300ms;
+  --transition-slow: 500ms;
+
+  /* Font Families */
+  --font-family-poppins: var(--font-poppins);
+}
+
+/* ==========================================
+   CSS Variables for dynamic usage
+   ========================================== */
+
+:root {
+  /* Map theme colors to CSS variables for inline styles */
+  --brand-primary: #d4a574;
+  --brand-primary-hover: #c49464;
+  --brand-bg-primary: #0a1628;
+  --brand-bg-secondary: #162944;
+  --brand-bg-tertiary: #1a2744;
+  --brand-text-primary: #f8f9fa;
+  --brand-text-secondary: #9ca3af;
+  --brand-success: #25d366;
+}
+
+/* ==========================================
+   Base Styles
+   ========================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--brand-bg-primary);
+  color: var(--brand-text-primary);
+  font-family: var(--font-outfit), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+/* Font Families */
+.font-poppins {
+  font-family: var(--font-poppins), sans-serif;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-instrument), 'Playfair Display', Georgia, serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* Links & Buttons */
+a {
+  color: var(--brand-primary);
+  transition: color var(--transition-fast) ease;
+}
+
+a:hover {
+  color: var(--brand-primary-hover);
+}
+
+/* Selection */
+::selection {
+  background: var(--brand-primary);
+  color: var(--brand-bg-primary);
+}
+
+/* Focus Visible */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--brand-primary);
+  outline-offset: 2px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--brand-bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--brand-primary);
+  border-radius: var(--radius-lg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-primary-hover);
+}
+
+/* ==========================================
+   Utility Classes using CSS Variables
+   For dynamic inline styles and JavaScript
+   ========================================== */
+
+.bg-brand-primary { background-color: var(--brand-bg-primary); }
+.bg-brand-secondary { background-color: var(--brand-bg-secondary); }
+.bg-brand-tertiary { background-color: var(--brand-bg-tertiary); }
+
+.text-brand-primary { color: var(--brand-text-primary); }
+.text-brand-secondary { color: var(--brand-text-secondary); }
+.text-brand-accent { color: var(--brand-primary); }
+
+.border-brand-accent { border-color: var(--brand-primary); }
+
+/* ==========================================
+   Reduce Motion
+   ========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
