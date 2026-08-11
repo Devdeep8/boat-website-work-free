@@ -1,25 +1,22 @@
 import type { Metadata } from "next";
-import { Instrument_Serif, Outfit, Poppins } from "next/font/google";
+import { Instrument_Serif, Poppins, Geist } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
+
+const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
 const instrument = Instrument_Serif({
   variable: "--font-instrument",
   subsets: ["latin"],
   display: "swap",
-  weight: "400"
-});
-
-const outfit = Outfit({
-  variable: "--font-outfit",
-  subsets: ["latin"],
-  display: "swap",
+  weight: "400",
 });
 
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
   display: "swap",
-  weight: ["400", "500", "600", "700"]
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -63,7 +60,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="en-IN"
-      className={`${instrument.variable} ${outfit.variable} ${poppins.variable} h-full antialiased`}
+      className={cn("h-full", "antialiased", instrument.variable, poppins.variable, "font-sans", geist.variable)}
     >
       <head>
         <script

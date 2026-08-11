@@ -1,0 +1,222 @@
+"use client";
+
+import { useState } from "react";
+import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
+
+const NAVIGATION = [
+  { name: "Home", href: "/" },
+  {
+    name: "About Us",
+    href: "/about",
+    children: ["Our Team", "About Company"]
+  },
+  {
+    name: "Experiences",
+    href: "#experiences",
+    children: [
+      "Corporate Packages",
+      "Romantic Getaways",
+      "Photoshoots & Video Shoots",
+      "Gift a Sail",
+      "Private Yacht Charters",
+      "High Seas Cruising",
+      "Thrilling Water Sports",
+      "Learn to Sail",
+      "Speedboat Transfers"
+    ]
+  },
+  {
+    name: "Speed Boats",
+    href: "#packages",
+    children: ["Bayliner 245", "Gulf Craft 31", "Speed Boat Blue Whale"]
+  },
+  {
+    name: "Yachts",
+    href: "#packages",
+    children: ["Jeanneau 54", "Grand Soliel 45", "Lagoon 560"]
+  },
+  {
+    name: "Destinations",
+    href: "#destinations",
+    children: ["Mumbai", "Goa", "Kerala", "Alibaug"]
+  },
+  {
+    name: "Contact",
+    href: "/contact"
+  }
+];
+
+const CONTACT_INFO = {
+  email: "enquiry@boatbooking.com",
+  phones: ["+91 88792 93803", "+91 98923 80138"],
+  locations: "Mumbai | Goa | Kerala"
+};
+
+const SOCIAL_LINKS = [
+  { name: "Facebook", icon: "👤", href: "#" },
+  { name: "Tripadvisor", icon: "🏆", href: "#" },
+  { name: "YouTube", icon: "▶️", href: "#" },
+  { name: "Instagram", icon: "📷", href: "#" }
+];
+
+export default function Header() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+
+  return (
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+      {/* Top Bar - Contact Info */}
+      <div className="bg-gradient-to-r from-[#59b280] to-[#4a9a6d] text-white py-2">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex flex-wrap items-center justify-between gap-2 text-sm">
+            <div className="flex items-center gap-4">
+              <span className="font-poppins">{CONTACT_INFO.locations}</span>
+              <span className="hidden sm:inline">|</span>
+              <a href={`mailto:${CONTACT_INFO.email}`} className="hover:underline font-poppins">
+                {CONTACT_INFO.email}
+              </a>
+            </div>
+            <div className="flex items-center gap-4">
+              {CONTACT_INFO.phones.map((phone, index) => (
+                <a key={index} href={`tel:${phone.replace(/\s/g, "")}`} className="hover:underline font-poppins">
+                  {phone}
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Navigation */}
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="flex items-center justify-between h-16">
+          {/* Logo */}
+          <Link href="/" className="flex items-center gap-2">
+            <div className="w-10 h-10 bg-[#59b280] rounded-full flex items-center justify-center">
+              <span className="text-white font-bold text-xl">⛵</span>
+            </div>
+            <span className="font-instrument text-xl font-semibold text-gray-900">Boat Charters</span>
+          </Link>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center gap-6">
+            {NAVIGATION.map((item) => (
+              <div
+                key={item.name}
+                className="relative"
+                onMouseEnter={() => item.children && setActiveDropdown(item.name)}
+                onMouseLeave={() => setActiveDropdown(null)}
+              >
+                <Link
+                  href={item.href}
+                  className="text-gray-700 hover:text-[#59b280] font-medium font-poppins text-sm transition-colors py-2"
+                >
+                  {item.name}
+                  {item.children && (
+                    <svg className="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  )}
+                </Link>
+
+                {/* Dropdown Menu */}
+                <AnimatePresence>
+                  {activeDropdown === item.name && item.children && (
+                    <motion.div
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -10 }}
+                      transition={{ duration: 0.2 }}
+                      className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-100 py-2"
+                    >
+                      {item.children.map((child) => (
+                        <Link
+                          key={child}
+                          href="#"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#59b280] font-poppins transition-colors"
+                        >
+                          {child}
+                        </Link>
+                      ))}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            ))}
+          </nav>
+
+          {/* Social Links */}
+          <div className="hidden md:flex items-center gap-3">
+            {SOCIAL_LINKS.map((social) => (
+              <a
+                key={social.name}
+                href={social.href}
+                className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 hover:bg-[#59b280] hover:text-white transition-colors"
+                aria-label={social.name}
+              >
+                <span className="text-sm">{social.icon}</span>
+              </a>
+            ))}
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="lg:hidden p-2 rounded-lg hover:bg-gray-100"
+            aria-label="Toggle menu"
+          >
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              {mobileMenuOpen ? (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              )}
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {mobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.3 }}
+            className="lg:hidden bg-white border-t border-gray-200"
+          >
+            <nav className="px-4 py-6 space-y-4">
+              {NAVIGATION.map((item) => (
+                <div key={item.name}>
+                  <Link
+                    href={item.href}
+                    className="block text-gray-700 hover:text-[#59b280] font-medium font-poppins"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                  {item.children && (
+                    <div className="mt-2 ml-4 space-y-2">
+                      {item.children.map((child) => (
+                        <Link
+                          key={child}
+                          href="#"
+                          className="block text-sm text-gray-600 hover:text-[#59b280] font-poppins"
+                          onClick={() => setMobileMenuOpen(false)}
+                        >
+                          {child}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </nav>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </header>
+  );
+}

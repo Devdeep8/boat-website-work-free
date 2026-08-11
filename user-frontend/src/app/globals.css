@@ -1,4 +1,8 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
 
 /* ==========================================
    DESIGN TOKENS - Color System
@@ -6,25 +10,25 @@
    ========================================== */
 
 @theme {
-  /* Brand Colors - Main accent color */
-  --color-primary: #d4a574;
-  --color-primary-hover: #c49464;
-  --color-primary-light: #e5c49a;
+  /* Brand Colors - Main accent color (#59b280 - Green) */
+  --color-primary: #59b280;
+  --color-primary-hover: #4a9a6d;
+  --color-primary-light: #7bc49a;
 
-  /* Background Colors */
-  --color-bg-primary: #0a1628;
-  --color-bg-secondary: #162944;
-  --color-bg-tertiary: #1a2744;
-  --color-bg-quaternary: #0d1f3c;
+  /* Background Colors - White theme */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f8fafc;
+  --color-bg-tertiary: #f1f5f9;
+  --color-bg-quaternary: #e2e8f0;
 
-  /* Text Colors */
-  --color-text-primary: #f8f9fa;
-  --color-text-secondary: #9ca3af;
-  --color-text-tertiary: #6b7280;
+  /* Text Colors - Dark text for light background */
+  --color-text-primary: #1e293b;
+  --color-text-secondary: #64748b;
+  --color-text-tertiary: #94a3b8;
 
   /* Functional Colors */
-  --color-success: #25d366;
-  --color-success-hover: #20bd5a;
+  --color-success: #59b280;
+  --color-success-hover: #4a9a6d;
   --color-danger: #ef4444;
   --color-warning: #f59e0b;
 
@@ -42,8 +46,9 @@
   --transition-normal: 300ms;
   --transition-slow: 500ms;
 
-  /* Font Families */
+  /* Font Families - Poppins as main font */
   --font-family-poppins: var(--font-poppins);
+  --font-family-sans: var(--font-poppins);
 }
 
 /* ==========================================
@@ -52,14 +57,44 @@
 
 :root {
   /* Map theme colors to CSS variables for inline styles */
-  --brand-primary: #d4a574;
-  --brand-primary-hover: #c49464;
-  --brand-bg-primary: #0a1628;
-  --brand-bg-secondary: #162944;
-  --brand-bg-tertiary: #1a2744;
-  --brand-text-primary: #f8f9fa;
-  --brand-text-secondary: #9ca3af;
-  --brand-success: #25d366;
+  --brand-primary: #59b280;
+  --brand-primary-hover: #4a9a6d;
+  --brand-bg-primary: #ffffff;
+  --brand-bg-secondary: #f8fafc;
+  --brand-bg-tertiary: #f1f5f9;
+  --brand-text-primary: #1e293b;
+  --brand-text-secondary: #64748b;
+  --brand-success: #59b280;
+
+  /* Shadcn/ui Theme Variables - Light Mode */
+  --background: 255 255 255;
+  --foreground: 30 41 59;
+  --card: 255 255 255;
+  --card-foreground: 30 41 59;
+  --popover: 255 255 255;
+  --popover-foreground: 30 41 59;
+  --primary: 89 178 128;
+  --primary-foreground: 255 255 255;
+  --secondary: 241 245 249;
+  --secondary-foreground: 30 41 59;
+  --muted: 241 245 249;
+  --muted-foreground: 100 116 139;
+  --accent: 241 245 249;
+  --accent-foreground: 30 41 59;
+  --destructive: 239 68 68;
+  --destructive-foreground: 255 255 255;
+  --border: 226 232 240;
+  --input: 226 232 240;
+  --ring: 89 178 128;
+  --radius: 0.625rem;
+  --sidebar: 255 255 255;
+  --sidebar-foreground: 30 41 59;
+  --sidebar-primary: 89 178 128;
+  --sidebar-primary-foreground: 255 255 255;
+  --sidebar-accent: 241 245 249;
+  --sidebar-accent-foreground: 30 41 59;
+  --sidebar-border: 226 232 240;
+  --sidebar-ring: 89 178 128;
 }
 
 /* ==========================================
@@ -77,7 +112,7 @@ html {
 body {
   background: var(--brand-bg-primary);
   color: var(--brand-text-primary);
-  font-family: var(--font-outfit), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: var(--font-poppins), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
@@ -87,6 +122,30 @@ body {
 .font-poppins {
   font-family: var(--font-poppins), sans-serif;
 }
+
+/* Text Colors - for white background theme */
+.text-brand-primary { color: var(--brand-text-primary); }
+.text-brand-secondary { color: var(--brand-text-secondary); }
+.text-brand-tertiary { color: var(--brand-text-tertiary); }
+.text-brand-accent { color: var(--brand-primary); }
+.text-brand-success { color: var(--brand-success); }
+
+/* Background Colors - for white theme */
+.bg-brand-primary { background-color: var(--brand-bg-primary); }
+.bg-brand-secondary { background-color: var(--brand-bg-secondary); }
+.bg-brand-tertiary { background-color: var(--brand-bg-tertiary); }
+.bg-brand-accent { background-color: var(--brand-primary); }
+.bg-brand-success { background-color: var(--brand-success); }
+
+/* Border Colors */
+.border-brand-accent { border-color: var(--brand-primary); }
+.border-brand-primary { border-color: var(--brand-bg-secondary); }
+
+/* Hover States */
+.hover\:bg-brand-accent:hover { background-color: var(--brand-primary); }
+.hover\:bg-brand-accent-hover:hover { background-color: var(--brand-primary-hover); }
+.hover\:text-brand-accent:hover { color: var(--brand-primary); }
+.hover\:border-brand-accent:hover { border-color: var(--brand-primary); }
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
@@ -125,7 +184,7 @@ button:focus-visible {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--brand-bg-primary);
+  background: var(--brand-bg-secondary);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -137,20 +196,6 @@ button:focus-visible {
   background: var(--brand-primary-hover);
 }
 
-/* ==========================================
-   Utility Classes using CSS Variables
-   For dynamic inline styles and JavaScript
-   ========================================== */
-
-.bg-brand-primary { background-color: var(--brand-bg-primary); }
-.bg-brand-secondary { background-color: var(--brand-bg-secondary); }
-.bg-brand-tertiary { background-color: var(--brand-bg-tertiary); }
-
-.text-brand-primary { color: var(--brand-text-primary); }
-.text-brand-secondary { color: var(--brand-text-secondary); }
-.text-brand-accent { color: var(--brand-primary); }
-
-.border-brand-accent { border-color: var(--brand-primary); }
 
 /* ==========================================
    Reduce Motion
@@ -167,5 +212,95 @@ button:focus-visible {
 
   html {
     scroll-behavior: auto;
+  }
+}
+
+@theme inline {
+  --font-heading: var(--font-sans);
+  --font-sans: var(--font-sans);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+.dark {
+  --background: 10 15 30;
+  --foreground: 248 249 250;
+  --card: 22 41 68;
+  --card-foreground: 248 249 250;
+  --popover: 22 41 68;
+  --popover-foreground: 248 249 250;
+  --primary: 89 178 128;
+  --primary-foreground: 255 255 255;
+  --secondary: 26 39 68;
+  --secondary-foreground: 248 249 250;
+  --muted: 26 39 68;
+  --muted-foreground: 156 163 175;
+  --accent: 26 39 68;
+  --accent-foreground: 248 249 250;
+  --destructive: 239 68 68;
+  --destructive-foreground: 255 255 255;
+  --border: 255 255 255 / 10%;
+  --input: 255 255 255 / 15%;
+  --ring: 89 178 128;
+  --chart-1: 220 220 220;
+  --chart-2: 156 163 175;
+  --chart-3: 107 114 128;
+  --chart-4: 75 85 99;
+  --chart-5: 55 65 81;
+  --sidebar: 22 41 68;
+  --sidebar-foreground: 248 249 250;
+  --sidebar-primary: 89 178 128;
+  --sidebar-primary-foreground: 255 255 255;
+  --sidebar-accent: 26 39 68;
+  --sidebar-accent-foreground: 248 249 250;
+  --sidebar-border: 255 255 255 / 10%;
+  --sidebar-ring: 89 178 128;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
   }
 }
