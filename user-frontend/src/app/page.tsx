@@ -131,9 +131,8 @@ const VALUE_PROPOSITIONS = [
 ];
 
 const STATS = [
-  { number: "50+", label: "Premium Yachts" },
-  { number: "10,000+", label: "Happy Guests" },
-  { number: "10+", label: "Years Experience" }
+  { number: "20,000+", label: "Happy Guests" },
+  { number: "9+", label: "Years Experience" }
 ];
 
 const WHATSAPP_NUMBER = "918779163152";
@@ -218,16 +217,16 @@ export default function HomePage() {
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.2 }}
                 >
-                  Yacht Booking in Mumbai, Goa & Kerala
+                  Speed Boat / Yacht Booking Experience in Mumbai Harbour
                 </motion.span>
                 <h1 className="font-instrument text-5xl md:text-6xl lg:text-7xl font-semibold text-white mb-6 leading-[1.1]">
-                  Find Your Favourite
-                  <span className="block text-white">
-                    Yacht With Us
+                  Travel in Style with us to 
+                  <span className="block text-white text-3xl">
+                    Alibaug (Mandwa) or Elephanta Caves
                   </span>
                 </h1>
                 <p className="text-lg md:text-xl text-white mb-10 max-w-lg ml-auto leading-relaxed font-poppins">
-                  Celebrate your special moments with us. Premium boat and yacht charters for memorable experiences.
+                  Full Charters or Shared Rides Available                
                 </p>
 
                 {/* CTA Buttons */}

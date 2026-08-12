@@ -25,6 +25,11 @@ export const metadata: Metadata = {
     template: "%s | Mumbai Boat Charters"
   },
   description: "Premium speed boat and yacht charters in Mumbai. Harbour cruises, Mandwa transfers, Elephanta tours. Book via WhatsApp - instant confirmation available.",
+  icons: {
+    icon: [{ url: "/logo/logo.png", type: "image/png" }],
+    shortcut: "/logo/logo.png",
+    apple: "/logo/logo.png",
+  },
   keywords: ["mumbai boat charter", "speed boat mumbai", "yacht hire mumbai", "mandwa boat transfer", "elephanta caves tour", "alibaug speed boat"],
   authors: [{ name: "Mumbai Boat Charters" }],
   openGraph: {
@@ -60,7 +65,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="en-IN"
-      className={cn("h-full", "antialiased", instrument.variable, poppins.variable, "font-sans", geist.variable)}
+      className={cn("h-full", "antialiased",poppins.variable, "font-sans", geist.variable)}
     >
       <head>
         <script
@@ -72,7 +77,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "name": "Mumbai Boat Charters",
               "description": "Premium speed boat and yacht charters in Mumbai offering harbour cruises, Mandwa/Alibaug transfers, and Elephanta tours.",
               "url": "https://mumbaiboatcharters.com",
-              "telephone": "+91XXXXXXXXXX",
+              "telephone": "+918779163152",
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Mumbai",
