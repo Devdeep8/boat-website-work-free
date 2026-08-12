@@ -51,8 +51,8 @@ const NAVIGATION = [
 ];
 
 const CONTACT_INFO = {
-  email: "enquiry@boatbooking.com",
-  phones: ["+91 88792 93803", "+91 98923 80138"],
+  email: "vishalboatservice@gmail.com",
+  phones: ["+91 87791 63152"],
   locations: "Mumbai | Goa | Kerala"
 };
 

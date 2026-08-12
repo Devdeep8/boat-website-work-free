@@ -8,8 +8,8 @@ const FOOTER_DATA = {
     name: "Mumbai Boat Charters",
     tagline: "Premium experiences on Mumbai waters",
     address: "Jetty No. 5, next to Gateway of India, opposite main entrance of The Taj Mahal Hotel. Mumbai",
-    email: "enquiry@boatbooking.com",
-    phones: ["+91 88792 93803", "+91 98923 80138"]
+    email: "vishalboatservice@gmail.com",
+    phones: ["+91 87791 63152"]
   },
   quickLinks: [
     { name: "About", href: "/about" },
@@ -46,7 +46,7 @@ const FOOTER_DATA = {
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300">
+    <footer className="bg-white text-[#064e3b]">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
@@ -89,7 +89,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-white font-semibold mb-4 font-poppins">Quick Links</h3>
+            <h3 className="text-[#064e3b] font-semibold mb-4 font-poppins">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               {FOOTER_DATA.quickLinks.map((link) => (
                 <li key={link.name}>
@@ -103,7 +103,7 @@ export default function Footer() {
 
           {/* Yacht Categories */}
           <div>
-            <h3 className="text-white font-semibold mb-4 font-poppins">Yachts</h3>
+            <h3 className="text-[#064e3b] font-semibold mb-4 font-poppins">Yachts</h3>
             <ul className="space-y-2 text-sm">
               {FOOTER_DATA.yachtCategories.map((category) => (
                 <li key={category.name}>
@@ -117,7 +117,7 @@ export default function Footer() {
 
           {/* Experiences */}
           <div>
-            <h3 className="text-white font-semibold mb-4 font-poppins">Experiences</h3>
+            <h3 className="text-[#064e3b] font-semibold mb-4 font-poppins">Experiences</h3>
             <ul className="space-y-2 text-sm">
               {FOOTER_DATA.experiences.map((experience) => (
                 <li key={experience.name}>
@@ -131,12 +131,12 @@ export default function Footer() {
         </div>
 
         {/* Social Links */}
-        <div className="flex items-center gap-3 mt-8 pt-8 border-t border-gray-800">
+        <div className="flex items-center gap-3 mt-8 pt-8 border-t border-gray-200">
           {FOOTER_DATA.socialLinks.map((social) => (
             <a
               key={social.name}
               href={social.href}
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-[#59b280] hover:text-white transition-colors"
+              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-[#59b280] hover:text-white transition-colors"
               aria-label={social.name}
             >
               <social.icon className="w-5 h-5" />
@@ -145,16 +145,16 @@ export default function Footer() {
         </div>
 
         {/* Newsletter */}
-        <div className="mt-8 p-6 bg-gray-800 rounded-lg">
-          <h3 className="text-white font-semibold mb-2 font-poppins">Stay Updated</h3>
-          <p className="text-sm text-gray-400 mb-4 font-poppins">
+        <div className="mt-8 p-6 bg-white rounded-lg border border-gray-100">
+          <h3 className="text-[#064e3b] font-semibold mb-2 font-poppins">Stay Updated</h3>
+          <p className="text-sm text-[#065f46] mb-4 font-poppins">
             Subscribe to our newsletter for exclusive offers and updates
           </p>
           <div className="flex gap-2">
             <input
               type="email"
               placeholder="Your email address"
-              className="flex-1 px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:border-[#59b280] font-poppins"
+              className="flex-1 px-4 py-2 rounded-lg bg-white border border-gray-200 text-[#064e3b] placeholder-gray-400 focus:outline-none focus:border-[#59b280] font-poppins"
             />
             <button className="px-6 py-2 bg-[#59b280] hover:bg-[#4a9a6d] text-white rounded-lg font-medium transition-colors font-poppins">
               Subscribe
@@ -164,7 +164,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-800">
+      <div className="border-t border-gray-200">
         <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
             <p className="font-poppins">
@@ -183,9 +183,9 @@ export default function Footer() {
       </div>
 
       {/* Disclaimer */}
-      <div className="bg-gray-950">
+      <div className="bg-white">
         <div className="max-w-7xl mx-auto px-4 py-4">
-          <p className="text-xs text-gray-500 text-center font-poppins">
+          <p className="text-xs text-[#065f46] text-center font-poppins">
             Sailing services are subject to weather conditions. Booking confirmation requires 100% payment in advance.
             Guests must adhere to all safety measures provided and follow guidance from the captain/skipper.
             All guests agree to indemnify the company against any future claims related to sailing activities.

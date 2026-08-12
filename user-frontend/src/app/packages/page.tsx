@@ -137,7 +137,7 @@ const CATEGORIES = [
   { id: "guided-tour", name: "Guided Tours", icon: "🏛️" }
 ];
 
-const WHATSAPP_NUMBER = "919876543210";
+const WHATSAPP_NUMBER = "918779163152";
 
 export default function PackagesPage() {
   const [packages, setPackages] = useState<Package[]>(DEMO_PACKAGES);
@@ -207,7 +207,7 @@ export default function PackagesPage() {
                   onClick={() => setSelectedCategory(category.id)}
                   className={`px-6 py-3 rounded-full font-medium transition-all duration-300 font-poppins ${
                     selectedCategory === category.id
-                      ? "bg-brand-primary text-white"
+                      ? "bg-[#59b280] text-white"
                       : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                   }`}
                 >

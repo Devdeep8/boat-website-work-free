@@ -52,7 +52,7 @@ export default function HeroBanner({ media = [], autoplay = true, interval = 500
   const currentMedia = banners[currentIndex];
 
   return (
-    <div className="absolute inset-0 bg-gray-900">
+    <div className="absolute inset-0">
       {/* Banner Image */}
       <Image
         src={currentMedia.src}
@@ -63,8 +63,11 @@ export default function HeroBanner({ media = [], autoplay = true, interval = 500
         onLoadingComplete={() => setIsLoaded(true)}
       />
 
-      {/* Dark overlay for text readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60" />
+      {/* A subtle neutral overlay keeps foreground copy legible without tinting the photo. */}
+      <div
+        className="absolute inset-0 z-10 bg-black/45"
+        aria-hidden="true"
+      />
 
       {/* Navigation dots */}
       {banners.length > 1 && (
@@ -74,7 +77,7 @@ export default function HeroBanner({ media = [], autoplay = true, interval = 500
               key={index}
               onClick={() => setCurrentIndex(index)}
               className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                index === currentIndex ? 'bg-white w-8' : 'bg-white/50'
+                index === currentIndex ? 'bg-[#59b280] w-8' : 'bg-white/60'
               }`}
               aria-label={`Go to slide ${index + 1}`}
             />
