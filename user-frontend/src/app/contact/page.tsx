@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const WHATSAPP_NUMBER = "919876543210";
 const EMAIL = "info@mumbaiboatcharters.com";
@@ -12,7 +14,9 @@ export default function ContactPage() {
   };
 
   return (
-    <main className="min-h-screen">
+    <>
+      <Header />
+      <main className="pt-[120px] min-h-screen">
       {/* Hero */}
       <section className="relative py-24 px-4 bg-gradient-to-br from-[#0a1628] via-[#1a2744] to-[#0a1628]">
         <div className="max-w-6xl mx-auto text-center">
@@ -163,5 +167,8 @@ export default function ContactPage() {
         </div>
       </section>
     </main>
+
+      <Footer />
+    </>
   );
 }

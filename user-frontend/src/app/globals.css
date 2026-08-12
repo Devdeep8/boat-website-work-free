@@ -154,14 +154,16 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
 }
 
-/* Links & Buttons */
-a {
-  color: var(--brand-primary);
-  transition: color var(--transition-fast) ease;
-}
+/* Links & Buttons — in @layer base so utility classes (e.g. text-white) override the default link color */
+@layer base {
+  a {
+    color: var(--brand-primary);
+    transition: color var(--transition-fast) ease;
+  }
 
-a:hover {
-  color: var(--brand-primary-hover);
+  a:hover {
+    color: var(--brand-primary-hover);
+  }
 }
 
 /* Selection */

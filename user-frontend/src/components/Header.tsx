@@ -3,6 +3,9 @@
 import { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
+import Logo from "@/components/Logo";
+import { User, Trophy, Play, Camera } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
 const NAVIGATION = [
   { name: "Home", href: "/" },
@@ -53,11 +56,11 @@ const CONTACT_INFO = {
   locations: "Mumbai | Goa | Kerala"
 };
 
-const SOCIAL_LINKS = [
-  { name: "Facebook", icon: "👤", href: "#" },
-  { name: "Tripadvisor", icon: "🏆", href: "#" },
-  { name: "YouTube", icon: "▶️", href: "#" },
-  { name: "Instagram", icon: "📷", href: "#" }
+const SOCIAL_LINKS: { name: string; icon: LucideIcon; href: string }[] = [
+  { name: "Facebook", icon: User, href: "#" },
+  { name: "Tripadvisor", icon: Trophy, href: "#" },
+  { name: "YouTube", icon: Play, href: "#" },
+  { name: "Instagram", icon: Camera, href: "#" }
 ];
 
 export default function Header() {
@@ -67,19 +70,26 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
       {/* Top Bar - Contact Info */}
-      <div className="bg-gradient-to-r from-[#59b280] to-[#4a9a6d] text-white py-2">
+      <div className="bg-linear-to-r from-[#59b280] to-[#4a9a6d] text-white py-2">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-wrap items-center justify-between gap-2 text-sm">
             <div className="flex items-center gap-4">
               <span className="font-poppins">{CONTACT_INFO.locations}</span>
               <span className="hidden sm:inline">|</span>
-              <a href={`mailto:${CONTACT_INFO.email}`} className="hover:underline font-poppins">
+              <a href={`mailto:${CONTACT_INFO.email}`} className="text-white hover:underline font-poppins">
                 {CONTACT_INFO.email}
               </a>
             </div>
             <div className="flex items-center gap-4">
               {CONTACT_INFO.phones.map((phone, index) => (
-                <a key={index} href={`tel:${phone.replace(/\s/g, "")}`} className="hover:underline font-poppins">
+                <a
+                  key={index}
+                  href={`tel:${phone.replace(/\s/g, "")}`}
+                  className="text-white font-semibold hover:underline font-poppins flex items-center gap-1.5"
+                >
+                  <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                  </svg>
                   {phone}
                 </a>
               ))}
@@ -92,12 +102,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-[#59b280] rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-xl">⛵</span>
-            </div>
-            <span className="font-instrument text-xl font-semibold text-gray-900">Boat Charters</span>
-          </Link>
+          <Logo variant="light" />
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-6">
@@ -155,7 +160,7 @@ export default function Header() {
                 className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 hover:bg-[#59b280] hover:text-white transition-colors"
                 aria-label={social.name}
               >
-                <span className="text-sm">{social.icon}</span>
+                <social.icon className="w-4 h-4" />
               </a>
             ))}
           </div>

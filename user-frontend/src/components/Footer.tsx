@@ -1,4 +1,7 @@
 import Link from "next/link";
+import Logo from "@/components/Logo";
+import { User, Trophy, Play, Camera } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
 const FOOTER_DATA = {
   company: {
@@ -33,12 +36,12 @@ const FOOTER_DATA = {
     { name: "Private Yacht Charters", href: "#experiences" },
     { name: "Thrilling Water Sports", href: "#experiences" }
   ],
-  socialLinks: [
-    { name: "Facebook", icon: "👤", href: "#" },
-    { name: "Tripadvisor", icon: "🏆", href: "#" },
-    { name: "YouTube", icon: "▶️", href: "#" },
-    { name: "Instagram", icon: "📷", href: "#" }
-  ]
+  socialLinks: ([
+    { name: "Facebook", icon: User, href: "#" },
+    { name: "Tripadvisor", icon: Trophy, href: "#" },
+    { name: "YouTube", icon: Play, href: "#" },
+    { name: "Instagram", icon: Camera, href: "#" }
+  ] as { name: string; icon: LucideIcon; href: string }[])
 };
 
 export default function Footer() {
@@ -49,11 +52,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-[#59b280] rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xl">⛵</span>
-              </div>
-              <span className="font-instrument text-xl font-semibold text-white">Mumbai Boat Charters</span>
+            <div className="mb-4">
+              <Logo variant="dark" />
             </div>
             <p className="text-sm text-gray-400 mb-4 font-poppins">
               Premium boat and yacht charters in Mumbai, Goa & Kerala. Creating unforgettable memories on the water.
@@ -139,7 +139,7 @@ export default function Footer() {
               className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-[#59b280] hover:text-white transition-colors"
               aria-label={social.name}
             >
-              <span>{social.icon}</span>
+              <social.icon className="w-5 h-5" />
             </a>
           ))}
         </div>
