@@ -22,11 +22,6 @@ const DEFAULT_BANNERS = [
   },
   {
     type: 'image' as const,
-    src: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1920&h=1080&fit=crop',
-    alt: 'Speed boat on water'
-  },
-  {
-    type: 'image' as const,
     src: 'https://images.unsplash.com/photo-1605281317010-fe5ffe798166?w=1920&h=1080&fit=crop',
     alt: 'Sailing yacht at sunset'
   }
@@ -63,9 +58,9 @@ export default function HeroBanner({ media = [], autoplay = true, interval = 500
         onLoadingComplete={() => setIsLoaded(true)}
       />
 
-      {/* A subtle neutral overlay keeps foreground copy legible without tinting the photo. */}
+      {/* A subtle light overlay keeps foreground copy legible while preserving the scenic image. */}
       <div
-        className="absolute inset-0 z-10 bg-black/45"
+        className="absolute inset-0 z-10 bg-white/20 backdrop-blur-sm"
         aria-hidden="true"
       />
 

@@ -20,11 +20,12 @@ const FOOTER_DATA = {
     { name: "Contact", href: "/contact" }
   ],
   yachtCategories: [
-    { name: "Motor Yachts", href: "#packages" },
-    { name: "Sail Yachts", href: "#packages" },
-    { name: "Sail Boats", href: "#packages" },
-    { name: "Speed Boats", href: "#packages" },
-    { name: "House Boats", href: "#packages" }
+    { name: "Wooden Ferry", href: "#packages" },
+    { name: "AC Ferry", href: "#packages" },
+    { name: "Speed Boat", href: "#packages" },
+    { name: "Yachts", href: "#packages" },
+    { name: "Sail boat", href: "#packages" },
+    { name: "Ro-Ro Ship", href: "#packages" }
   ],
   experiences: [
     { name: "Corporate Events", href: "#experiences" },

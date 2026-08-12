@@ -81,35 +81,41 @@ const DEMO_PACKAGES: Package[] = [
 
 const YACHT_CATEGORIES = [
   {
-    name: "Motor Yachts",
-    description: "Luxury motor yachts for premium experiences",
-    icon: "🛥️",
+    name: "Wooden Ferry",
+    description: "Classic ferry rides for Elephanta Caves and Mumbai harbour trips",
+    icon: "⛴️",
     href: "#packages"
   },
   {
-    name: "Sail Yachts",
-    description: "Experience the thrill of sailing",
-    icon: "⛵",
+    name: "AC Ferry",
+    description: "Comfortable air-conditioned ferry options for group travel",
+    icon: "❄️",
     href: "#packages"
   },
   {
-    name: "Sail Boats",
-    description: "Perfect for learning to sail",
-    icon: "🌊",
-    href: "#packages"
-  },
-  {
-    name: "Speed Boats",
-    description: "Fast transfers and thrilling rides",
+    name: "Speed Boat",
+    description: "Fast transfers and thrilling Mumbai harbour rides",
     icon: "🚤",
     href: "#packages"
   },
   {
-    name: "House Boats",
-    description: "Overnight stays on water",
-    icon: "🏠",
+    name: "Yachts",
+    description: "Luxury yachts for premium private experiences",
+    icon: "🛥️",
     href: "#packages"
-  }
+  },
+  {
+    name: "Sail boat",
+    description: "Relaxed sailing experiences on the water",
+    icon: "⛵",
+    href: "#packages"
+  },
+  {
+    name: "Ro-Ro Ship",
+    description: "Roll-on roll-off ship travel for larger transfers",
+    icon: "🚢",
+    href: "#packages"
+  },
 ];
 
 const VALUE_PROPOSITIONS = [
@@ -167,7 +173,7 @@ export default function HomePage() {
 
       <main className="pt-[96px] md:pt-[120px]">
         {/* Hero Section */}
-        <section className="relative min-h-[420px] md:min-h-[600px] flex items-center overflow-hidden">
+        <section className="relative min-h-[520px] sm:min-h-[560px] md:min-h-[640px] lg:min-h-[680px] flex items-center overflow-hidden">
           {/* Hero Banner */}
           <HeroBanner
             media={[
@@ -179,7 +185,7 @@ export default function HomePage() {
           />
 
           {/* Hero content */}
-          <div className="relative z-10 px-4 py-20 max-w-7xl mx-auto w-full">
+          <div className="relative z-10 px-4 sm:px-6 lg:px-8 py-20 max-w-7xl mx-auto w-full">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               {/* Left side - Stats */}
               <motion.div
@@ -188,17 +194,17 @@ export default function HomePage() {
                 transition={{ duration: 0.6 }}
                 className="hidden md:block"
               >
-                <div className="space-y-8">
+                <div className="space-y-6">
                   {STATS.map((stat, index) => (
                     <motion.div
                       key={stat.label}
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.4 + index * 0.1 }}
-                      className="text-center"
+                      className="rounded-[2rem] bg-white/15 backdrop-blur-md border border-white/40 p-8 text-center shadow-lg"
                     >
-                      <div className="font-instrument text-5xl lg:text-6xl font-semibold text-white">{stat.number}</div>
-                      <div className="text-sm text-white font-poppins mt-1">{stat.label}</div>
+                      <div className="font-instrument text-4xl sm:text-5xl lg:text-6xl font-semibold text-[#064e3b]">{stat.number}</div>
+                      <div className="text-sm text-[#065f46] font-poppins mt-1">{stat.label}</div>
                     </motion.div>
                   ))}
                 </div>
@@ -209,33 +215,33 @@ export default function HomePage() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
-                className="text-right"
+                className="text-center md:text-right"
               >
                 <motion.span
-                  className="inline-block text-white text-sm font-semibold tracking-[0.3em] uppercase mb-6 font-poppins"
+                  className="inline-block text-[#064e3b] text-sm font-semibold tracking-[0.3em] uppercase mb-6 font-poppins"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.2 }}
                 >
                   Speed Boat / Yacht Booking Experience in Mumbai Harbour
                 </motion.span>
-                <h1 className="font-instrument text-5xl md:text-6xl lg:text-7xl font-semibold text-white mb-6 leading-[1.1]">
-                  Travel in Style with us to 
-                  <span className="block text-white text-3xl">
+                <h1 className="font-instrument text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-[#064e3b] mb-6 leading-[1.05] max-w-xl mx-auto md:mx-0">
+                  Travel in Style with us to
+                  <span className="block text-[#59b280] text-3xl sm:text-4xl">
                     Alibaug (Mandwa) or Elephanta Caves
                   </span>
                 </h1>
-                <p className="text-lg md:text-xl text-white mb-10 max-w-lg ml-auto leading-relaxed font-poppins">
-                  Full Charters or Shared Rides Available                
+                <p className="text-lg md:text-xl text-[#065f46] mb-10 max-w-lg mx-auto md:mx-0 leading-relaxed font-poppins">
+                  Full charters or shared rides available for every budget and group size.
                 </p>
 
                 {/* CTA Buttons */}
-                <div className="flex flex-col sm:flex-row gap-4 justify-end">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center sm:justify-end">
                   <a
                     href={createWhatsAppLink("Hi, I'm interested in booking a boat charter")}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-100 text-[#064e3b] font-semibold px-8 py-4 rounded-full transition-all duration-300 font-poppins"
+                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-100 text-[#064e3b] font-semibold px-8 py-4 rounded-full transition-all duration-300 font-poppins"
                   >
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
@@ -244,7 +250,7 @@ export default function HomePage() {
                   </a>
                   <Link
                     href="/packages"
-                    className="inline-flex items-center justify-center gap-2 bg-[#59b280] hover:bg-[#4a9a6d] text-white font-medium px-8 py-4 rounded-full transition-all duration-300 font-poppins"
+                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#59b280] hover:bg-[#4a9a6d] text-white font-medium px-8 py-4 rounded-full transition-all duration-300 font-poppins"
                   >
                     View All Packages
                   </Link>
@@ -253,17 +259,17 @@ export default function HomePage() {
             </div>
 
             {/* Mobile Stats */}
-            <div className="flex items-center justify-center gap-8 mt-12 md:hidden">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-12 md:hidden">
               {STATS.map((stat, index) => (
                 <motion.div
                   key={stat.label}
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 0.6 + index * 0.1 }}
-                  className="text-center"
+                  className="rounded-[2rem] bg-white/90 backdrop-blur-sm border border-gray-200 p-5 text-center shadow-lg"
                 >
-                  <div className="font-instrument text-3xl font-semibold text-white">{stat.number}</div>
-                  <div className="text-xs text-white font-poppins">{stat.label}</div>
+                  <div className="font-instrument text-3xl font-semibold text-[#064e3b]">{stat.number}</div>
+                  <div className="text-xs text-[#065f46] font-poppins">{stat.label}</div>
                 </motion.div>
               ))}
             </div>
@@ -282,14 +288,14 @@ export default function HomePage() {
             >
               <span className="text-[#59b280] text-sm font-semibold tracking-[0.2em] uppercase font-poppins">Our Fleet</span>
               <h2 className="font-instrument text-4xl md:text-5xl font-semibold text-gray-900 mt-4 mb-4">
-                Choose Your Yacht Type
+                Choose Your Boat Type
               </h2>
               <p className="text-gray-600 text-lg max-w-2xl mx-auto font-poppins">
                 We have a wide range of yachts and boats to suit every occasion and budget
               </p>
             </motion.div>
 
-            <div className="grid md:grid-cols-5 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-6">
               {YACHT_CATEGORIES.map((category, index) => (
                 <Link
                   key={category.name}
