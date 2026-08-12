@@ -336,7 +336,7 @@ export default function HomePage() {
               <span className="text-[#59b280] text-sm font-semibold tracking-[0.2em] uppercase font-poppins">Featured Yachts</span>
               <h2 className="font-instrument text-4xl md:text-6xl font-semibold text-gray-900 mt-4 mb-6">
                 Our Premium Fleet
-              </h2>
+              </h2> 
               <p className="text-gray-600 text-lg max-w-2xl mx-auto font-poppins">
                 Experience luxury on water with our well-maintained fleet of yachts and speed boats
               </p>
