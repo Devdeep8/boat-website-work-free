@@ -11,38 +11,9 @@ type DestinationPageProps = {
 
 const WHATSAPP_NUMBER = "918779163152";
 
-const BOAT_CARDS = [
-  {
-    name: "Wooden Ferry",
-    image: "https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?w=600&h=420&fit=crop",
-    details: ["Classic harbour ride", "Best for sightseeing", "Group friendly"],
-  },
-  {
-    name: "AC Ferry",
-    image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&h=420&fit=crop",
-    details: ["Comfortable seating", "Cool cabin travel", "Family friendly"],
-  },
-  {
-    name: "Speed Boat",
-    image: "https://images.unsplash.com/photo-1605281317010-fe5ffe798166?w=600&h=420&fit=crop",
-    details: ["Quick transfers", "Private route", "Flexible timing"],
-  },
-  {
-    name: "Yachts",
-    image: "https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?w=600&h=420&fit=crop",
-    details: ["Premium charter", "Celebration ready", "Crew assisted"],
-  },
-  {
-    name: "Sail boat",
-    image: "https://images.unsplash.com/photo-1528154291023-a6525fabe5b4?w=600&h=420&fit=crop",
-    details: ["Calm sailing", "Photo friendly", "Relaxed pace"],
-  },
-  {
-    name: "Ro-Ro Ship",
-    image: "https://images.unsplash.com/photo-1575376194708-31aef9d9388f?w=600&h=420&fit=crop",
-    details: ["Large transfer", "Vehicle route", "Mandwa option"],
-  },
-];
+const publicPath = (p: string) => encodeURI(p);
+
+
 
 const VISIT_CARDS = [
   {
@@ -79,18 +50,142 @@ const VISIT_CARDS = [
   },
 ];
 
-const REVIEWS = [
+// Reviews removed — replaced by per-destination FAQs rendered below.
+
+const MUMBAI_HOW_TO_REACH = [
   {
-    name: "Amit Shah",
-    quote: "Clean boat, helpful crew, and the route was planned nicely for our group.",
+    title: "Wooden Ferry",
+    duration: "30 mins & 1 Hour",
+    boardingPoint: "Gateway of India, Jetty 3",
+    capacity: "60-80 PAX",
+    price: "Rs. 200/person (Return Fare)",
+    timings: "4pm to 7pm",
+    image: publicPath('/Mumbai Habour/Wooden ferry at Gateway of India for Harbour Cruise or a 30mins ride in Mumbai sea.jpg'),
   },
   {
-    name: "Neha Mehta",
-    quote: "Booking on WhatsApp was simple and the harbour ride felt smooth from start to finish.",
+    title: "Speed Boat Charter",
+    duration: "30 mins & 1 Hour",
+    boardingPoint: "Gateway of India, Jetty 5",
+    capacity: "6, 10 & 12 PAX",
+    price: "Starting Price: Rs. 5,000/boat",
+    timings: "7am to 8pm",
+    image: publicPath('/Mumbai Habour/Mumbai Harbour speed boat tour by vishal boat service.jpg'),
   },
   {
-    name: "Rohan Dsouza",
-    quote: "Great views, punctual pickup, and a very comfortable experience for the family.",
+    title: "Speed Boat Shared",
+    duration: "30 mins & 1 Hour",
+    boardingPoint: "Gateway of India, Jetty 5",
+    capacity: "10 & 12 PAX",
+    price: "Starting Price: Rs. 500/person",
+    timings: "4pm to 7pm",
+    image: publicPath('/Mumbai Habour/Speed boat provided by vishal boat service at Mumbai harbour_.jpg'),
+  },
+  {
+    title: "Yacht",
+    duration: "2 Hour or more",
+    boardingPoint: "Gateway of India, Jetty 5",
+    capacity: "12-40 PAX",
+    price: "Starting Price: Rs. 30,000/boat",
+    timings: "7am to 8pm",
+    image: publicPath('/Mumbai Habour/luxury yacht in Mumbai harbour for party or relaxing session hire from vishal boat service_.jpg'),
+  },
+  {
+    title: "Sail Boat",
+    duration: "2 Hour or more",
+    boardingPoint: "Gateway of India, Jetty 5",
+    capacity: "4-12 PAX",
+    price: "Starting Price: Rs. 5,000/boat",
+    timings: "7am to 8pm",
+    image: publicPath('/Mumbai Habour/vishal boat service provides romantic relaxing time with loved ones in a sail boat at Mumbai harbour.jpg'),
+  },
+];
+
+const MUMBAI_ACTIVITIES = [
+  { title: "Relaxing time in sail boat", image: publicPath('/Mumbai Habour/vishal boat service provides romantic relaxing time with loved ones in a sail boat at Mumbai harbour.jpg') },
+  { title: "Pre-Wedding Photoshoot", image: publicPath('/Mumbai Habour/Pre-wedding photoshoot in yacht at Mumbai harbour-vishal boat service manages all for you at economical pricing_.jpg') },
+  { title: "Corporate Team Evening Outing", image: publicPath('/Mumbai Habour/take your corporate team for a yacht party at the Mumbai sea. vishal boat service can arrange all for you in your budget. already caters to most of the big companies in Mumbai.jpg') },
+  { title: "Birthday Party", image: publicPath('/Mumbai Habour/hire a yacht for birthday parties in the Mumbai harbour. vishal boat service provides end-to-end service from hiring to execution of the full party.jpg') },
+  { title: "Movie shooting", image: publicPath('/Mumbai Habour/movie gheraiya shooting in Mumbai. vishal boat service provides boats for the movie shooting. the actors and crew very happy with service_.jpg') },
+  { title: "Party with Friends with sunset views", image: publicPath('/Mumbai Habour/Party with friends on boat. girls time at Mumbai seas.jpg') },
+  { title: "Yacht Party", image: publicPath('/Mumbai Habour/vishal boat service get you the best yacht party with your friends. call to get a party arranged asap.jpg') },
+  { title: "Speed Thrill on speed Boat", image: publicPath('/Mumbai Habour/Speed Boat Ride with vishal boat Service in Mumbai at gateway of india for harbour cruise or a boat ride in Mumbai sea_.jpg') },
+];
+
+const ALIBAGH_HOW_TO_REACH = [
+  {
+    title: "Wooden Ferry",
+    duration: "1 Hour",
+    boardingPoint: "Gateway of India, Jetty 2",
+    capacity: "60-80 PAX",
+    price: "Rs. 200/person (one way Fare)",
+    timings: "7am to 7pm",
+    image: publicPath('/Alibaug ( Mandwa)/Wooden ferry at Gateway of India for ALIBAUG MANDWA 1 hour  ride in Mumbai sea.jpg'),
+  },
+  {
+    title: "Speed Boat Charter",
+    duration: "20-23 mins",
+    boardingPoint: "Gateway of India, Jetty 5",
+    capacity: "6, 10 & 12 PAX",
+    price: "Starting Price: Rs. 7,000/boat",
+    timings: "7am to 8pm",
+    image: publicPath('/Alibaug ( Mandwa)/Speed Boat Ride with vishal boat Service in Mumbai at gateway of india for ALIBAUG MANDWA.jpg'),
+  },
+  {
+    title: "Speed Boat Shared",
+    duration: "20-23 mins",
+    boardingPoint: "Gateway of India, Jetty 5",
+    capacity: "6, 10 & 12 PAX",
+    price: "Starting Price: Rs. 1,200/person",
+    timings: "9am to 7pm",
+    image: publicPath('/Alibaug ( Mandwa)/12 seater speed boat with best speed boat rental service vishal boat service for ALIBAUG MANDWA starting at rs 1200 per person_.jpg'),
+  },
+  {
+    title: "Yacht",
+    duration: "1 hour",
+    boardingPoint: "Gateway of India, Jetty 5",
+    capacity: "12-40 PAX",
+    price: "Starting Price: Rs. 60,000/boat",
+    timings: "8am to 8pm",
+    image: publicPath('/Alibaug ( Mandwa)/luxury yacht in Mumbai for a trip to ALBAUG MANDWA- hire from vishal boat service AND GET BEST SERVICE_.jpg'),
+  },
+];
+
+const ELEPHANTA_HOW_TO_REACH = [
+  {
+    title: "Wooden Ferry",
+    duration: "1 Hour each way",
+    boardingPoint: "Gateway of India, Jetty 4",
+    capacity: "60-80 PAX",
+    price: "Rs. 250/person (one way Fare)",
+    timings: "7am to 7pm",
+    image: publicPath('/Elephanta Caves/Wooden ferry at Gateway of India for Elepahnata caves 1 hour  ride in Mumbai sea.jpg'),
+  },
+  {
+    title: "Speed Boat Charter",
+    duration: "3 Hours",
+    boardingPoint: "Gateway of India, Jetty 5",
+    capacity: "6, 10 & 12 PAX",
+    price: "Starting Price: Rs. 18,000/boat (Return Fare)",
+    timings: "8am to 2pm",
+    image: publicPath('/Elephanta Caves/Speed Boat Ride with vishal boat Service in Mumbai at gateway of india for Elephanta caves_.jpg'),
+  },
+  {
+    title: "Guided Tour in Speed Boat",
+    duration: "4 Hours",
+    boardingPoint: "Gateway of India, Jetty 5",
+    capacity: "6, 10 & 12 PAX",
+    price: "Starting Price: Rs. 7,000/person",
+    timings: "9am & 12pm",
+    image: publicPath('/Elephanta Caves/12 seater speed boat with best speed boat rental service vishal boat service for Elephanta Caves starting at rs 8000 per person_.jpg'),
+  },
+  {
+    title: "Yacht",
+    duration: "3-4 hours",
+    boardingPoint: "Gateway of India, Jetty 5",
+    capacity: "12-20 PAX",
+    price: "Starting Price: Rs. 70,000/boat",
+    timings: "8am to 3pm",
+    image: publicPath('/Elephanta Caves/luxury yacht in Mumbai for a trip to Elephanta caves- hire from vishal boat service_.jpg'),
   },
 ];
 
@@ -125,7 +220,85 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
     notFound();
   }
 
-  const availableBoats = BOAT_CARDS.filter((boat) => destination.experiences.includes(boat.name));
+  // available boats list removed (replaced by location-aware 'How to Reach' cards)
+
+  // Prepare cards data: for Mumbai use exact provided data, otherwise derive from experiences
+  const cardsToShowData = (() => {
+    if (destination.slug === "mumbai") {
+      return MUMBAI_HOW_TO_REACH;
+    }
+    if (destination.slug === "alibaug") {
+      return ALIBAGH_HOW_TO_REACH;
+    }
+    if (destination.slug === "elephanta-caves") {
+      return ELEPHANTA_HOW_TO_REACH;
+    }
+
+    const BOAT_INFO: Record<
+      string,
+      { title: string; image?: string; boardingPoint?: string; duration?: string; timings?: string; capacity?: string; price?: string }
+    > = {
+      "Wooden Ferry": {
+        title: "Wooden Ferry",
+        image: "https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?w=600&h=420&fit=crop",
+        boardingPoint: destination.startingPoint,
+        duration: "30 mins & 1 Hour",
+        timings: "4pm to 7pm",
+        capacity: "60-80 PAX",
+        price: "Rs. 200/person (Return Fare)",
+      },
+      "Speed Boat Charter": {
+        title: "Speed Boat Charter",
+        image: "https://images.unsplash.com/photo-1605281317010-fe5ffe798166?w=600&h=420&fit=crop",
+        boardingPoint: destination.startingPoint,
+        duration: "30 mins & 1 Hour",
+        timings: "7am to 8pm",
+        capacity: "6, 10 & 12 PAX",
+        price: "Starting Price: Rs. 5,000/boat",
+      },
+      "Speed Boat Shared": {
+        title: "Speed Boat Shared",
+        image: "https://images.unsplash.com/photo-1590608897129-79f6e8d8b3f1?w=600&h=420&fit=crop",
+        boardingPoint: destination.startingPoint,
+        duration: "30 mins & 1 Hour",
+        timings: "4pm to 7pm",
+        capacity: "10 & 12 PAX",
+        price: "Starting Price: Rs. 500/person",
+      },
+      Yacht: {
+        title: "Yacht",
+        image: "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=600&h=420&fit=crop",
+        boardingPoint: destination.startingPoint,
+        duration: "2 Hour or more",
+        timings: "7am to 8pm",
+        capacity: "12-40 PAX",
+        price: "Starting Price: Rs. 30,000/boat",
+      },
+      "Sail Boat": {
+        title: "Sail Boat",
+        image: "https://images.unsplash.com/photo-1528154291023-a6525fabe5b4?w=600&h=420&fit=crop",
+        boardingPoint: destination.startingPoint,
+        duration: "2 Hour or more",
+        timings: "7am to 8pm",
+        capacity: "4-12 PAX",
+        price: "Starting Price: Rs. 5,000/boat",
+      },
+    };
+
+    const showTypes = destination.experiences.map((e) => {
+      if (e.toLowerCase().includes("speed")) return "Speed Boat Shared";
+      if (e.toLowerCase().includes("wooden")) return "Wooden Ferry";
+      if (e.toLowerCase().includes("yacht")) return "Yacht";
+      if (e.toLowerCase().includes("sail")) return "Sail Boat";
+      if (e.toLowerCase().includes("ac ferry")) return "Wooden Ferry";
+      if (e.toLowerCase().includes("ro-ro")) return "Wooden Ferry";
+      return e;
+    });
+
+    const unique = Array.from(new Set(showTypes));
+
+    return unique.map((type) => BOAT_INFO[type] || { title: type, boardingPoint: destination.startingPoint, duration: "Varies", timings: "Varies", capacity: "Varies", price: "Contact us" });
+  })();
 
   return (
     <>
@@ -170,81 +343,137 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
             </section>
           </section>
 
+      
+
           <section className="mx-auto max-w-7xl px-0 py-12 md:py-16">
             <div className="text-center">
               <p className="font-poppins text-xs font-semibold uppercase tracking-[0.25em] text-brand-accent sm:text-sm">
-                Boats available at {destination.name}
+                How to reach {destination.name}
               </p>
               <h2 className="mt-3 text-3xl font-semibold text-brand-primary sm:text-4xl md:text-5xl">
-                Choose your boat type
+                How to Reach ?
               </h2>
+              <p className="mt-2 text-sm text-brand-primary-muted">Boarding Point: {destination.startingPoint}</p>
             </div>
 
-            <div className="mt-8 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
-              {availableBoats.map((boat) => (
-                <article key={boat.name} className="overflow-hidden rounded-[1.5rem] bg-brand-accent text-brand-inverse shadow-brand-soft">
+            {/* Location-aware boat boarding cards */}
+            <div className="mt-8 grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+              {cardsToShowData.map((info) => (
+                <article key={info.title} className="overflow-hidden rounded-[1.5rem] bg-brand-accent text-brand-inverse shadow-brand-soft">
                   <div className="relative h-48 sm:h-52 md:h-56">
-                    <Image src={boat.image} alt={boat.name} fill className="object-cover" />
+                    <Image src={info.image || "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600&h=420&fit=crop"} alt={info.title} fill className="object-cover" />
                   </div>
-                  <div className="p-5 text-center sm:p-6">
-                    <h3 className="font-poppins text-xl font-semibold">{boat.name}</h3>
-                    <ul className="mt-4 space-y-2 font-poppins text-xs leading-relaxed text-brand-inverse-muted sm:text-sm">
-                      {boat.details.map((detail) => (
-                        <li key={detail}>{detail}</li>
-                      ))}
-                    </ul>
+                  <div className="p-5 sm:p-6">
+                    <h3 className="font-poppins text-xl font-semibold">{info.title}</h3>
+                    <div className="mt-4 grid gap-2 font-poppins text-sm text-brand-inverse-muted">
+                      <div><strong>Boarding Point:</strong> {info.boardingPoint}</div>
+                      <div><strong>Ride Duration:</strong> {info.duration}</div>
+                      <div><strong>Timings:</strong> {info.timings}</div>
+                      <div><strong>Capacity:</strong> {info.capacity}</div>
+                      <div><strong>Starting Price:</strong> {info.price}</div>
+                    </div>
                   </div>
                 </article>
               ))}
+            </div>
+
+            {/* Mobile-only collapsible dropdown with exact details */}
+            <details className="mt-6 block md:hidden">
+              <summary className="cursor-pointer rounded-md bg-brand-primary-translucent px-4 py-3 font-poppins font-semibold">See How to Reach details</summary>
+              <div className="mt-3 space-y-4">
+                {cardsToShowData.map((info) => (
+                  <div key={info.title} className="rounded-md border border-brand-muted bg-brand-primary p-4">
+                    <h4 className="font-poppins mb-2 text-lg font-semibold">{info.title}</h4>
+                    <div className="grid gap-1 text-sm text-brand-inverse-muted">
+                      <div><strong>Boarding Point:</strong> {info.boardingPoint}</div>
+                      <div><strong>Ride Duration:</strong> {info.duration}</div>
+                      <div><strong>Timings:</strong> {info.timings}</div>
+                      <div><strong>Capacity:</strong> {info.capacity}</div>
+                      <div><strong>Price:</strong> {info.price}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </details>
+
+            {/* JSON-LD structured data for SEO */}
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "HowTo",
+                  name: `How to reach ${destination.name}`,
+                  description: `Options and boarding details to reach ${destination.name} by boat from ${destination.startingPoint}.`,
+                  step: destination.experiences.map((exp) => ({
+                    "@type": "HowToStep",
+                    name: exp,
+                    text: (() => {
+                      const t = exp.toLowerCase();
+                      if (t.includes("speed")) return `Fast transfers from ${destination.startingPoint} — ideal for quick trips and private charters.`;
+                      if (t.includes("wooden")) return `Public and private ferry options from ${destination.startingPoint} for a relaxed harbour experience.`;
+                      if (t.includes("yacht")) return `Premium yacht charters departing from ${destination.startingPoint}, suitable for celebrations and private groups.`;
+                      if (t.includes("sail")) return `Leisure sail-boat options with flexible timing departing from ${destination.startingPoint}.`;
+                      return `Boat transfer option departing from ${destination.startingPoint}.`;
+                    })(),
+                  })),
+                }),
+              }}
+            />
+          </section>
+              <section className="mx-auto max-w-7xl px-5 py-12 md:py-16">
+            <div className="text-center">
+              <h2 className="text-2xl font-semibold sm:text-3xl md:text-4xl">What To do at {destination.name} ?</h2>
+            </div>
+
+            <div className="mt-8 grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+              {(() => {
+                const activities = destination.slug === "mumbai" ? MUMBAI_ACTIVITIES : VISIT_CARDS;
+                return activities.map((act) => (
+                  <article key={act.title} className="overflow-hidden rounded-[1.2rem] bg-brand-elevated shadow-brand-soft">
+                    <div className="relative aspect-[4/3]">
+                      <Image
+                        src={act.image}
+                        alt={act.title}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                        quality={75}
+                        loading="lazy"
+                      />
+                    </div>
+                    <div className="bg-brand-accent px-3 py-3 text-center font-poppins text-xs font-semibold leading-snug text-brand-inverse sm:text-sm">
+                      {act.title}
+                    </div>
+                  </article>
+                ));
+              })()}
             </div>
           </section>
 
           <section className="mx-auto max-w-7xl bg-brand-primary py-12 md:py-16">
             <div className="text-center">
               <p className="font-poppins text-xs font-semibold uppercase tracking-[0.25em] text-brand-accent sm:text-sm">
-                Want to do at {destination.name}?
+                FAQs about {destination.name}
               </p>
               <h2 className="mt-3 text-3xl font-semibold text-brand-primary sm:text-4xl md:text-5xl">
-                Plan your experience
+                Frequently Asked Questions
               </h2>
             </div>
 
-            <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-              {VISIT_CARDS.map((card) => (
-                <article key={card.title} className="overflow-hidden rounded-[1.2rem] bg-brand-elevated shadow-brand-soft">
-                  <div className="relative aspect-square">
-                    <Image src={card.image} alt={card.title} fill className="object-cover" />
-                  </div>
-                  <div className="bg-brand-accent px-3 py-3 text-center font-poppins text-xs font-semibold leading-snug text-brand-inverse sm:text-sm">
-                    {card.title}
-                  </div>
-                </article>
-              ))}
-            </div>
-          </section>
-
-          <section className="mx-auto max-w-7xl bg-brand-primary py-12 md:py-16">
-            <div className="text-center">
-              <p className="font-poppins text-xs font-semibold uppercase tracking-[0.25em] text-brand-accent sm:text-sm">
-                Review of our clients
-              </p>
-              <h2 className="mt-3 text-3xl font-semibold text-brand-primary sm:text-4xl md:text-5xl">
-                Guests love the ride
-              </h2>
-            </div>
-
-            <div className="mt-8 grid gap-5 md:grid-cols-3">
-              {REVIEWS.map((review) => (
-                <article key={review.name} className="rounded-[1.5rem] border border-brand-muted bg-brand-primary p-5 text-center shadow-brand-soft md:p-6">
-                  <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-brand-elevated font-poppins text-xl font-bold text-brand-accent">
-                    &ldquo;
-                  </div>
-                  <p className="mt-4 font-poppins text-sm leading-relaxed text-brand-secondary sm:text-base">
-                    {review.quote}
-                  </p>
-                  <p className="mt-4 font-poppins text-sm font-semibold text-brand-primary">{review.name}</p>
-                </article>
-              ))}
+            <div className="mt-8 max-w-3xl mx-auto">
+              {(destination.faqs || []).length === 0 ? (
+                <p className="text-center text-sm text-brand-inverse-muted">No FAQs available for this location yet.</p>
+              ) : (
+                <div className="space-y-4">
+                  {destination.faqs!.map((faq) => (
+                    <details key={faq.question} className="rounded-md bg-brand-elevated p-4">
+                      <summary className="cursor-pointer font-poppins font-semibold">{faq.question}</summary>
+                      <div className="mt-2 text-sm text-black">{faq.answer}</div>
+                    </details>
+                  ))}
+                </div>
+              )}
             </div>
           </section>
 
