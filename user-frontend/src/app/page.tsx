@@ -82,39 +82,39 @@ const DEMO_PACKAGES: Package[] = [
 const YACHT_CATEGORIES = [
   {
     name: "Wooden Ferry",
-    description: "Classic ferry rides for Elephanta Caves and Mumbai harbour trips",
+    description: "The Famous Mumbai Wooden Ferry used for Elephanta Caves, Alibaug (Mandwa) and Mumbai Harbour Ride",
     icon: "⛴️",
-    href: "#packages"
+    href: "/destinations/mumbai"
   },
   {
     name: "AC Ferry",
-    description: "Comfortable air-conditioned ferry options for group travel",
+    description: "Economical & Comfortable Passenger Boats with AC & Non-AC sections for Alibaug (Mandwa) from Gateway of India",
     icon: "❄️",
-    href: "#packages"
+    href: "/destinations/alibaug"
   },
   {
     name: "Speed Boat",
-    description: "Fast transfers and thrilling Mumbai harbour rides",
+    description: "Travel in High Speed Boats to Alibaug (Mandwa) in just 23 minutes",
     icon: "🚤",
-    href: "#packages"
+    href: "/destinations/alibaug"
   },
   {
     name: "Yachts",
-    description: "Luxury yachts for premium private experiences",
+    description: "VVIP experience in a Premium Yachts to Elephanta Caves or Alibaug (Mandwa) from Gateway of India",
     icon: "🛥️",
-    href: "#packages"
+    href: "/destinations/elephanta-caves"
   },
   {
     name: "Sail boat",
-    description: "Relaxed sailing experiences on the water",
+    description: "Relaxing and romantic experience in calm seas of Mumbai Harbour with your loved ones",
     icon: "⛵",
-    href: "#packages"
+    href: "/destinations/mumbai"
   },
   {
     name: "Ro-Ro Ship",
-    description: "Roll-on roll-off ship travel for larger transfers",
+    description: "Take your car along with you in a ship to Alibaug (Mandwa) from Domestic Cruise Terminal",
     icon: "🚢",
-    href: "#packages"
+    href: "/destinations/alibaug"
   },
 ];
 
@@ -276,6 +276,41 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* Destination Highlights */}
+        <section className="bg-[#f7f7f3] py-16 px-4">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-10">
+              <span className="text-[#59b280] text-sm font-semibold tracking-[0.2em] uppercase font-poppins">Destinations</span>
+              <h2 className="font-instrument text-4xl md:text-5xl font-semibold text-gray-900 mt-4 mb-2">
+                Sail across Mumbai's iconic waters
+              </h2>
+            </div>
+
+            <div className="grid gap-6 lg:grid-cols-3">
+              <Link href="/destinations/mumbai" className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                <h3 className="font-poppins text-2xl font-semibold text-[#064e3b] mb-3">Mumbai Harbour</h3>
+                <p className="font-poppins text-base leading-7 text-gray-700">
+                  View the beautiful coastline of Mumbai with the view gateway of India.
+                </p>
+              </Link>
+
+              <Link href="/destinations/alibaug" className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                <h3 className="font-poppins text-2xl font-semibold text-[#064e3b] mb-3">Alibaug (Mandwa)</h3>
+                <p className="font-poppins text-base leading-7 text-gray-700">
+                  Escape from Mumbai into the nature of Alibaug just 25 minutes ride from Gateway of India.
+                </p>
+              </Link>
+
+              <Link href="/destinations/elephanta-caves" className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                <h3 className="font-poppins text-2xl font-semibold text-[#064e3b] mb-3">Elephanta Caves</h3>
+                <p className="font-poppins text-base leading-7 text-gray-700">
+                  Explore the history of India with ancient rock carvings of the monument of Elephanta caves.
+                </p>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Yacht Categories */}
         <section className="py-16 px-4 bg-white">
           <div className="max-w-7xl mx-auto">
@@ -290,16 +325,13 @@ export default function HomePage() {
               <h2 className="font-instrument text-4xl md:text-5xl font-semibold text-gray-900 mt-4 mb-4">
                 Choose Your Boat Type
               </h2>
-              <p className="text-gray-600 text-lg max-w-2xl mx-auto font-poppins">
-                We have a wide range of yachts and boats to suit every occasion and budget
-              </p>
             </motion.div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-6">
               {YACHT_CATEGORIES.map((category, index) => (
                 <Link
                   key={category.name}
-                  href="/packages"
+                  href={category.href}
                   className="group bg-white rounded-2xl p-6 text-center border border-gray-200 hover:border-[#59b280] hover:shadow-lg transition-all duration-300 cursor-pointer block"
                 >
                   <div className="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">
