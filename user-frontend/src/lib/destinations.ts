@@ -11,6 +11,7 @@ export type Destination = {
   startingPoint: string;
   highlights: string[];
   experiences: string[];
+  faqs?: { question: string; answer: string }[];
 };
 
 export const DESTINATIONS: Destination[] = [
@@ -28,6 +29,23 @@ export const DESTINATIONS: Destination[] = [
     startingPoint: "Gateway of India",
     highlights: ["Gateway views", "Sunset slots", "Private charters", "Flexible route"],
     experiences: ["Speed Boat", "Yachts", "Sail boat"],
+    faqs: [
+      {
+        question: "How much time does it take to go around Mumbai Harbour?",
+        answer:
+          "Typical harbour rides range from 30 minutes to 1 hour for short sightseeing trips. Private charters such as yachts or extended harbour tours can take 1–3 hours depending on the route.",
+      },
+      {
+        question: "What all boat options do I have for Mumbai Harbour?",
+        answer:
+          "We offer wooden ferries, AC ferries, speed boats (shared and private charters), yachts and sail boats — suitable for sightseeing, transfers, parties and photoshoots.",
+      },
+      {
+        question: "I am a corporate, can we do any outing for staff in Mumbai Harbour?",
+        answer:
+          "Yes — Vishal Boat Service provides a wide range of corporate outing options. A yacht experience or a one-hour speed boat ride are common time-bound activities for corporate groups.",
+      },
+    ],
   },
   {
     slug: "alibaug",
@@ -43,6 +61,20 @@ export const DESTINATIONS: Destination[] = [
     startingPoint: "Gateway of India",
     highlights: ["Direct Mandwa route", "Luggage support", "Family friendly", "Private pickup"],
     experiences: ["Speed Boat", "Yachts", "AC Ferry", "Ro-Ro Ship"],
+    faqs: [
+      {
+        question: "How long does it take to reach Mandwa (Alibaug) from Gateway of India?",
+        answer: "A speed boat takes about 20–23 minutes. Ferries and other transfers can take up to an hour depending on the service.",
+      },
+      {
+        question: "What boat options are available for Alibaug transfers?",
+        answer: "You can choose speed boat transfers, yachts for private groups, AC ferries and Ro-Ro services for vehicles where available.",
+      },
+      {
+        question: "Can I bring luggage or equipment?",
+        answer: "Yes — most transfer services allow luggage; please mention large items during booking so we can arrange appropriate handling.",
+      },
+    ],
   },
   {
     slug: "elephanta-caves",
@@ -58,6 +90,20 @@ export const DESTINATIONS: Destination[] = [
     startingPoint: "Gateway of India",
     highlights: ["Island transfer", "Guide options", "Cave visit", "Harbour views"],
     experiences: ["Wooden Ferry", "AC Ferry", "Speed Boat"],
+    faqs: [
+      {
+        question: "How long should I plan for a visit to Elephanta Caves?",
+        answer: "Plan for a 3–4 hour trip including transfer time, cave visit and a short walk to/from the site; guided tours often take longer.",
+      },
+      {
+        question: "What boat options are available to reach Elephanta?",
+        answer: "You can take public ferries, wooden ferries, AC ferries or private speed boat charters depending on your preference and budget.",
+      },
+      {
+        question: "Are guided visits available on Elephanta Island?",
+        answer: "Yes — guided tours can be arranged and are recommended if you want expert historical context for the caves.",
+      },
+    ],
   },
   {
     slug: "goa",
@@ -73,6 +119,11 @@ export const DESTINATIONS: Destination[] = [
     startingPoint: "Goa marina or local jetty",
     highlights: ["Sunset routes", "Music friendly", "Group plans", "Custom timing"],
     experiences: ["Yachts", "Sail boat", "Speed Boat"],
+    faqs: [
+      { question: "Can I book private sunset cruises?", answer: "Yes — private sunset cruises and yacht charters are available and popular in Goa." },
+      { question: "Is food allowed on board?", answer: "Yes — catering can be arranged on most private charters; check our booking options." },
+      { question: "Are safety briefings provided?", answer: "Yes — all charters include a safety briefing and lifejackets for all guests." },
+    ],
   },
   {
     slug: "kerala",
@@ -88,6 +139,11 @@ export const DESTINATIONS: Destination[] = [
     startingPoint: "Local jetty by route",
     highlights: ["Backwater routes", "Calm cruising", "Family plans", "Scenic stops"],
     experiences: ["Wooden Ferry", "AC Ferry", "Yachts"],
+    faqs: [
+      { question: "Are the backwater routes family-friendly?", answer: "Yes — backwater cruises are calm and well-suited to families and small groups." },
+      { question: "Can we book overnight backwater stays?", answer: "Some providers offer overnight houseboat stays; please contact us for details and availability." },
+      { question: "Is transport included to the jetty?", answer: "We can arrange local transfers on request; include transfer requirements when booking." },
+    ],
   },
 ];
 
