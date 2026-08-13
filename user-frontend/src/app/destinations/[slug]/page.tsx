@@ -328,6 +328,21 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
     return unique.map((type) => BOAT_INFO[type] || { title: type, boardingPoint: destination.startingPoint, duration: "Varies", timings: "Varies", capacity: "Varies", price: "Contact us" });
   })();
 
+  const faqPageSchema = destination.faqs?.length
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: destination.faqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.answer,
+          },
+        })),
+      }
+    : null;
+
   return (
     <>
       <Header />
@@ -496,6 +511,15 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
                 </div>
               )}
             </div>
+
+            {faqPageSchema && (
+              <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                  __html: JSON.stringify(faqPageSchema),
+                }}
+              />
+            )}
           </section>
 
           <section className="mx-auto max-w-7xl bg-brand-accent px-5 py-10 text-center text-brand-inverse sm:px-6 md:px-10 md:py-12">
