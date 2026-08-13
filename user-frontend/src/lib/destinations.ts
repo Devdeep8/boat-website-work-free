@@ -345,44 +345,154 @@ export const DESTINATIONS: Destination[] = [
     experiences: ["Wooden Ferry", "AC Ferry", "Speed Boat"],
     faqs: [
       {
-        question: "How long should I plan for a visit to Elephanta Caves?",
+        question: "What is the best way to visit Elephanta Caves from Mumbai?",
         answer:
-          "A full Elephanta trip usually takes around 3–4 hours, including the boat ride to the island, time to explore the caves, and the return trip. If you are taking a private speed boat or yacht charter, you may have more flexibility in timing and can stay longer for photography, sightseeing, or a relaxed visit.",
+          "The fastest and most comfortable way to visit Elephanta Caves is by a private speed boat from Gateway of India. Unlike public ferries, a private speed boat offers flexible departure timings, significantly reduces travel time, and provides a more comfortable experience for families, senior citizens, and groups.\nVishal Boat Service offers private speed boat transfers and guided Elephanta Caves tour packages, including flexible timings and return transfers. Call or WhatsApp +91 87791 63152 to book your preferred departure.",
       },
       {
-        question: "Which boats are available from Gateway of India to Elephanta Caves?",
+        question: "How long does it take to reach Elephanta Caves by speed boat?",
         answer:
-          "You can travel by:\n* Wooden Ferry\n* AC Ferry\n* Private Speed Boat\n* Speed Boat Charter\n* Yacht Charter\nDepending on your travel style and budget, we can help you choose between a quick ride, a guided tour, or a private premium experience.",
+          "A speed boat ride from Gateway of India to Elephanta Caves usually takes around 20 to 30 minutes, depending on sea conditions.\nPublic ferries generally take around one hour each way.\nIf you're looking to save time and enjoy a more exclusive experience, a private speed boat is the ideal choice.",
       },
       {
-        question: "Where do the Elephanta boat rides start from?",
+        question: "How much does a private speed boat to Elephanta Caves cost?",
         answer:
-          "Most Elephanta boat rides begin from Gateway of India, Mumbai. The boarding point depends on the type of boat you choose, but our team can guide you to the exact jetty and timing after booking confirmation. We recommend arriving 20–30 minutes before departure.",
+          "The cost depends on:\n* Number of passengers\n* Boat type\n* Season\n* Departure time\nVishal Boat Service offers a range of private speed boats and luxury yachts for Elephanta tours to suit different group sizes and budgets.\nFor the latest prices and availability, call or WhatsApp +91 87791 63152.",
       },
       {
-        question: "Is the Elephanta trip suitable for families and tourists?",
+        question: "Where do private boats to Elephanta Caves depart from?",
         answer:
-          "Yes. Elephanta Caves is a popular destination for families, students, tourists, and photography enthusiasts. The island trip is enjoyable for both casual visitors and those looking for a historical and cultural experience. The boat ride itself adds to the excitement and gives you a scenic view of Mumbai Harbour.",
+          "All private speed boats and yachts for Elephanta Caves depart from Jetty No. 5, Gateway of India, Mumbai.\nAfter your booking is confirmed, our team shares the exact boarding location, Google Maps pin, and complete boarding instructions via WhatsApp.",
       },
       {
-        question: "Can I book a private speed boat to Elephanta Caves?",
+        question: "What is included in the Premium Guided Elephanta Caves Tour?",
         answer:
-          "Absolutely. Private speed boats are one of the most convenient ways to visit Elephanta Caves, especially if you want to avoid crowding and travel on your own time. This option is ideal for families, groups, and travellers who want a shorter, more comfortable journey with more flexibility.",
+          "Our Premium Guided Elephanta Caves Tour is designed for guests who want a comfortable and hassle-free experience.\nDepending on the package selected, it may include:\n* Private speed boat transfers\n* Professional local guide\n* Flexible departure timings\n* Return journey\n* Assistance at the jetty\n* Customized itinerary\nPlease contact us for package details and pricing.",
       },
       {
-        question: "What can I see at Elephanta Caves?",
+        question: "How much time should I keep for an Elephanta Caves tour?",
         answer:
-          "The Elephanta Caves are famous for their rock-cut sculptures and temple structures dedicated to Lord Shiva. Visitors can explore the cave complex, admire the carved architecture, and enjoy the island's scenic surroundings. The site is especially appealing to history lovers, cultural travellers, and photographers.",
+          "Most visitors spend around 4 to 6 hours for a complete Elephanta experience.\nThis includes:\n* Speed boat journey\n* Exploring the UNESCO World Heritage caves\n* Photography\n* Sightseeing\n* Return journey\nIf you're travelling by private speed boat, you save valuable travel time compared to public ferries.",
       },
       {
-        question: "Are guided tours available at Elephanta Caves?",
+        question: "Can families with children visit Elephanta Caves by speed boat?",
         answer:
-          "Yes. Guided tours can be arranged for travellers who want a more informative and structured visit. A guide helps you understand the historical and spiritual significance of the carvings and gives better context to the island's heritage.",
+          "Yes. Private speed boats are a popular option for families because they reduce travel time and provide greater flexibility.\nLife jackets are provided for all passengers, and our experienced captains ensure a safe and comfortable journey.",
       },
       {
-        question: "Why choose Vishal Boat Service for Elephanta Caves?",
+        question: "Is a private speed boat better than the public ferry to Elephanta?",
         answer:
-          "Vishal Boat Service provides reliable transfer options, knowledgeable support, and flexible schedules for Elephanta trips. Whether you want a shared ferry, a private speed boat, or a premium yacht charter, we help you plan a smooth and memorable day trip from Mumbai to the island.",
+          "If you value comfort, flexibility, and time, then yes.\nA private speed boat offers:\n* Faster travel\n* Flexible departure timings\n* No waiting for scheduled ferry departures\n* Less crowded experience\n* Comfortable seating\n* Personalized service\nIt is especially recommended for families, senior citizens, corporate groups, and international tourists.",
+      },
+      {
+        question: "Can I combine a Mumbai Harbour Cruise with an Elephanta Caves tour?",
+        answer:
+          "Yes. Many guests choose to combine a Mumbai Harbour Cruise with a visit to Elephanta Caves to make the most of their day on the water.\nOur team can customize your itinerary based on your available time and preferred experience.",
+      },
+      {
+        question: "Can I hire a private yacht for an Elephanta Caves tour?",
+        answer:
+          "Yes. Luxury yachts are available for private Elephanta Caves tours, offering a premium experience with spacious seating, onboard facilities, and complete privacy.\nThis option is popular for corporate groups, VIP guests, family celebrations, and luxury sightseeing experiences.",
+      },
+      {
+        question: "Do I need to book my Elephanta Caves speed boat in advance?",
+        answer:
+          "Yes. We strongly recommend advance booking, especially on weekends, public holidays, and during the tourist season.\nAdvance booking ensures better boat availability and your preferred departure time.\nCall or WhatsApp +91 87791 63152 to reserve your boat.",
+      },
+      {
+        question: "Can foreign tourists book a private Elephanta Caves tour?",
+        answer:
+          "Absolutely.\nVishal Boat Service welcomes visitors from around the world.\nOur team regularly assists international tourists with private speed boat transfers, guided tours, and customized sightseeing experiences.\nAdvance booking is recommended so we can prepare your itinerary.\nWe have catered to 3000 foreign tourists in the last one year for Elephanta Caves in particular.",
+      },
+      {
+        question: "Are Elephanta Caves open throughout the year?",
+        answer:
+          "Elephanta Caves are generally open throughout the year except Mondays, when the caves remain closed.\nBoat services are also subject to weather and sea conditions, particularly during the monsoon season.\nPlease contact us before your visit for the latest operating information.",
+      },
+      {
+        question: "What should I carry while visiting Elephanta Caves?",
+        answer:
+          "We recommend carrying:\n* Comfortable walking shoes\n* Sunglasses\n* Hat or cap\n* Drinking water\n* Sunscreen\n* Camera or mobile phone\n* Cash or digital payment options for entry tickets and local purchases\nOur team will guide you on everything you need before your trip.",
+      },
+      {
+        question: "Why book your Elephanta Caves tour with Vishal Boat Service?",
+        answer:
+          "Vishal Boat Service offers a premium and hassle-free way to experience Elephanta Caves.\nWith our private speed boats and customized tour packages, you enjoy:\n* Faster travel than public ferries\n* Flexible departure timings\n* Comfortable private boats\n* Guided tour options\n* Personalized assistance from booking to return\n* Transparent pricing with no hidden charges\n* Easy booking through WhatsApp or phone\nWhether you're travelling with family, friends, or corporate guests, we'll help you plan a memorable Elephanta Caves experience.\n📞 Call or WhatsApp: +91 87791 63152",
+      },
+      {
+        question: "Is Elephanta Caves worth visiting?",
+        answer:
+          "Yes, Elephanta Caves is one of Mumbai's most popular tourist attractions and a UNESCO World Heritage Site. The island is famous for its magnificent rock-cut cave temples dedicated to Lord Shiva, ancient sculptures, and beautiful views of Mumbai Harbour. Whether you're visiting Mumbai for the first time or planning a weekend outing, an Elephanta Caves tour is a memorable experience for families, couples, solo travellers, and international tourists.\nFor a faster and more comfortable journey, Vishal Boat Service offers private speed boat tours to Elephanta Caves from Gateway of India. Call or WhatsApp +91 87791 63152 for bookings.",
+      },
+      {
+        question: "How much time is needed to visit Elephanta Caves?",
+        answer:
+          "Most visitors spend around 4 to 6 hours for a complete Elephanta Caves tour. This includes the boat ride from Gateway of India, exploring the caves, photography, visiting viewpoints, and returning to Mumbai.\nChoosing a private speed boat instead of the public ferry helps reduce travel time, allowing you to spend more time exploring the island.",
+      },
+      {
+        question: "What is the fastest way to reach Elephanta Caves?",
+        answer:
+          "The fastest way to reach Elephanta Caves from Mumbai is by private speed boat from Gateway of India. The journey typically takes 20–30 minutes, depending on sea conditions, whereas public ferries usually take around one hour each way.\nIf you're travelling with family, friends, or a group, a private speed boat offers greater comfort, flexibility, and convenience. Contact Vishal Boat Service on +91 87791 63152 to check availability.",
+      },
+      {
+        question: "Can I visit Elephanta Caves in half a day?",
+        answer:
+          "Yes. A half-day Elephanta Caves tour is ideal if you're travelling by private speed boat. Since the journey is much quicker than the public ferry, you'll have enough time to explore the caves and return to Mumbai within a few hours.\nOur team can help you plan a morning or afternoon itinerary based on your schedule.",
+      },
+      {
+        question: "Are private boats available to Elephanta Caves?",
+        answer:
+          "Yes. Vishal Boat Service offers private speed boats and luxury yachts to Elephanta Caves for individuals, families, corporate groups, and tourists.\nPrivate boats allow you to choose your own departure time, avoid crowded ferries, and enjoy a more comfortable journey across Mumbai Harbour.\nCall or WhatsApp +91 87791 63152 for the latest prices and boat options.",
+      },
+      {
+        question: "What is the difference between the ferry and a speed boat to Elephanta?",
+        answer:
+          "A public ferry is the most economical option and operates on fixed schedules with shared seating. It usually takes about one hour to reach Elephanta Island.\nA private speed boat is much faster, taking approximately 20–30 minutes, and offers flexible timings, greater comfort, and privacy. It's ideal for families, senior citizens, corporate groups, and travellers looking for a premium experience.",
+      },
+      {
+        question: "Which jetty goes to Elephanta Caves?",
+        answer:
+          "Most private speed boats and luxury yachts to Elephanta Caves depart from Jetty No. 5 at Gateway of India. Public ferries generally operate from nearby Jetty No. 4 at Gateway of India.\nAfter confirming your booking, Vishal Boat Service shares the exact boarding location and directions via WhatsApp, making it easy to find your departure point.",
+      },
+      {
+        question: "Is a guide required for Elephanta Caves?",
+        answer:
+          "A guide is not compulsory, but hiring a knowledgeable guide can greatly enhance your visit. The sculptures and temples at Elephanta Caves have a rich history dating back over a thousand years, and a guide helps you understand their cultural and architectural significance.\nVishal Boat Service also offers Premium Guided Elephanta Caves Tour Packages for guests who want a complete sightseeing experience.",
+      },
+      {
+        question: "Can senior citizens visit Elephanta Caves comfortably?",
+        answer:
+          "Yes. Many senior citizens visit Elephanta Caves every day. A private speed boat is often more comfortable than a crowded public ferry because it offers quicker travel and flexible departure timings.\nPlease note that reaching the caves involves walking and climbing steps, so comfortable footwear is recommended. If anyone in your group requires special assistance, let us know while booking so we can recommend the best option.\nPlease Note: Elephanta is not recommended for people on wheel chair or walking disabilities. There are a lot of stairs to get there.",
+      },
+      {
+        question: "What are the timings of Elephanta Caves?",
+        answer:
+          "Elephanta Caves are generally open from 9:00 AM to 5:00 PM, and the site remains closed on Mondays. Boat services operate according to weather and sea conditions.\nIf you're planning your visit, contact Vishal Boat Service before travelling so we can help you choose the best departure time.",
+      },
+      {
+        question: "Is photography allowed at Elephanta Caves?",
+        answer:
+          "Yes. Photography is allowed in most areas of Elephanta Caves, making it a popular destination for tourists, photographers, and travel enthusiasts. The ancient rock-cut sculptures, cave architecture, and panoramic views of Mumbai Harbour offer plenty of opportunities for memorable photographs.\nIf you're planning a professional photoshoot or commercial filming, please check the applicable permissions in advance.",
+      },
+      {
+        question: "Are food and drinks available on Elephanta Island?",
+        answer:
+          "Yes. Elephanta Island has several local restaurants and food stalls where visitors can enjoy snacks, meals, and refreshments. Drinking water and cold beverages are also available.\nIf you're travelling with children or have specific dietary requirements, carrying some snacks and water is recommended.",
+      },
+      {
+        question: "Can I book a same-day Elephanta speed boat?",
+        answer:
+          "Yes, same-day bookings may be available depending on boat availability, weather conditions and permissions. However, weekends, public holidays, and the tourist season can be busy.\nIt is better to book the speed boat ride 2 days in advance minimum.\nTo avoid disappointment, it's best to book your private speed boat to Elephanta Caves in advance. Call or WhatsApp +91 87791 63152 to check real-time availability.",
+      },
+      {
+        question: "How far is Elephanta Caves from Gateway of India?",
+        answer:
+          "Elephanta Island is located approximately 10 kilometres across Mumbai Harbour from Gateway of India.\nA private speed boat usually reaches the island in 20–30 minutes, while a public ferry typically takes around one hour.",
+      },
+      {
+        question: "Which is the best boat for an Elephanta tour?",
+        answer:
+          "The best boat depends on your travel style and group size.\n* Private Speed Boats are ideal for quick transfers, families, and small groups.\n* Luxury Yachts are perfect for premium experiences, celebrations, corporate outings, and guests who prefer additional comfort and onboard facilities.\n* Public Ferries are a budget-friendly option for individual travellers.\nIf you're unsure which boat suits your requirements, the Vishal Boat Service team can help you choose the right option based on your budget and itinerary.\n📞 Call or WhatsApp: +91 87791 63152",
       },
     ],
   },

@@ -157,17 +157,25 @@ const ALIBAGH_HOW_TO_REACH = [
     capacity: "80-200 PAX",
     price: "₹250/person (one way fare)",
     timings: "7am to 8pm",
-    image: publicPath('/Alibaug ( Mandwa)/mandwa-port-vishal-boat-serice.jpg'),
+    image: publicPath('/Alibaug ( Mandwa)/PNP FERRY TO ALIBAUG - AC FERRY.jpg'),
   },
 ];
 
 const ALIBAGH_ACTIVITIES = [
-  { title: "Speed Boat Ride", image: publicPath('/Alibaug ( Mandwa)/Speed Boat Ride with vishal boat Service in Mumbai at gateway of india for ALIBAUG MANDWA.jpg') },
+  { title: "Speed Boat Ride", image: publicPath('/Alibaug ( Mandwa)/SPEED BOAT SHARING RIDE TO ALIBUAG- ECONOMICAL-rs1200 per person.jpg') },
   { title: "Beach Sunset / Sunrise", image: publicPath('/Alibaug ( Mandwa)/Alibaug-awas-beach-vishal-boat-service.jpg') },
   { title: "Fort Tours", image: publicPath('/Alibaug ( Mandwa)/Alibaug-fort-tours-vishal-boat-service.jpg') },
-  { title: "Bird Feeding in sea", image: publicPath('/Alibaug ( Mandwa)/Alibaug-awas-beach-vishal-boat-service.jpg') },
+  { title: "Bird Feeding in sea", image: publicPath('/Alibaug ( Mandwa)/FEED THE birds on the way to ALIBAUG MANDWA that fly around your boat. book from vishal boat service_.jpg') },
   { title: "AirBNB Stays", image: publicPath('/Alibaug ( Mandwa)/aura Alibaug villa saffron stays-book tourist alibaug- vishal boat service_.jpg') },
   { title: "Restaurants By the Beach", image: publicPath('/Alibaug ( Mandwa)/by the beach Restauants at alibaug for tourist-use speed boats to visit-book vishal boat service_.jpg') },
+];
+
+const ELEPHANTA_ACTIVITIES = [
+  { title: "Caves tour", image: publicPath('/Elephanta Caves/mumbai-elephanta-caves-vishal-boat-service.jpg') },
+  { title: "Enroute Caves Market Shopping", image: publicPath('/Elephanta Caves/a flee market on the way uphill to the Elephanta caves- shopping for tourist- covered in the guided tours to elephanta caves by vishal boat service_.webp') },
+  { title: "Toy Train Ride", image: publicPath('/Elephanta Caves/enjoy the tour train ride right after your speed boat ride at elephanta caves. tourist activity in elephanta caves_.jpg') },
+  { title: "Bird Feeding in sea", image: publicPath('/Elephanta Caves/FEED THE birds on the way to Elephanta caves that fly around your boat. book from vishal boat service_.jpg') },
+  { title: "Boat Ride", image: publicPath('/Elephanta Caves/Speed boat Ride to elephanta caves and enjoy the view at gateway of india on your way back-book from vishal boat service.jpg') },
 ];
 
 const ELEPHANTA_HOW_TO_REACH = [
@@ -176,8 +184,8 @@ const ELEPHANTA_HOW_TO_REACH = [
     duration: "1 Hour each way",
     boardingPoint: "Gateway of India, Jetty 4",
     capacity: "60-80 PAX",
-    price: "Rs. 250/person (one way Fare)",
-    timings: "7am to 7pm",
+    price: "₹230/person",
+    timings: "9am to 5pm",
     image: publicPath('/Elephanta Caves/Wooden ferry at Gateway of India for Elepahnata caves 1 hour  ride in Mumbai sea.jpg'),
   },
   {
@@ -185,7 +193,7 @@ const ELEPHANTA_HOW_TO_REACH = [
     duration: "3 Hours",
     boardingPoint: "Gateway of India, Jetty 5",
     capacity: "6, 10 & 12 PAX",
-    price: "Starting Price: Rs. 18,000/boat (Return Fare)",
+    price: "₹10,000/boat",
     timings: "8am to 2pm",
     image: publicPath('/Elephanta Caves/Speed Boat Ride with vishal boat Service in Mumbai at gateway of india for Elephanta caves_.jpg'),
   },
@@ -194,17 +202,17 @@ const ELEPHANTA_HOW_TO_REACH = [
     duration: "4 Hours",
     boardingPoint: "Gateway of India, Jetty 5",
     capacity: "6, 10 & 12 PAX",
-    price: "Starting Price: Rs. 7,000/person",
+    price: "₹7,500/person",
     timings: "9am & 12pm",
     image: publicPath('/Elephanta Caves/12 seater speed boat with best speed boat rental service vishal boat service for Elephanta Caves starting at rs 8000 per person_.jpg'),
   },
   {
     title: "Yacht",
-    duration: "3-4 hours",
+    duration: "3-4 Hours",
     boardingPoint: "Gateway of India, Jetty 5",
     capacity: "12-20 PAX",
-    price: "Starting Price: Rs. 70,000/boat",
-    timings: "8am to 3pm",
+    price: "₹70,000/boat",
+    timings: "8am to 9pm",
     image: publicPath('/Elephanta Caves/luxury yacht in Mumbai for a trip to Elephanta caves- hire from vishal boat service_.jpg'),
   },
 ];
@@ -434,7 +442,14 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
 
             <div className="mt-8 grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
               {(() => {
-                const activities = destination.slug === "mumbai" ? MUMBAI_ACTIVITIES : destination.slug === "alibaug" ? ALIBAGH_ACTIVITIES : VISIT_CARDS;
+                const activities =
+                  destination.slug === "mumbai"
+                    ? MUMBAI_ACTIVITIES
+                    : destination.slug === "alibaug"
+                      ? ALIBAGH_ACTIVITIES
+                      : destination.slug === "elephanta-caves"
+                        ? ELEPHANTA_ACTIVITIES
+                        : VISIT_CARDS;
                 return activities.map((act) => (
                   <article key={act.title} className="overflow-hidden rounded-[1.2rem] bg-brand-elevated shadow-brand-soft">
                     <div className="relative aspect-[4/3]">
