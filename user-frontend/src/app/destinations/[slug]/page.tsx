@@ -69,7 +69,7 @@ const MUMBAI_HOW_TO_REACH = [
     capacity: "6, 10 & 12 PAX",
     price: "Starting Price: Rs. 5,000/boat",
     timings: "7am to 8pm",
-    image: publicPath('/Mumbai Habour/Mumbai Harbour speed boat tour by vishal boat service.jpg'),
+    image: publicPath('/Mumbai Habour/Speed Boat Ride with vishal boat Service in Mumbai at gateway of india for harbour cruise or a boat ride in Mumbai sea_.jpg'),
   },
   {
     title: "Speed Boat Shared",
@@ -78,7 +78,7 @@ const MUMBAI_HOW_TO_REACH = [
     capacity: "10 & 12 PAX",
     price: "Starting Price: Rs. 500/person",
     timings: "4pm to 7pm",
-    image: publicPath('/Mumbai Habour/Speed boat provided by vishal boat service at Mumbai harbour_.jpg'),
+    image: publicPath('/Mumbai Habour/12 seater speed boat with best speed boat rental service vishal boat service for harbour cruise starting at rs 500 per person_.jpg'),
   },
   {
     title: "Yacht",
@@ -96,19 +96,21 @@ const MUMBAI_HOW_TO_REACH = [
     capacity: "4-12 PAX",
     price: "Starting Price: Rs. 5,000/boat",
     timings: "7am to 8pm",
-    image: publicPath('/Mumbai Habour/vishal boat service provides romantic relaxing time with loved ones in a sail boat at Mumbai harbour.jpg'),
+    image: publicPath('/Mumbai Habour/vishal boat service provides sail boats at Mumbai harbour for 2 hours packages rental at economical prices_.jpg'),
   },
 ];
 
 const MUMBAI_ACTIVITIES = [
-  { title: "Relaxing time in sail boat", image: publicPath('/Mumbai Habour/vishal boat service provides romantic relaxing time with loved ones in a sail boat at Mumbai harbour.jpg') },
+  { title: "Speed Thrill on speed Boat", image: publicPath('/Mumbai Habour/Speed boat provided by vishal boat service at Mumbai harbour_.jpg') },
+  { title: "Party with Friends with sunset views", image: publicPath('/Mumbai Habour/Party with friends on boat. girls time at Mumbai seas.jpg') },
+  { title: "Yacht Party", image: publicPath('/Mumbai Habour/vishal boat service get you the best yacht party with your friends. call to get a party arranged asap.jpg') },
   { title: "Pre-Wedding Photoshoot", image: publicPath('/Mumbai Habour/Pre-wedding photoshoot in yacht at Mumbai harbour-vishal boat service manages all for you at economical pricing_.jpg') },
   { title: "Corporate Team Evening Outing", image: publicPath('/Mumbai Habour/take your corporate team for a yacht party at the Mumbai sea. vishal boat service can arrange all for you in your budget. already caters to most of the big companies in Mumbai.jpg') },
   { title: "Birthday Party", image: publicPath('/Mumbai Habour/hire a yacht for birthday parties in the Mumbai harbour. vishal boat service provides end-to-end service from hiring to execution of the full party.jpg') },
+  { title: "Relaxing time in sail boat", image: publicPath('/Mumbai Habour/vishal boat service provides romantic relaxing time with loved ones in a sail boat at Mumbai harbour.jpg') },
   { title: "Movie shooting", image: publicPath('/Mumbai Habour/movie gheraiya shooting in Mumbai. vishal boat service provides boats for the movie shooting. the actors and crew very happy with service_.jpg') },
-  { title: "Party with Friends with sunset views", image: publicPath('/Mumbai Habour/Party with friends on boat. girls time at Mumbai seas.jpg') },
-  { title: "Yacht Party", image: publicPath('/Mumbai Habour/vishal boat service get you the best yacht party with your friends. call to get a party arranged asap.jpg') },
-  { title: "Speed Thrill on speed Boat", image: publicPath('/Mumbai Habour/Speed Boat Ride with vishal boat Service in Mumbai at gateway of india for harbour cruise or a boat ride in Mumbai sea_.jpg') },
+  { title: "Marriage Proposal", image: publicPath('/Mumbai Habour/vishal boat service makes your Marriage proposal more special with the beautiful view of the calm sea.jpg') },
+  { title: "Team building activity for corporates", image: publicPath('/Mumbai Habour/Corporate-Yacht-Sailing-team-building-activity with vishal boat service.jpg') },
 ];
 
 const ALIBAGH_HOW_TO_REACH = [
@@ -308,38 +310,24 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
           <section className="w-full overflow-hidden bg-brand-primary shadow-brand-soft">
             <div className="relative min-h-[360px] w-full overflow-hidden md:min-h-[520px] lg:min-h-[640px]">
               <Image src={destination.image} alt={destination.imageAlt} fill priority className="object-cover" />
-              <div className="absolute inset-0 bg-brand-image-scrim" />
-              <div className="absolute inset-x-4 bottom-4 md:inset-x-8 md:bottom-8 lg:inset-x-10 lg:bottom-10">
-                <div className="mx-auto max-w-5xl rounded-[1.5rem] bg-brand-primary-translucent px-5 py-4 text-center backdrop-blur-sm md:px-8 md:py-6">
-                  <p className="font-poppins text-[10px] font-semibold uppercase tracking-[0.28em] text-brand-accent sm:text-xs md:text-sm">
+              <div className="absolute inset-0 bg-[rgba(30,41,59,0.12)]" />
+              <div className="absolute inset-x-0 bottom-0 flex justify-center px-4 pb-4 md:px-8 md:pb-8">
+                <div className="w-full max-w-[980px] border-[3px] border-[#b84ae5] bg-white/80 px-4 py-4 text-center shadow-[0_20px_45px_rgba(0,0,0,0.18)] backdrop-blur-sm md:px-8 md:py-6">
+                  <p className="font-poppins text-[10px] font-semibold uppercase tracking-[0.28em] text-[#1d7d64] sm:text-xs md:text-sm">
                     {destination.eyebrow}
                   </p>
-                  <h1 className="mt-2 text-3xl font-semibold text-brand-primary sm:text-4xl md:text-5xl lg:text-7xl">
+                  <h1 className="mt-2 text-3xl font-semibold text-[#1d7d64] sm:text-4xl md:text-5xl lg:text-7xl">
                     {destination.name}
                   </h1>
                 </div>
               </div>
             </div>
 
-            <section className="mx-auto max-w-7xl bg-brand-accent px-5 py-8 text-center text-brand-inverse sm:px-6 md:px-10 md:py-10 lg:px-14">
+            <section className="mx-auto max-w-7xl bg-[#7cbf8d] px-5 py-8 text-center text-brand-inverse sm:px-6 md:px-10 md:py-10 lg:px-14">
               <h2 className="text-2xl font-semibold sm:text-3xl md:text-4xl">About {destination.name}</h2>
               <p className="mx-auto mt-4 max-w-3xl font-poppins text-sm leading-relaxed text-brand-inverse-muted sm:text-base md:text-lg">
                 {destination.summary}
               </p>
-              <div className="mt-7 grid gap-3 text-left font-poppins text-sm md:grid-cols-3">
-                <div className="rounded-[1.25rem] bg-brand-primary-translucent p-4 text-brand-primary">
-                  <span className="mb-2 block font-semibold">Duration</span>
-                  {destination.duration}
-                </div>
-                <div className="rounded-[1.25rem] bg-brand-primary-translucent p-4 text-brand-primary">
-                  <span className="mb-2 block font-semibold">Start point</span>
-                  {destination.startingPoint}
-                </div>
-                <div className="rounded-[1.25rem] bg-brand-primary-translucent p-4 text-brand-primary">
-                  <span className="mb-2 block font-semibold">Best for</span>
-                  {destination.bestFor}
-                </div>
-              </div>
             </section>
           </section>
 
@@ -469,7 +457,7 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
                   {destination.faqs!.map((faq) => (
                     <details key={faq.question} className="rounded-md bg-brand-elevated p-4">
                       <summary className="cursor-pointer font-poppins font-semibold">{faq.question}</summary>
-                      <div className="mt-2 text-sm text-black">{faq.answer}</div>
+                      <div className="mt-2 whitespace-pre-line text-sm leading-6 text-black">{faq.answer}</div>
                     </details>
                   ))}
                 </div>
