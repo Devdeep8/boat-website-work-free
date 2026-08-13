@@ -7,7 +7,15 @@ import Logo from "@/components/Logo";
 import { User, Trophy, Play, Camera } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
-const NAVIGATION = [
+type NavChild = string | { name: string; href: string };
+
+type NavigationItem = {
+  name: string;
+  href: string;
+  children?: NavChild[];
+};
+
+const NAVIGATION: NavigationItem[] = [
   { name: "Home", href: "/" },
   {
     name: "About Us",
@@ -49,7 +57,13 @@ const NAVIGATION = [
   {
     name: "Destinations",
     href: "/destinations",
-    children: ["Mumbai", "Goa", "Kerala", "Alibaug"],
+    children: [
+      { name: "Mumbai", href: "/destinations/mumbai" },
+      { name: "Goa", href: "/destinations/goa" },
+      { name: "Kerala", href: "/destinations/kerala" },
+      { name: "Alibaug", href: "/destinations/alibaug" },
+      { name: "Elephanta Caves", href: "/destinations/elephanta-caves" },
+    ],
   },
   {
     name: "Contact",
@@ -86,6 +100,14 @@ const SOCIAL_LINKS: {
   { name: "YouTube", icon: Play, href: "#" },
   { name: "Instagram", icon: Camera, href: "#" },
 ];
+
+function getChildName(child: NavChild) {
+  return typeof child === "string" ? child : child.name;
+}
+
+function getChildHref(child: NavChild) {
+  return typeof child === "string" ? "#" : child.href;
+}
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -198,11 +220,11 @@ export default function Header() {
                     >
                       {item.children.map((child) => (
                         <Link
-                          key={child}
-                          href="#"
+                          key={getChildName(child)}
+                          href={getChildHref(child)}
                           className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#59b280] font-poppins transition-colors"
                         >
-                          {child}
+                          {getChildName(child)}
                         </Link>
                       ))}
                     </motion.div>
@@ -285,12 +307,12 @@ export default function Header() {
                     <div className="mt-2 ml-4 space-y-2">
                       {item.children.map((child) => (
                         <Link
-                          key={child}
-                          href="#"
+                          key={getChildName(child)}
+                          href={getChildHref(child)}
                           className="block text-sm text-gray-600 hover:text-[#59b280] font-poppins"
                           onClick={() => setMobileMenuOpen(false)}
                         >
-                          {child}
+                          {getChildName(child)}
                         </Link>
                       ))}
                     </div>

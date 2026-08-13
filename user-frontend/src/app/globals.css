@@ -8,36 +8,38 @@
    ========================================== */
 
 @theme {
-  /* Brand Colors - Main accent color (#59b280 - Green) */
-  --color-primary: #59b280;
-  --color-primary-hover: #4a9a6d;
-  --color-primary-light: #7bc49a;
+  /* ============================================================
+     BRAND PALETTE — the single source of truth for every color.
+     Tweak any value here and it updates across the ENTIRE site:
+     home, header, footer, packages, destinations, all pages.
+     These generate utilities like bg-brand, text-forest, text-gold,
+     from-brand, hover:bg-brand-dark, ring-brand, etc.
+     ============================================================ */
 
-  /* Background Colors - White theme */
-  --color-bg-primary: #ffffff;
-  --color-bg-secondary: #f8fafc;
-  --color-bg-tertiary: #f1f5f9;
-  --color-bg-quaternary: #e2e8f0;
+  /* Primary brand green — buttons, links, accents, section labels */
+  --color-brand: #59b280;
+  --color-brand-dark: #4a9a6d;    /* hover / pressed */
+  --color-brand-light: #7bc49a;   /* lighter accent, gradient ends */
 
-  /* Text Colors - Dark text for light background */
-  --color-text-primary: #1e293b;
-  --color-text-secondary: #64748b;
-  --color-text-tertiary: #94a3b8;
+  /* Deep forest greens — headings, strong copy, dark surfaces */
+  --color-forest: #064e3b;
+  --color-forest-soft: #065f46;   /* secondary copy */
+  --color-forest-deep: #0a1628;   /* near-black hover for forest */
 
-  /* Functional Colors */
+  /* Warm gold accent — stat figures, eyebrow labels */
+  --color-gold: #d4a574;
+
+  /* Functional (semantic aliases) */
   --color-success: #59b280;
-  --color-success-hover: #4a9a6d;
   --color-danger: #ef4444;
   --color-warning: #f59e0b;
 
+  /* WhatsApp official green — intentionally separate from brand */
+  --color-whatsapp: #25d366;
+  --color-whatsapp-dark: #20bd5a;
+
   /* Spacing */
   --spacing-section: 5rem;
-
-  /* Border Radius */
-  --radius-lg: 1rem;
-  --radius-xl: 1.5rem;
-  --radius-2xl: 2rem;
-  --radius-full: 9999px;
 
   /* Transitions */
   --transition-fast: 150ms;
@@ -60,9 +62,13 @@
   --brand-bg-primary: #ffffff;
   --brand-bg-secondary: #f8fafc;
   --brand-bg-tertiary: #f1f5f9;
+  --brand-bg-elevated: #ecfdf5;
+  --brand-bg-contrast: #052e2b;
   --brand-text-primary: #1e293b;
   --brand-text-secondary: #64748b;
+  --brand-text-inverse: #ffffff;
   --brand-success: #59b280;
+  --brand-border: #dbe8df;
 
   /* Shadcn/ui Theme Variables - Light Mode */
   --background: 255 255 255;
@@ -127,17 +133,41 @@ body {
 .text-brand-tertiary { color: var(--brand-text-tertiary); }
 .text-brand-accent { color: var(--brand-primary); }
 .text-brand-success { color: var(--brand-success); }
+.text-brand-inverse { color: var(--brand-text-inverse); }
+.text-brand-inverse-muted { color: color-mix(in srgb, var(--brand-text-inverse) 85%, transparent); }
+.text-brand-inverse-subtle { color: color-mix(in srgb, var(--brand-text-inverse) 75%, transparent); }
 
 /* Background Colors - for white theme */
 .bg-brand-primary { background-color: var(--brand-bg-primary); }
 .bg-brand-secondary { background-color: var(--brand-bg-secondary); }
 .bg-brand-tertiary { background-color: var(--brand-bg-tertiary); }
+.bg-brand-elevated { background-color: var(--brand-bg-elevated); }
+.bg-brand-contrast { background-color: var(--brand-bg-contrast); }
 .bg-brand-accent { background-color: var(--brand-primary); }
 .bg-brand-success { background-color: var(--brand-success); }
+.bg-brand-primary-translucent { background-color: color-mix(in srgb, var(--brand-bg-primary) 90%, transparent); }
+.bg-brand-image-scrim { background-color: color-mix(in srgb, var(--brand-bg-contrast) 20%, transparent); }
+.bg-brand-image-scrim-soft { background-color: color-mix(in srgb, var(--brand-bg-contrast) 15%, transparent); }
 
 /* Border Colors */
 .border-brand-accent { border-color: var(--brand-primary); }
 .border-brand-primary { border-color: var(--brand-bg-secondary); }
+.border-brand-muted { border-color: var(--brand-border); }
+
+/* Shared brand treatments for location and marketing pages */
+.bg-brand-hero {
+  background:
+    radial-gradient(circle at top left, color-mix(in srgb, var(--brand-primary) 24%, transparent), transparent 34rem),
+    linear-gradient(135deg, var(--brand-bg-contrast), color-mix(in srgb, var(--brand-primary-hover) 72%, var(--brand-bg-contrast)));
+}
+
+.bg-brand-panel {
+  background: linear-gradient(180deg, var(--brand-bg-primary), var(--brand-bg-elevated));
+}
+
+.shadow-brand-soft {
+  box-shadow: 0 24px 80px color-mix(in srgb, var(--brand-bg-contrast) 12%, transparent);
+}
 
 /* Hover States */
 .hover\:bg-brand-accent:hover { background-color: var(--brand-primary); }
