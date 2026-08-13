@@ -20,7 +20,7 @@ export const DESTINATIONS: Destination[] = [
     eyebrow: "City harbour cruises",
     headline: "See Mumbai from its most cinematic side",
     summary:
-      "Cruise past the Gateway of India, Taj Mahal Palace, naval docks, and skyline views with private boats for couples, families, and corporate groups.",
+      "Mumbai Harbour is one of India's most iconic waterfront destinations, offering panoramic views of the city's skyline, the Gateway of India, the Taj Mahal Palace Hotel, naval docks and historic coastal landmarks. A private speed boat or yacht cruise across the harbour provides a unique way to experience Mumbai away from the city's busy streets. Whether you are planning a romantic sunset cruise, family outing, corporate event or photography session, Mumbai Harbour offers a memorable experience on the Arabian Sea.",
     image: "https://images.unsplash.com/photo-1529253355930-ddbe423a2ac7?w=1400&h=1100&fit=crop",
     imageAlt: "Mumbai skyline and waterfront",
     duration: "1-3 hours",
@@ -35,10 +35,10 @@ export const DESTINATIONS: Destination[] = [
     eyebrow: "Fast coastal transfers",
     headline: "Skip the road and arrive at Mandwa by sea",
     summary:
-      "Reach Mandwa and Alibaug with comfortable sea transfers, luggage assistance, flexible timings, and private options for weekend escapes.",
+      "Mandwa is the gateway to Alibaug and one of Maharashtra's most popular coastal destinations. Known for its beaches, luxury villas, resorts and scenic landscapes, Mandwa attracts weekend travellers, wedding guests and corporate groups from Mumbai. A private speed boat transfer from Gateway of India offers the fastest and most comfortable way to reach Mandwa while avoiding road traffic. Luxury yacht transfers are also available for guests looking for a premium travel experience. Takes about 20-23 mins in a speed boat and about 1 hour in a ferry to reach from Gateway of India.",
     image: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=1400&h=1100&fit=crop",
     imageAlt: "Coastal beach waves near Alibaug",
-    duration: "45-60 minutes",
+    duration: "20-23 minutes by speed boat",
     bestFor: "Mandwa transfers, weekend trips, private groups",
     startingPoint: "Gateway of India",
     highlights: ["Direct Mandwa route", "Luggage support", "Family friendly", "Private pickup"],
@@ -50,7 +50,7 @@ export const DESTINATIONS: Destination[] = [
     eyebrow: "Heritage island tours",
     headline: "Make the journey to Elephanta feel special",
     summary:
-      "Plan a smoother trip to Elephanta Island with boat transfers, guided tour options, and scenic harbour time before or after the caves.",
+      "The Elephanta Caves are a UNESCO World Heritage Site famous for their magnificent rock-cut cave temples dedicated to Lord Shiva. Located on Elephanta Island in Mumbai Harbour, the caves showcase intricate sculptures dating back to the 5th–8th centuries and are among Maharashtra's most celebrated historical attractions. A private guided speed boat tour allows visitors to enjoy a flexible schedule, avoid crowded ferries and experience the island with personalized service, making it ideal for families, international tourists and premium travellers. Multiple options are available depending on budget and experience required.",
     image: "https://images.unsplash.com/photo-1609947017136-9daf32a5eb16?w=1400&h=1100&fit=crop",
     imageAlt: "Historic stone architecture in India",
     duration: "3-4 hours",
