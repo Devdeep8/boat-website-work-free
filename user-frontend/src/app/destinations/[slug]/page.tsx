@@ -115,41 +115,59 @@ const MUMBAI_ACTIVITIES = [
 
 const ALIBAGH_HOW_TO_REACH = [
   {
-    title: "Wooden Ferry",
-    duration: "1 Hour",
-    boardingPoint: "Gateway of India, Jetty 2",
-    capacity: "60-80 PAX",
-    price: "Rs. 200/person (one way Fare)",
-    timings: "7am to 7pm",
-    image: publicPath('/Alibaug ( Mandwa)/Wooden ferry at Gateway of India for ALIBAUG MANDWA 1 hour  ride in Mumbai sea.jpg'),
+    title: "Speed Boat Shared",
+    duration: "20-23 mins",
+    boardingPoint: "Gateway of India, Jetty 5",
+    capacity: "6, 10 & 12 PAX",
+    price: "₹1,200/person",
+    timings: "9am to 7pm",
+    image: publicPath('/Alibaug ( Mandwa)/12 seater speed boat with best speed boat rental service vishal boat service for ALIBAUG MANDWA starting at rs 1200 per person_.jpg'),
   },
   {
     title: "Speed Boat Charter",
     duration: "20-23 mins",
     boardingPoint: "Gateway of India, Jetty 5",
     capacity: "6, 10 & 12 PAX",
-    price: "Starting Price: Rs. 7,000/boat",
+    price: "₹7,000/boat",
     timings: "7am to 8pm",
     image: publicPath('/Alibaug ( Mandwa)/Speed Boat Ride with vishal boat Service in Mumbai at gateway of india for ALIBAUG MANDWA.jpg'),
-  },
-  {
-    title: "Speed Boat Shared",
-    duration: "20-23 mins",
-    boardingPoint: "Gateway of India, Jetty 5",
-    capacity: "6, 10 & 12 PAX",
-    price: "Starting Price: Rs. 1,200/person",
-    timings: "9am to 7pm",
-    image: publicPath('/Alibaug ( Mandwa)/12 seater speed boat with best speed boat rental service vishal boat service for ALIBAUG MANDWA starting at rs 1200 per person_.jpg'),
   },
   {
     title: "Yacht",
     duration: "1 hour",
     boardingPoint: "Gateway of India, Jetty 5",
     capacity: "12-40 PAX",
-    price: "Starting Price: Rs. 60,000/boat",
+    price: "₹60,000/boat",
     timings: "8am to 8pm",
     image: publicPath('/Alibaug ( Mandwa)/luxury yacht in Mumbai for a trip to ALBAUG MANDWA- hire from vishal boat service AND GET BEST SERVICE_.jpg'),
   },
+  {
+    title: "Wooden Ferry",
+    duration: "1 hour",
+    boardingPoint: "Gateway of India, Jetty 2",
+    capacity: "60-80 PAX",
+    price: "₹200/person (one way fare)",
+    timings: "7am to 7pm",
+    image: publicPath('/Alibaug ( Mandwa)/Wooden ferry at Gateway of India for ALIBAUG MANDWA 1 hour  ride in Mumbai sea.jpg'),
+  },
+  {
+    title: "AC Ferry",
+    duration: "45 mins",
+    boardingPoint: "Gateway of India, Jetty 2",
+    capacity: "80-200 PAX",
+    price: "₹250/person (one way fare)",
+    timings: "7am to 8pm",
+    image: publicPath('/Alibaug ( Mandwa)/mandwa-port-vishal-boat-serice.jpg'),
+  },
+];
+
+const ALIBAGH_ACTIVITIES = [
+  { title: "Speed Boat Ride", image: publicPath('/Alibaug ( Mandwa)/Speed Boat Ride with vishal boat Service in Mumbai at gateway of india for ALIBAUG MANDWA.jpg') },
+  { title: "Beach Sunset / Sunrise", image: publicPath('/Alibaug ( Mandwa)/Alibaug-awas-beach-vishal-boat-service.jpg') },
+  { title: "Fort Tours", image: publicPath('/Alibaug ( Mandwa)/Alibaug-fort-tours-vishal-boat-service.jpg') },
+  { title: "Bird Feeding in sea", image: publicPath('/Alibaug ( Mandwa)/Alibaug-awas-beach-vishal-boat-service.jpg') },
+  { title: "AirBNB Stays", image: publicPath('/Alibaug ( Mandwa)/aura Alibaug villa saffron stays-book tourist alibaug- vishal boat service_.jpg') },
+  { title: "Restaurants By the Beach", image: publicPath('/Alibaug ( Mandwa)/by the beach Restauants at alibaug for tourist-use speed boats to visit-book vishal boat service_.jpg') },
 ];
 
 const ELEPHANTA_HOW_TO_REACH = [
@@ -416,7 +434,7 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
 
             <div className="mt-8 grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
               {(() => {
-                const activities = destination.slug === "mumbai" ? MUMBAI_ACTIVITIES : VISIT_CARDS;
+                const activities = destination.slug === "mumbai" ? MUMBAI_ACTIVITIES : destination.slug === "alibaug" ? ALIBAGH_ACTIVITIES : VISIT_CARDS;
                 return activities.map((act) => (
                   <article key={act.title} className="overflow-hidden rounded-[1.2rem] bg-brand-elevated shadow-brand-soft">
                     <div className="relative aspect-[4/3]">

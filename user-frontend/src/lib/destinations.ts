@@ -153,16 +153,179 @@ export const DESTINATIONS: Destination[] = [
     experiences: ["Speed Boat", "Yachts", "AC Ferry", "Ro-Ro Ship"],
     faqs: [
       {
-        question: "How long does it take to reach Mandwa (Alibaug) from Gateway of India?",
-        answer: "A speed boat takes about 20–23 minutes. Ferries and other transfers can take up to an hour depending on the service.",
+        question: "What is the fastest way to travel from Mumbai to Alibaug?",
+        answer:
+          "The fastest and most convenient way to travel from Mumbai to Alibaug is by a private speed boat from Gateway of India to Mandwa Jetty. The journey usually takes 20–30 minutes, depending on sea conditions.\nUnlike public ferries, private speed boats offer flexible departure timings, faster travel, and a comfortable experience for families, corporate groups, and tourists.\nTo check today's availability or book a private speed boat, call or WhatsApp +91 87791 63152.",
       },
       {
-        question: "What boat options are available for Alibaug transfers?",
-        answer: "You can choose speed boat transfers, yachts for private groups, AC ferries and Ro-Ro services for vehicles where available.",
+        question: "How long does a speed boat take from Mumbai to Mandwa?",
+        answer:
+          "A speed boat from Mumbai to Mandwa generally takes around 20 to 30 minutes. Travel time may vary depending on weather and sea conditions.\nOur private speed boats depart from Jetty No. 5, Gateway of India, making them one of the quickest ways to reach Mandwa and Alibaug.",
       },
       {
-        question: "Can I bring luggage or equipment?",
-        answer: "Yes — most transfer services allow luggage; please mention large items during booking so we can arrange appropriate handling.",
+        question: "How much does a private speed boat from Mumbai to Alibaug cost?",
+        answer:
+          "The cost of a private speed boat to Alibaug depends on:\n* Number of passengers\n* Boat size\n* Travel date\n* Departure time\nVishal Boat Service offers a range of boats to suit different budgets and group sizes. Contact us on +91 87791 63152 for the latest pricing and availability.",
+      },
+      {
+        question: "Where do speed boats to Mandwa depart from?",
+        answer:
+          "All our private speed boats and yacht transfers to Mandwa depart from Jetty No. 5, Gateway of India, Mumbai.\nAfter your booking is confirmed, we'll send you the exact boarding location, Google Maps link, and easy-to-follow directions via WhatsApp.",
+      },
+      {
+        question: "Is a speed boat better than the ferry to Alibaug?",
+        answer:
+          "If you're looking for speed, comfort, and flexibility, then yes.\nA private speed boat is much faster than a ferry and allows you to choose your own departure time. It's ideal for families, business travellers, wedding guests, and anyone wanting a hassle-free journey.\nPublic ferries are more economical but operate on fixed schedules and usually take longer.",
+      },
+      {
+        question: "Can I book a same-day speed boat to Alibaug?",
+        answer:
+          "Yes, same-day bookings are often available, subject to boat availability and weather conditions.\nHowever, weekends, holidays, and long weekends are in high demand. We recommend booking in advance to secure your preferred departure time.\nCall or WhatsApp +91 87791 63152 for instant assistance.",
+      },
+      {
+        question: "Do you provide private boat transfers for Alibaug resorts?",
+        answer:
+          "Yes, Vishal Boat Service provides private speed boat transfers to Mandwa for guests staying at popular Alibaug resorts and villas.\nOnce you arrive at Mandwa Jetty, we can also help coordinate local transport to your destination, making your journey smooth from Mumbai to your resort.",
+      },
+      {
+        question: "Can families and senior citizens travel by speed boat?",
+        answer:
+          "Absolutely.\nOur speed boats are regularly used by families with children, senior citizens, and international tourists.\nAll passengers are provided with life jackets, and our experienced captains prioritize safety throughout the journey.\nIf anyone in your group requires special assistance, please let us know while booking.",
+      },
+      {
+        question: "Can I hire an entire speed boat for my family or group?",
+        answer:
+          "Yes, you can book an exclusive private speed boat for your family, friends, or corporate group.\nPrivate charters offer:\n* Flexible departure timings\n* Complete privacy\n* Comfortable seating\n* Direct transfers\n* No waiting for other passengers\nIt's the perfect option for vacations, celebrations, and business travel.\nPrice starting from Rs. 8000/-",
+      },
+      {
+        question: "Can I hire a luxury yacht to Alibaug?",
+        answer:
+          "Yes, in addition to speed boats, Vishal Boat Service also offers luxury yacht charters from Mumbai to Alibaug.\nMany guests choose yachts for:\n* Birthday celebrations\n* Destination weddings\n* Corporate outings\n* Family gatherings\n* Bachelor and bachelorette parties\n* Weekend getaways\nOur team can recommend the best yacht based on your group size and budget.\nStarting Price Rs. 70,000/-",
+      },
+      {
+        question: "Do you provide speed boats for Alibaug weddings?",
+        answer:
+          "Yes. We specialize in speed boat transportation for destination weddings in Alibaug.\nOur services include:\n* Guest transfers\n* Bride and groom arrivals\n* Family transportation\n* Wedding logistics\n* VIP guest transfers\nWe work closely with wedding planners to ensure smooth and timely transportation throughout the event.\nIn 2026 we have already catered to 50+ wedding transportation in Alibaug for the guest. We are well aware of the arrangements required for wedding groups.",
+      },
+      {
+        question: "Can corporate groups hire boats to Alibaug?",
+        answer:
+          "Yes, many companies choose our private speed boat and yacht services for:\n* Corporate offsites\n* Team outings\n* Leadership retreats\n* Client meetings\n* Incentive trips\n* Company events\nWe can arrange multiple boats and customized schedules based on your event requirements.\nWith a client base of companies like Morgan Stanley, Dharma Productions, Reliance Group, Microsoft, Bank of America, Zerodha, Taj Group, Tata Group, Godrej, Nappa Dori, Star Group, Essel Group and many more. All these companies being a regular client of ours.",
+      },
+      {
+        question: "Which resorts can I reach easily from Mandwa Jetty?",
+        answer:
+          "Mandwa Jetty is the main gateway to Alibaug and offers convenient access to many popular resorts, beach villas, and holiday homes.\nIf you're unsure about the best transfer option, our team can guide you based on your accommodation and arrival time.",
+      },
+      {
+        question: "Is luggage allowed on speed boats to Alibaug?",
+        answer:
+          "Yes, guests can carry reasonable luggage on our private speed boats.\nIf you're travelling with extra baggage, golf equipment, wedding items, or production equipment, please inform us while booking so we can recommend the most suitable boat.\nIn the shared ride, guests are restricted to one cabin bag per person as we also need to look at comfort and safety of all the clients in the boat.",
+      },
+      {
+        question: "Can I take my pet on a private speed boat?",
+        answer:
+          "Yes, pets may be allowed on private charters, subject to prior approval and safety requirements.\nPlease inform us in advance so we can make suitable arrangements and ensure a comfortable journey for both you and your pet.\nWe charge Rs. 500/pet one way.",
+      },
+      {
+        question: "What happens if the weather is bad?",
+        answer:
+          "Passenger safety is our highest priority.\nIf sea conditions are unsafe, departures may be delayed or rescheduled in accordance with local maritime regulations.\nOur team will keep you informed and help arrange the next available departure or discuss suitable alternatives.",
+      },
+      {
+        question: "What is the best time to visit Alibaug?",
+        answer:
+          "Alibaug is a year-round destination, but the best months are October to March, when the weather is pleasant for beaches, sightseeing, and water activities.\nWeekday travel is generally less crowded than weekends and public holidays.",
+      },
+      {
+        question: "Can I book a return speed boat from Alibaug to Mumbai?",
+        answer:
+          "Yes, we offer one-way and return private speed boat transfers between Mumbai, Mandwa, and Alibaug.\nOur team can schedule your return journey according to your travel plans, ensuring a convenient and stress-free experience.",
+      },
+      {
+        question: "Why should I choose Vishal Boat Service for my Mumbai to Alibaug transfer?",
+        answer:
+          "Vishal Boat Service is trusted by tourists, families, corporate clients, wedding planners, and international visitors for safe and reliable private boat transfers.\nWhen you book with us, you benefit from:\n* Fast and comfortable speed boats\n* Luxury yacht options\n* Flexible departure timings\n* Experienced captains and trained crew\n* Transparent pricing\n* Easy WhatsApp booking\n* Assistance at Jetty No. 5, Gateway of India\n* Personalized service from booking to arrival\nWhether you're travelling for leisure, a wedding, or business, we aim to make your journey smooth and memorable.\n📞 Call or WhatsApp: +91 87791 63152",
+      },
+      {
+        question: "Is Mandwa the same as Alibaug?",
+        answer:
+          "No. Mandwa and Alibaug are different locations, although they are closely connected. Mandwa is the main jetty where speed boats and ferries from Mumbai arrive, while Alibaug town is approximately 20 km from Mandwa Jetty.\nMost visitors travelling from Mumbai first reach Mandwa by speed boat or ferry and then continue to Alibaug by taxi, shuttle bus, or private vehicle. Vishal Boat Service can also guide you on the best onward transport based on your destination.",
+      },
+      {
+        question: "How far is Mandwa Jetty from Alibaug town?",
+        answer:
+          "Mandwa Jetty is approximately 20 kilometres from Alibaug town, and the road journey usually takes 25 to 35 minutes, depending on traffic.\nMany popular resorts, villas, and beaches are located between Mandwa and Alibaug, making Mandwa the main gateway for visitors arriving by sea.",
+      },
+      {
+        question: "What is the difference between Mandwa and Alibaug?",
+        answer:
+          "Mandwa is the arrival point for passengers travelling from Mumbai by boat, while Alibaug is the main town known for its beaches, resorts, restaurants, and tourist attractions.\nMost travellers choose a private speed boat from Gateway of India to Mandwa because it is the fastest sea route, followed by a short drive to Alibaug.",
+      },
+      {
+        question: "Can I take a speed boat directly from Gateway of India to Alibaug?",
+        answer:
+          "Yes. Private speed boats can be arranged from Gateway of India based on your destination and sea conditions. Most services arrive at Mandwa Jetty, which offers easy road access to Alibaug and nearby resorts.\nIf you're staying at a specific resort or villa, our team can advise you on the most convenient drop-off point and onward transport.\nCall or WhatsApp +91 87791 63152 for route options and bookings.",
+      },
+      {
+        question: "Are speed boats available 24 hours?",
+        answer:
+          "No. Speed boat services operate during daylight hours and are subject to weather, visibility, sea conditions, and local maritime regulations.\nThe best departure times are generally between 7:00 AM and 8pm. If you have an early morning or late evening travel requirement, contact our team and we'll suggest the most suitable schedule.",
+      },
+      {
+        question: "Which is better – a speed boat or the RoRo ferry to Alibaug?",
+        answer:
+          "It depends on your travel needs.\nA private speed boat is ideal if you want the fastest journey, flexible departure timings, privacy, and a premium travel experience. It is especially popular with families, corporate travellers, wedding guests, and tourists.\nA RoRo ferry allows passengers to travel with their vehicles and is suitable for those planning to drive around Alibaug. However, it operates on fixed schedules and the overall journey is usually longer than a speed boat.\nIf you're unsure which option is best for you, Vishal Boat Service can help you choose the right travel mode.",
+      },
+      {
+        question: "Can I hire a private boat for a one-day trip to Alibaug?",
+        answer:
+          "Yes. Many guests book a private speed boat for a same-day return trip to Alibaug.\nA typical day trip includes:\n* Morning departure from Gateway of India\n* Visit to beaches, forts, or resorts in Alibaug\n* Lunch at a beachside restaurant\n* Evening return to Mumbai\nWe can also arrange return timings that suit your itinerary.",
+      },
+      {
+        question: "Is parking available at Gateway of India?",
+        answer:
+          "Yes, paid parking is available near Gateway of India. However, the area is one of Mumbai's busiest tourist destinations, and parking can be limited on weekends, holidays, and during peak tourist seasons.\nFor a more convenient experience, we recommend using a taxi or app-based cab. Once your booking is confirmed, we'll share the exact boarding location and directions via WhatsApp.",
+      },
+      {
+        question: "How early should I reach Jetty No. 5?",
+        answer:
+          "We recommend arriving at Jetty No. 5, Gateway of India, at least 20 minutes before your scheduled departure.\nThis allows enough time for boarding, safety instructions, and a relaxed start to your journey. After booking, our team will share your reporting time and the exact location on WhatsApp.",
+      },
+      {
+        question: "Can I book a speed boat for a large group?",
+        answer:
+          "Yes, Vishal Boat Service can arrange multiple speed boats or larger charter vessels for families, corporate groups, weddings, school trips, and special events.\nWhether you're travelling with 10 guests or over 200 guests, we'll recommend the most suitable boats and departure plan for your group.",
+      },
+      {
+        question: "Do you provide GST invoices for corporate bookings?",
+        answer:
+          "Yes, GST invoices can be provided for eligible corporate bookings upon request.\nMany companies choose Vishal Boat Service for business travel, corporate offsites, client entertainment, and team outings between Mumbai and Alibaug.\nPlease share your billing details while making the booking so we can prepare the invoice accordingly.",
+      },
+      {
+        question: "Can you arrange multiple boats for weddings and events?",
+        answer:
+          "Absolutely. Vishal Boat Service regularly manages transportation for destination weddings, corporate events, film shoots, and large private celebrations.\nDepending on your guest count, we can arrange multiple speed boats, luxury yachts, or a combination of both to ensure smooth transportation between Mumbai and Alibaug.\nOur team coordinates boarding schedules and guest movement so your event runs seamlessly.",
+      },
+      {
+        question: "Which beaches are closest to Mandwa Jetty?",
+        answer:
+          "Several beautiful beaches are located close to Mandwa Jetty, making it a great starting point for exploring Alibaug.\nPopular nearby beaches include:\n* Mandwa Beach\n* Kihim Beach\n* Awas Beach\n* Varsoli Beach\n* Alibaug Beach\n* Nagaon Beach\nOur team can suggest the best beach based on whether you're looking for water sports, peaceful relaxation, family outings, or beach resorts.",
+      },
+      {
+        question: "Do you provide transfers to resorts and private villas in Alibaug?",
+        answer:
+          "Yes. Vishal Boat Service assists guests travelling to resorts, beach villas, farmhouses, and private holiday homes across Alibaug.\nIf you share your accommodation details while booking, we'll guide you on the most convenient arrival point and available transport options from Mandwa Jetty.\nThis makes your journey from Mumbai to your destination smooth and hassle-free.",
+      },
+      {
+        question: "Can I carry luggage on a private speed boat?",
+        answer:
+          "Yes. Passengers are welcome to carry reasonable luggage on private speed boats.\nIf you're travelling with extra baggage, wedding decorations, photography equipment, musical instruments, or production gear, please inform us before your trip. We'll recommend the most suitable boat to ensure a comfortable journey for both passengers and luggage.\nIn shared speed boat rides, passengers are allowed to carry one cabin bag each.",
+      },
+      {
+        question: "Why book your Mumbai to Mandwa or Alibaug transfer with Vishal Boat Service?",
+        answer:
+          "Vishal Boat Service is a trusted name for private speed boat transfers, yacht charters, and luxury travel between Mumbai, Mandwa, and Alibaug.\nWhen you book with us, you enjoy:\n* Fast and comfortable speed boats\n* Luxury yacht options\n* Experienced captains and trained crew\n* Flexible departure timings\n* Transparent pricing\n* Easy WhatsApp booking\n* Assistance at Jetty No. 5, Gateway of India\n* Customized travel for families, tourists, weddings, corporate groups, and special events\nWhether you're travelling for a weekend getaway, a destination wedding, a business meeting, or a family holiday, our goal is to make your journey safe, comfortable, and memorable.\n📞 Call or WhatsApp +91 87791 63152 today to check availability and book your private speed boat or yacht.",
       },
     ],
   },
@@ -183,15 +346,43 @@ export const DESTINATIONS: Destination[] = [
     faqs: [
       {
         question: "How long should I plan for a visit to Elephanta Caves?",
-        answer: "Plan for a 3–4 hour trip including transfer time, cave visit and a short walk to/from the site; guided tours often take longer.",
+        answer:
+          "A full Elephanta trip usually takes around 3–4 hours, including the boat ride to the island, time to explore the caves, and the return trip. If you are taking a private speed boat or yacht charter, you may have more flexibility in timing and can stay longer for photography, sightseeing, or a relaxed visit.",
       },
       {
-        question: "What boat options are available to reach Elephanta?",
-        answer: "You can take public ferries, wooden ferries, AC ferries or private speed boat charters depending on your preference and budget.",
+        question: "Which boats are available from Gateway of India to Elephanta Caves?",
+        answer:
+          "You can travel by:\n* Wooden Ferry\n* AC Ferry\n* Private Speed Boat\n* Speed Boat Charter\n* Yacht Charter\nDepending on your travel style and budget, we can help you choose between a quick ride, a guided tour, or a private premium experience.",
       },
       {
-        question: "Are guided visits available on Elephanta Island?",
-        answer: "Yes — guided tours can be arranged and are recommended if you want expert historical context for the caves.",
+        question: "Where do the Elephanta boat rides start from?",
+        answer:
+          "Most Elephanta boat rides begin from Gateway of India, Mumbai. The boarding point depends on the type of boat you choose, but our team can guide you to the exact jetty and timing after booking confirmation. We recommend arriving 20–30 minutes before departure.",
+      },
+      {
+        question: "Is the Elephanta trip suitable for families and tourists?",
+        answer:
+          "Yes. Elephanta Caves is a popular destination for families, students, tourists, and photography enthusiasts. The island trip is enjoyable for both casual visitors and those looking for a historical and cultural experience. The boat ride itself adds to the excitement and gives you a scenic view of Mumbai Harbour.",
+      },
+      {
+        question: "Can I book a private speed boat to Elephanta Caves?",
+        answer:
+          "Absolutely. Private speed boats are one of the most convenient ways to visit Elephanta Caves, especially if you want to avoid crowding and travel on your own time. This option is ideal for families, groups, and travellers who want a shorter, more comfortable journey with more flexibility.",
+      },
+      {
+        question: "What can I see at Elephanta Caves?",
+        answer:
+          "The Elephanta Caves are famous for their rock-cut sculptures and temple structures dedicated to Lord Shiva. Visitors can explore the cave complex, admire the carved architecture, and enjoy the island's scenic surroundings. The site is especially appealing to history lovers, cultural travellers, and photographers.",
+      },
+      {
+        question: "Are guided tours available at Elephanta Caves?",
+        answer:
+          "Yes. Guided tours can be arranged for travellers who want a more informative and structured visit. A guide helps you understand the historical and spiritual significance of the carvings and gives better context to the island's heritage.",
+      },
+      {
+        question: "Why choose Vishal Boat Service for Elephanta Caves?",
+        answer:
+          "Vishal Boat Service provides reliable transfer options, knowledgeable support, and flexible schedules for Elephanta trips. Whether you want a shared ferry, a private speed boat, or a premium yacht charter, we help you plan a smooth and memorable day trip from Mumbai to the island.",
       },
     ],
   },
