@@ -59,8 +59,6 @@ const NAVIGATION: NavigationItem[] = [
     href: "/destinations",
     children: [
       { name: "Mumbai", href: "/destinations/mumbai" },
-      { name: "Goa", href: "/destinations/goa" },
-      { name: "Kerala", href: "/destinations/kerala" },
       { name: "Alibaug", href: "/destinations/alibaug" },
       { name: "Elephanta Caves", href: "/destinations/elephanta-caves" },
     ],
