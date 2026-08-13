@@ -20,12 +20,10 @@ const FOOTER_DATA = {
     { name: "Contact", href: "/contact" }
   ],
   yachtCategories: [
-    { name: "Wooden Ferry", href: "#packages" },
-    { name: "AC Ferry", href: "#packages" },
-    { name: "Speed Boat", href: "#packages" },
-    { name: "Yachts", href: "#packages" },
-    { name: "Sail boat", href: "#packages" },
-    { name: "Ro-Ro Ship", href: "#packages" }
+    { name: "Mumbai Harbour", href: "/destinations/mumbai" },
+    { name: "Alibaug (Mandwa)", href: "/destinations/alibaug" },
+    { name: "Elephanta Caves", href: "/destinations/elephanta-caves" },
+
   ],
   experiences: [
     { name: "Corporate Events", href: "#experiences" },
@@ -104,7 +102,7 @@ export default function Footer() {
 
           {/* Yacht Categories */}
           <div>
-            <h3 className="text-[#064e3b] font-semibold mb-4 font-poppins">Yachts</h3>
+            <h3 className="text-[#064e3b] font-semibold mb-4 font-poppins">Destinations</h3>
             <ul className="space-y-2 text-sm">
               {FOOTER_DATA.yachtCategories.map((category) => (
                 <li key={category.name}>
@@ -131,19 +129,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Social Links */}
-        <div className="flex items-center gap-3 mt-8 pt-8 border-t border-gray-200">
-          {FOOTER_DATA.socialLinks.map((social) => (
-            <a
-              key={social.name}
-              href={social.href}
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-[#59b280] hover:text-white transition-colors"
-              aria-label={social.name}
-            >
-              <social.icon className="w-5 h-5" />
-            </a>
-          ))}
-        </div>
+
 
         {/* Newsletter */}
         <div className="mt-8 p-6 bg-white rounded-lg border border-gray-100">

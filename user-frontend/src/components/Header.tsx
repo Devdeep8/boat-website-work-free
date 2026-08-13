@@ -233,19 +233,7 @@ export default function Header() {
           </nav>
 
           {/* Social Links */}
-          <div className="hidden md:flex items-center gap-3">
-            {SOCIAL_LINKS.map((social) => (
-              <a
-                key={social.name}
-                href={social.href}
-                className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 hover:bg-[#59b280] hover:text-white transition-colors"
-                aria-label={social.name}
-              >
-                <social.icon className="w-4 h-4" />
-              </a>
-            ))}
-          </div>
-
+       
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

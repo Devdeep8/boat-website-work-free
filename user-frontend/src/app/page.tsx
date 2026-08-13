@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import HeroBanner from "@/components/HeroBanner";
 import { useEffect, useState } from "react";
 import Link from "next/link";
@@ -287,25 +288,58 @@ export default function HomePage() {
             </div>
 
             <div className="grid gap-6 lg:grid-cols-3">
-              <Link href="/destinations/mumbai" className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-                <h3 className="font-poppins text-2xl font-semibold text-[#064e3b] mb-3">Mumbai Harbour</h3>
-                <p className="font-poppins text-base leading-7 text-gray-700">
-                  View the beautiful coastline of Mumbai with the view gateway of India.
-                </p>
+              <Link href="/destinations/mumbai" className="overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                <div className="relative h-52 w-full">
+                  <Image
+                    src="/Mumbai Habour/Mumbai Harbour speed boat tour by vishal boat service.jpg"
+                    alt="Mumbai Harbour"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 33vw"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="font-poppins text-2xl font-semibold text-[#064e3b] mb-3">Mumbai Harbour</h3>
+                  <p className="font-poppins text-base leading-7 text-gray-700">
+                    View the beautiful coastline of Mumbai with the view gateway of India.
+                  </p>
+                </div>
               </Link>
 
-              <Link href="/destinations/alibaug" className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-                <h3 className="font-poppins text-2xl font-semibold text-[#064e3b] mb-3">Alibaug (Mandwa)</h3>
-                <p className="font-poppins text-base leading-7 text-gray-700">
-                  Escape from Mumbai into the nature of Alibaug just 25 minutes ride from Gateway of India.
-                </p>
+              <Link href="/destinations/alibaug" className="overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                <div className="relative h-52 w-full">
+                  <Image
+                    src="/Alibaug ( Mandwa)/mandwa-port-vishal-boat-serice.jpg"
+                    alt="Alibaug Mandwa"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 33vw"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="font-poppins text-2xl font-semibold text-[#064e3b] mb-3">Alibaug (Mandwa)</h3>
+                  <p className="font-poppins text-base leading-7 text-gray-700">
+                    Escape from Mumbai into the nature of Alibaug just 25 minutes ride from Gateway of India.
+                  </p>
+                </div>
               </Link>
 
-              <Link href="/destinations/elephanta-caves" className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-                <h3 className="font-poppins text-2xl font-semibold text-[#064e3b] mb-3">Elephanta Caves</h3>
-                <p className="font-poppins text-base leading-7 text-gray-700">
-                  Explore the history of India with ancient rock carvings of the monument of Elephanta caves.
-                </p>
+              <Link href="/destinations/elephanta-caves" className="overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                <div className="relative h-52 w-full">
+                  <Image
+                    src="/Elephanta Caves/mumbai-elephanta-caves-vishal-boat-service.jpg"
+                    alt="Elephanta Caves"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 33vw"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="font-poppins text-2xl font-semibold text-[#064e3b] mb-3">Elephanta Caves</h3>
+                  <p className="font-poppins text-base leading-7 text-gray-700">
+                    Explore the history of India with ancient rock carvings of the monument of Elephanta caves.
+                  </p>
+                </div>
               </Link>
             </div>
           </div>
@@ -348,17 +382,6 @@ export default function HomePage() {
         </section>
 
         {/* Promotional Banner */}
-        <section className="bg-[#59b280] border-y border-[#4a9a6d] py-4">
-          <div className="max-w-7xl mx-auto px-4">
-            <div className="flex items-center justify-center gap-2 text-center">
-              <span className="text-2xl">🎉</span>
-              <p className="font-poppins font-medium text-white">
-                Special Offer: Get 20% off on your first booking! Use code <span className="font-bold">FIRST20</span>
-              </p>
-              <span className="text-2xl">🎉</span>
-            </div>
-          </div>
-        </section>
 
         {/* Packages Section */}
         <section id="packages" className="py-24 px-4 bg-gray-50">
