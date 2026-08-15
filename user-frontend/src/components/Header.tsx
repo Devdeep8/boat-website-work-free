@@ -43,6 +43,9 @@ const NAVIGATION: NavigationItem[] = [
       { name: "Shared Ride to Alibaug (Mandwa)", href: "/speed-boat-shared-ride-alibaug-mandwa" },
       { name: "Shared Mumbai Harbour Cruise", href: "/shared-mumbai-harbour-cruise" },
       { name: "Shared Tour to Elephanta Caves", href: "/shared-speed-boat-tour-elephanta-caves" },
+      { name: "Charter Ride to Alibaug (Mandwa)", href: "/speed-boat-charter-ride-alibaug-mandwa" },
+      { name: "Charter Mumbai Harbour Cruise", href: "/charter-mumbai-harbour-cruise" },
+      { name: "Charter Tour to Elephanta Caves", href: "/charter-speed-boat-tour-elephanta-caves" },
     ],
   },
   {

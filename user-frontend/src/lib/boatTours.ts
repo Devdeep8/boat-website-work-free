@@ -742,6 +742,910 @@ export const BOAT_TOURS: BoatTour[] = [
       ],
     },
   },
+  {
+    slug: "speed-boat-charter-ride-alibaug-mandwa",
+    title: "Speed Boat Charter Ride to Alibaug (Mandwa)",
+    destination: "Alibaug (Mandwa)",
+    routeLabel: "Gateway of India → Mandwa Jetty",
+    routeFrom: "Gateway of India, Jetty No. 5",
+    routeTo: "Mandwa Jetty, Alibaug",
+    heroImage: `${ALIBAUG_SHARED_DIR}/Speed boat shared ride to Alibaug from gateway of India in vishal boat service.png`,
+    heroImageAlt:
+      "Speed boat ride from Mumbai to Mandwa Alibaug departing Gateway of India",
+    storyImage: `${ALIBAUG_SHARED_DIR}/mandwa-port-speed-boat-pool-shared-ride.jpg`,
+    storyImageAlt: "Mandwa port arrival point for shared speed boat rides from Mumbai",
+    description: [
+      "Looking for the fastest and stylish way to travel from Mumbai to Alibaug? Vishal Boat Service offers a Speed Boat Charter between Gateway of India and Mandwa Jetty, allowing you to book a full boat to yourself at a time convenient to you.",
+      "Our speed boats are perfect for professionals, tourists, families, and weekend travellers who want the speed and comfort of a private boat at a time suitable to them. Each boat accommodates a group of 6, 10 or 12 passengers, ensuring a comfortable and hassle-free journey.",
+      "The journey takes just 20–23 minutes, making it one of the quickest ways to reach Alibaug from Mumbai. This service is ideal for architects, property consultants, villa owners, corporate executives, contractors, and anyone travelling to Alibaug for meetings, site visits, or even a leisurely lunch or dinner.",
+      "Starting from ₹7,000 per boat (one way), our same-day return fares offer even greater value.",
+    ],
+    quickFacts: {
+      duration: "20–23 minutes",
+      departure: "Gateway of India, Jetty No. 5",
+      timings: "9:00 AM – 6:30 PM",
+      priceFrom: "₹7,000 per boat",
+      capacity: "6, 10 or 12 passengers",
+      baggage: "One cabin bag per person",
+    },
+    whyChoose: [
+      {
+        icon: "shield",
+        title: "Highest Safety Standards",
+        text: "9+ years of experience with 20,000+ happy clients and every journey handled with care.",
+      },
+      {
+        icon: "DAta",
+        title: "9yr + experience with 20000+ happy clients.",
+        text: "9+ years of experience with 20,000+ happy clients and every journey handled with care.",
+      },
+      {
+        icon: "zap",
+        title: "Fastest Mumbai<->Mandwa transfer",
+        text: "Reach Mandwa in just 20–23 minutes for a quick, reliable sea commute from Mumbai to Alibaug.",
+      },
+      {
+        icon: "users",
+        title: "Caters to Small & Large groups with added comfort",
+        text: "Comfortable private rides are tailored for families, professionals and corporate groups alike.",
+      },
+      {
+        icon: "clock",
+        title: "Fixed daily departures",
+        text: "Multiple daily departures make it easy to plan a same-day journey without waiting for long ferry slots.",
+      },
+      {
+        icon: "whatsapp",
+        title: "Easy WhatsApp booking",
+        text: "Book your boat quickly and receive itinerary support directly on WhatsApp.",
+      },
+      {
+        icon: "mapPin",
+        title: "Trusted operators at Gateway of India",
+        text: "Professional teams and helpful jetty support make boarding easy from the moment you arrive.",
+      },
+      {
+        icon: "anchor",
+        title: "Helper at jetty to guide the guest with boarding",
+        text: "Our team assists with boarding and directions so your travel feels smooth and stress-free.",
+      },
+    ],
+    placesHeading: "Places You Can Explore in Alibaug",
+    rideHighlights: null,
+    faqHeading: "FAQs about Alibaug (Mandwa)",
+    places: [
+      {
+        name: "Alibaug (Mandwa)",
+        image: `${ALIBAUG_SHARED_DIR}/mandwa-port-speed-boat-pool-shared-ride.jpg`,
+        imageAlt: "Mandwa port where shared speed boat rides from Mumbai arrive",
+        description:
+          "Escape from mumbai into the nature of Alibaug, just 25 mins ride from Gateway of India.",
+      },
+      {
+        name: "Elephanta Caves",
+        image: `${ELEPHANTA_DIR}/mumbai-elephanta-caves-vishal-boat-service.jpg`,
+        imageAlt: "Elephanta Caves near Alibaug reached by speed boat from Mumbai",
+        description:
+          "Explore the history of India with ancient rock carvings of monument of Elephanta Caves.",
+      },
+      {
+        name: "Mumbai Harbour",
+        image: `${MUMBAI_DIR}/Mumbai Harbour speed boat tour by vishal boat service.jpg`,
+        imageAlt: "Alibaug fort sea tours near Mandwa jetty",
+        description:
+          "A historic sea fort a short ride from the jetty, best visited around low tide.",
+      },
+      {
+        name: "Bird Feeding En Route",
+        image: `${ALIBAUG_DIR}/FEED THE birds on the way to ALIBAUG MANDWA that fly around your boat. book from vishal boat service_.jpg`,
+        imageAlt: "Seabirds flying around a speed boat on the Mumbai to Mandwa route",
+        description:
+          "Seabirds circle the boat mid-route — a favourite moment on the Mumbai to Mandwa crossing.",
+      },
+      {
+        name: "Beachside Restaurants",
+        image: `${ALIBAUG_DIR}/by the beach Restauants at alibaug for tourist-use speed boats to visit-book vishal boat service_.jpg`,
+        imageAlt: "Beachside restaurants in Alibaug visited by speed boat travellers",
+        description:
+          "Alibaug's well-known coastal kitchens, an easy stop after arriving at Mandwa.",
+      },
+      {
+        name: "Villas & Stays",
+        image: `${ALIBAUG_DIR}/aura Alibaug villa saffron stays-book tourist alibaug- vishal boat service_.jpg`,
+        imageAlt: "Villa stays in Alibaug reached by speed boat from Mumbai",
+        description:
+          "Weekend villas and resorts across Alibaug, a short drive from Mandwa Jetty.",
+      },
+    ],
+    essentials: {
+      title: "Charter Speed Boat Ride is Ideal for:",
+      items: [
+        "Business travellers",
+        "Corporate employees",
+        "Architects & interior designers",
+        "Property buyers & developers",
+        "Tourists visiting Alibaug",
+        "Families & couples",
+        "Weekend getaways",
+        "Wedding groups",
+        "VVIP clients looking for no mistake luxury",
+      ],
+    },
+    faqs: SHARED_BOAT_FAQS,
+    seo: {
+      title: "Speed Boat Charter Ride to Alibaug (Mandwa)",
+      description:
+        "Book a private speed boat charter from Mumbai to Alibaug via Mandwa. 20–23 minutes from Gateway of India, Jetty 5, with full-boat booking from ₹7,000 and same-day return options.",
+      keywords: [
+        "Speed Boat Charter Ride to Alibaug",
+        "Mumbai to Mandwa charter speed boat",
+        "Alibaug charter boat",
+        "Mandwa private speed boat",
+        "Gateway of India to Mandwa charter",
+        "private boat to Alibaug",
+      ],
+    },
+  },
+  {
+    slug: "charter-mumbai-harbour-cruise",
+    title: "Charter Mumbai Harbour Cruise",
+    destination: "Mumbai Harbour",
+    routeLabel: "Gateway of India → Mumbai Harbour (round trip)",
+    routeFrom: "Gateway of India, Jetty No. 5",
+    routeTo: "Mumbai Harbour (round trip)",
+    heroImage: `${HARBOUR_SHARED_DIR}/Speed-boat-shared-ride-harbour-cruise-rs500.jpg`,
+    heroImageAlt:
+      "Gateway of India Mumbai harbour view from a charter speed boat cruise",
+    storyImage: `${HARBOUR_SHARED_DIR}/sunset-view-harbour-cruise-mumbai-vishal-speed-boat-service.jpg`,
+    storyImageAlt: "Sunset view on a charter Mumbai Harbour cruise speed boat ride",
+    description: [
+      "Experience Mumbai like never before with a Speed Boat Harbour Cruise from the iconic Gateway of India. Hiring an entire speed boat to yourself, you can simply book a boat at time suitable for you and enjoy one of Mumbai's most exciting boat rides at an affordable price.",
+      "Whether you're a tourist visiting Mumbai, a couple looking for a romantic sunset ride, a family searching for a memorable evening activity, or a local wanting to experience Mumbai from the sea, our Mumbai Harbour Cruise offers breathtaking views of the city's famous waterfront.",
+      "You can choose the boat size that suits your requirement and timing convenient for you, we will have all the arrangements done before you come at the jetty so that you do not have to wait, making it one of the easiest and most affordable sightseeing experiences in Mumbai.",
+      "Starting at just Rs. 6,000/- per boat, enjoy a thrilling 30-minute or an hour speed boat ride across Mumbai Harbour while taking in spectacular views of the Arabian Sea.",
+    ],
+    quickFacts: {
+      duration: "30 minutes or 1 hour",
+      departure: "Gateway of India, Jetty No. 5",
+      timings: "Flexible daily departures",
+      priceFrom: "₹6,000 per boat",
+      capacity: "6, 10 & 12 passengers",
+    },
+    whyChoose: [
+      {
+        icon: "shield",
+        title: "Highest Safety Standards",
+        text: "9yr + experience with 20000+ happy clients.",
+      },
+      {
+        icon: "zap",
+        title: "Fastest Mumbai<->Mandwa transfer",
+        text: "Quick, efficient and comfortable rides across the harbour.",
+      },
+      {
+        icon: "users",
+        title: "Caters to Small & Large groups with added comfort",
+        text: "Suitable for compact groups and larger parties with a comfortable ride experience.",
+      },
+      {
+        icon: "clock",
+        title: "Fixed daily departures",
+        text: "Regular departures make it easy to plan your trip without a long wait.",
+      },
+      {
+        icon: "whatsapp",
+        title: "Easy WhatsApp booking",
+        text: "Quick and simple booking support through WhatsApp.",
+      },
+      {
+        icon: "mapPin",
+        title: "Trusted operators at Gateway of India",
+        text: "Reliable service and experienced support at the departure point.",
+      },
+      {
+        icon: "anchor",
+        title: "Helper at jetty to guide the guest with boarding",
+        text: "Helpful staff assist guests with boarding and a smooth start to the ride.",
+      },
+    ],
+    placesHeading: "What all you see during the ride?",
+    rideHighlights: {
+      title: "What all you see during the ride?",
+      items: [
+        {
+          title: "Gateway of India",
+          image: `${HARBOUR_SHARED_DIR}/speed boat shared ride available from gateway of india for harbour cruise, alibaug , elephanta caves _.jpg`,
+          description:
+            "Enjoy iconic views of the Gateway of India from the sea during your harbour cruise.",
+        },
+        {
+          title: "Iconic Taj hotel",
+          image: `${HARBOUR_SHARED_DIR}/hotel-taj-view-mumbai-harbour-speed-boat-shared.avif`,
+          description:
+            "See the iconic Taj Mahal Palace from the waterfront as the city skyline opens up.",
+        },
+        {
+          title: "Mumbai Harbour",
+          image: `${HARBOUR_SHARED_DIR}/gateway-of-india-mumbai-harbour-view-speed-boat-service.jpg`,
+          description:
+            "Take in wide views of Mumbai Harbour and the working waterfront from the boat.",
+        },
+        {
+          title: "Speed Thrill on Speed Boat",
+          image: `${HARBOUR_SHARED_DIR}/speed-boat-thrill-ride-mumbai-harbour-ride-shared.jpg`,
+          description:
+            "Experience the excitement of a fast speed boat ride across the harbour.",
+        },
+        {
+          title: "Naval Dock (permitted from a distance)",
+          image: `${HARBOUR_SHARED_DIR}/Naval-dock-mumbai-view-harbour-cruise-speed-boat.jpg`,
+          description:
+            "Catch a distant view of the naval dock while cruising along the permitted harbour route.",
+        },
+        {
+          title: "Sunset by the Harbour",
+          image: `${HARBOUR_SHARED_DIR}/sunset-view-harbour-cruise-mumbai-vishal-speed-boat-service.jpg`,
+          description:
+            "Enjoy golden-hour sunset views over the harbour and the Mumbai skyline.",
+        },
+      ],
+    },
+    faqHeading: "FAQs about Harbour Charter Rides",
+    places: [
+      {
+        name: "Gateway of India",
+        image: `${HARBOUR_SHARED_DIR}/speed boat shared ride available from gateway of india for harbour cruise, alibaug , elephanta caves _.jpg`,
+        imageAlt: "Gateway of India from a private charter speed boat",
+        description:
+          "A famous landmark and the perfect starting point for a coastal cruise in Mumbai.",
+      },
+      {
+        name: "Mumbai Skyline",
+        image: `${HARBOUR_SHARED_DIR}/hotel-taj-view-mumbai-harbour-speed-boat-shared.avif`,
+        imageAlt: "Mumbai skyline seen from a charter boat on the harbour",
+        description:
+          "Enjoy the iconic skyline and waterfront as your boat moves across the harbour.",
+      },
+      {
+        name: "Sunset Views",
+        image: `${HARBOUR_SHARED_DIR}/sunset-view-harbour-cruise-mumbai-vishal-speed-boat-service.jpg`,
+        imageAlt: "Sunset over Mumbai harbour from a private boat",
+        description:
+          "A perfect moment for couples, families, and memorable photos by the sea.",
+      },
+    ],
+    essentials: {
+      title: "Our charter Harbour Cruise is ideal for:",
+      items: [
+        "Domestic Tourists",
+        "International Tourists",
+        "Couples",
+        "last rite rituals for family members in sea",
+        "Families",
+        "Solo Travellers",
+        "Friends",
+        "Students",
+        "Senior Citizens",
+        "Corporate Visitors",
+        "Weekend Visitors",
+        "Travel Bloggers",
+        "Influencers",
+        "Photographers",
+        "Whether you're visiting Mumbai for the first time or rediscovering your own city, this cruise offers one of the best experiences on the waterfront.",
+      ],
+    },
+    faqs: SHARED_BOAT_FAQS,
+    seo: {
+      title: "Charter Mumbai Harbour Cruise | Private Harbour Ride",
+      description:
+        "Book a private Mumbai Harbour charter cruise from Gateway of India. Flexible departures, full-boat privacy, 30-minute or 1-hour ride, starting at ₹6,000 per boat.",
+      keywords: [
+        "Mumbai Harbour charter cruise",
+        "Mumbai harbour private boat",
+        "Gateway of India charter cruise",
+        "Mumbai sunset charter boat",
+        "private harbour cruise Mumbai",
+      ],
+    },
+  },
+  {
+    slug: "charter-speed-boat-tour-elephanta-caves",
+    title: "Private Speed Boat for Elephanta Caves VVIP Tour",
+    destination: "Elephanta Caves",
+    routeLabel: "Gateway of India → Elephanta Island",
+    routeFrom: "Gateway of India, Jetty No. 5",
+    routeTo: "Elephanta Island, Mumbai Harbour",
+    heroImage: `${ELEPHANTA_SHARED_DIR}/Speed boat shared ride to Alibaug from gateway of India in vishal boat service.png`,
+    heroImageAlt: "Private speed boat ride from Mumbai to Elephanta Caves",
+    storyImage: `${ELEPHANTA_SHARED_DIR}/elephanta-caves-hindu-temple-hill-carved-india-vishal-boat-service.jpg.webp`,
+    storyImageAlt:
+      "Elephanta Caves rock-cut Hindu temple hill on Elephanta Island",
+    description: [
+      "Visit one of India's most famous UNESCO World Heritage Sites with our private Speed Boat Tour to Elephanta Caves.",
+      "Designed especially for foreign tourists, cruise passengers, business travellers, solo travellers, couples, families, and cultural explorers, this premium experience combines fast sea travel with a professionally guided sightseeing tour.",
+      "Unlike crowded public ferries, our private Speed Boat reaches Elephanta Island in approximately 20–30 minutes, allowing you to spend more time exploring the magnificent cave temples and less time travelling.",
+      "The complete experience lasts approximately 4 hours, making it the perfect half-day tour while visiting Mumbai.",
+      "Range of speed boat and yacht options are available to choose from.",
+      "Packages start from ₹20,000 per boat excluding taxes.",
+    ],
+    quickFacts: {
+      duration: "20–30 minutes each way",
+      departure: "Gateway of India, Jetty No. 5",
+      timings: "Flexible daylight departures",
+      capacity: "6, 10 & 12 seats",
+      priceFrom: "₹20,000 per boat",
+    },
+    whyChoose: [
+      {
+        icon: "zap",
+        title: "Much faster than the ferry",
+        text: "Cross to Elephanta Island in 20–30 minutes instead of the one-hour public ferry each way.",
+      },
+      {
+        icon: "landmark",
+        title: "UNESCO World Heritage site",
+        text: "Rock-cut Shiva temple caves from the 5th–8th centuries — one of Maharashtra's great monuments.",
+      },
+      {
+        icon: "users",
+        title: "Family-friendly tour",
+        text: "Private 6, 10 and 12-seater boats with life jackets for every passenger.",
+      },
+      {
+        icon: "camera",
+        title: "Harbour and Gateway views",
+        text: "Mumbai Harbour on the crossing, and the Gateway of India skyline on your way back.",
+      },
+      {
+        icon: "train",
+        title: "Toy train on the island",
+        text: "A short toy train ride connects Elephanta jetty to the steps below the caves.",
+      },
+      {
+        icon: "shoppingBag",
+        title: "Island market stop",
+        text: "A small flee market lines the walk uphill — handy for snacks, water and souvenirs.",
+      },
+    ],
+    placesHeading: "Places You Can Explore at Elephanta",
+    rideHighlights: {
+      title: "What all you see during the ride?",
+      items: [
+        {
+          title: "Gateway of India",
+          image: `${ELEPHANTA_SHARED_DIR}/speed boat shared ride available from gateway of india for harbour cruise, alibaug , elephanta caves _.jpg`,
+          description:
+            "Enjoy views of the iconic Gateway of India from the sea as you begin your journey.",
+        },
+        {
+          title: "Iconic Taj Hotel",
+          image: `${ELEPHANTA_SHARED_DIR}/iconic taj mahal hotel-view from boat ride to Elephanta Caves`,
+          description:
+            "See the iconic Taj Mahal Palace from the waterfront as the Mumbai skyline comes into view.",
+        },
+        {
+          title: "Mumbai Harbour",
+          image: `${HARBOUR_SHARED_DIR}/gateway-of-india-mumbai-harbour-view-speed-boat-service.jpg`,
+          description:
+            "Take in broad views of Mumbai Harbour and the coastline during the ride across the water.",
+        },
+        {
+          title: "Speed Thrill on Speed Boat",
+          image: `${ELEPHANTA_SHARED_DIR}/speed-boat-shared-ride-to-elephanta-caves.jpg`,
+          description:
+            "Experience the excitement of a fast crossing over Mumbai Harbour on a private speed boat.",
+        },
+        {
+          title: "Naval Dock",
+          image: `${ELEPHANTA_SHARED_DIR}/naval base view from shared speed boat boat ride in mumbai_.jpg`,
+          description:
+            "Catch a glimpse of the harbour and naval dock area while travelling along the Mumbai coastline.",
+        },
+        {
+          title: "Sunset by the Harbour",
+          image: `${ELEPHANTA_SHARED_DIR}/beautiful-sunset-mumbai-speed-boat-ride-elephanta.jpg`,
+          description:
+            "Enjoy beautiful sunset scenes over Mumbai Harbour when the light turns golden on the water.",
+        },
+        {
+          title: "Caves Tour",
+          image: `${ELEPHANTA_SHARED_DIR}/elephanta-caves-hindu-temple-hill-carved-india-vishal-boat-service.jpg.webp`,
+          description:
+            "Explore the historic cave temples on Elephanta Island, a highlight of the trip.",
+        },
+        {
+          title: "Elephanta Caves Market Shopping",
+          image: `${ELEPHANTA_SHARED_DIR}/Elephanta-shopping-tour-vishal-boat-service.jpg.webp`,
+          description:
+            "Browse the market area near the caves and enjoy the island's local stops.",
+        },
+        {
+          title: "Toy Train Ride",
+          image: `${ELEPHANTA_SHARED_DIR}/Toy-train-vishal-boat-service-elephanta-speed-boat.jpg`,
+          description:
+            "Enjoy the toy train ride available on Elephanta Island during your visit.",
+        },
+      ],
+    },
+    includes: {
+      title: "Your charter Speed Boat Elephanta Tour includes:",
+      items: [
+        "Charter Speed Boat Transfer",
+        "Return Journey",
+        "Professional English-speaking Guide",
+        "Guided Tour of Elephanta Caves",
+        "Assistance at Gateway of India",
+        "Small Group Experience",
+        "Comfortable Seating",
+        "Departure Timings (subject to schedule)",
+      ],
+    },
+    faqHeading: "FAQs about Elephanta Charter Rides",
+    places: [
+      {
+        name: "Alibaug (Mandwa)",
+        image: `${ALIBAUG_SHARED_DIR}/mandwa-port-speed-boat-pool-shared-ride.jpg`,
+        imageAlt: "Mandwa port where shared speed boat rides from Mumbai arrive",
+        description:
+          "Escape from mumbai into the nature of Alibaug, just 25 mins ride from Gateway of India.",
+      },
+      {
+        name: "Elephanta Caves",
+        image: `${ELEPHANTA_DIR}/mumbai-elephanta-caves-vishal-boat-service.jpg`,
+        imageAlt: "Elephanta Caves near Alibaug reached by speed boat from Mumbai",
+        description:
+          "Explore the history of India with ancient rock carvings of monument of Elephanta Caves.",
+      },
+      {
+        name: "Mumbai Harbour",
+        image: `${MUMBAI_DIR}/Mumbai Harbour speed boat tour by vishal boat service.jpg`,
+        imageAlt: "Alibaug fort sea tours near Mandwa jetty",
+        description:
+          "A historic sea fort a short ride from the jetty, best visited around low tide.",
+      },
+      {
+        name: "Bird Feeding En Route",
+        image: `${ALIBAUG_DIR}/FEED THE birds on the way to ALIBAUG MANDWA that fly around your boat. book from vishal boat service_.jpg`,
+        imageAlt: "Seabirds flying around a speed boat on the Mumbai to Mandwa route",
+        description:
+          "Seabirds circle the boat mid-route — a favourite moment on the Mumbai to Mandwa crossing.",
+      },
+      {
+        name: "Beachside Restaurants",
+        image: `${ALIBAUG_DIR}/by the beach Restauants at alibaug for tourist-use speed boats to visit-book vishal boat service_.jpg`,
+        imageAlt: "Beachside restaurants in Alibaug visited by speed boat travellers",
+        description:
+          "Alibaug's well-known coastal kitchens, an easy stop after arriving at Mandwa.",
+      },
+      {
+        name: "Villas & Stays",
+        image: `${ALIBAUG_DIR}/aura Alibaug villa saffron stays-book tourist alibaug- vishal boat service_.jpg`,
+        imageAlt: "Villa stays in Alibaug reached by speed boat from Mumbai",
+        description:
+          "Weekend villas and resorts across Alibaug, a short drive from Mandwa Jetty.",
+      },
+    ],
+    essentials: {
+      title: "This tour is highly recommended for:",
+      items: [
+        "International Tourists",
+        "Cruise Ship Passengers",
+        "Luxury Travellers",
+        "Couples",
+        "Families",
+        "Solo Travellers",
+        "Senior Citizens",
+        "Travel Agencies",
+        "Luxury Hotels & Concierge Services",
+        "Corporate Guests",
+        "Photography Enthusiasts",
+        "History & Culture Lovers",
+        "If you're staying in South Mumbai or arriving by cruise ship, this tour is an ideal way to experience one of Maharashtra's most iconic attractions.",
+      ],
+    },
+    faqs: SHARED_BOAT_FAQS,
+    seo: {
+      title: "Private Speed Boat for Elephanta Caves VVIP Tour",
+      description:
+        "Take a private speed boat tour from Gateway of India to Elephanta Caves. 20–30 minutes each way, full-boat privacy, professional guide, and flexible luxury travel options.",
+      keywords: [
+        "Elephanta Caves private speed boat",
+        "Mumbai to Elephanta Caves charter",
+        "Elephanta VVIP boat tour",
+        "private boat to Elephanta Caves",
+        "Gateway of India to Elephanta private boat",
+      ],
+    },
+  },
+  {
+    slug: "shared-speed-boat-tour-elephanta-caves",
+    title: "Shared Mumbai Harbour Cruise",
+    destination: "Mumbai Harbour",
+    routeLabel: "Gateway of India → Mumbai Harbour (round trip)",
+    routeFrom: "Gateway of India, Jetty No. 5",
+    routeTo: "Mumbai Harbour (round trip)",
+    heroImage: `${HARBOUR_SHARED_DIR}/Speed-boat-shared-ride-harbour-cruise-rs500.jpg`,
+    heroImageAlt:
+      "Gateway of India Mumbai harbour view from a shared speed boat cruise",
+    storyImage: `${HARBOUR_SHARED_DIR}/sunset-view-harbour-cruise-mumbai-vishal-speed-boat-service.jpg`,
+    storyImageAlt: "Sunset view on a shared Mumbai Harbour cruise speed boat ride",
+    description: [
+      "Experience Mumbai like never before with a Shared Speed Boat Harbour Cruise from the iconic Gateway of India. Instead of hiring an entire speed boat, you can simply book individual seats and enjoy one of Mumbai's most exciting boat rides at an affordable price.",
+      "Whether you're a tourist visiting Mumbai, a couple looking for a romantic sunset ride, a family searching for a memorable evening activity, or a local wanting to experience Mumbai from the sea, our Mumbai Harbour Cruise offers breathtaking views of the city's famous waterfront.",
+      "The cruise departs from Jetty No. 5, Gateway of India, every 30 minutes between 4:00 PM and 7:00 PM, making it one of the easiest and most affordable sightseeing experiences in Mumbai.",
+      "For just ₹500 per person, enjoy a thrilling 30-minute speed boat ride across Mumbai Harbour while taking in spectacular views of the Arabian Sea.",
+    ],
+    quickFacts: {
+      duration: "Approx. 30 minutes",
+      departure: "Gateway of India, Jetty No. 5",
+      timings: "4:00 PM – 8:00 PM, daily",
+      priceFrom: "₹500 per person",
+      capacity: "10 & 12 seats",
+    },
+    whyChoose: [
+      {
+        icon: "shield",
+        title: "Highest Safety Standards",
+        text: "9yr + experience with 20000+ happy clients.",
+      },
+      {
+        icon: "zap",
+        title: "Fastest Mumbai<->Mandwa transfer",
+        text: "Quick, efficient and comfortable rides across the harbour.",
+      },
+      {
+        icon: "users",
+        title: "Caters to Small & Large groups with added comfort",
+        text: "Suitable for compact groups and larger parties with a comfortable ride experience.",
+      },
+      {
+        icon: "clock",
+        title: "Fixed daily departures",
+        text: "Regular departures make it easy to plan your trip without a long wait.",
+      },
+      {
+        icon: "whatsapp",
+        title: "Easy WhatsApp booking",
+        text: "Quick and simple booking support through WhatsApp.",
+      },
+      {
+        icon: "mapPin",
+        title: "Trusted operators at Gateway of India",
+        text: "Reliable service and experienced support at the departure point.",
+      },
+      {
+        icon: "anchor",
+        title: "Helper at jetty to guide the guest with boarding",
+        text: "Helpful staff assist guests with boarding and a smooth start to the ride.",
+      },
+    ],
+    placesHeading: "What all you see during the ride?",
+    rideHighlights: {
+      title: "What all you see during the ride?",
+      items: [
+        {
+          title: "Gateway of India",
+          image: `${HARBOUR_SHARED_DIR}/speed boat shared ride available from gateway of india for harbour cruise, alibaug , elephanta caves _.jpg`,
+          description:
+            "Enjoy iconic views of the Gateway of India from the sea during your harbour cruise.",
+        },
+        {
+          title: "Iconic Taj hotel",
+          image: `${HARBOUR_SHARED_DIR}/hotel-taj-view-mumbai-harbour-speed-boat-shared.avif`,
+          description:
+            "See the iconic Taj Mahal Palace from the waterfront as the city skyline opens up.",
+        },
+        {
+          title: "Mumbai Harbour",
+          image: `${HARBOUR_SHARED_DIR}/gateway-of-india-mumbai-harbour-view-speed-boat-service.jpg`,
+          description:
+            "Take in wide views of Mumbai Harbour and the working waterfront from the boat.",
+        },
+        {
+          title: "Speed Thrill on Speed Boat",
+          image: `${HARBOUR_SHARED_DIR}/speed-boat-thrill-ride-mumbai-harbour-ride-shared.jpg`,
+          description:
+            "Experience the excitement of a fast speed boat ride across the harbour.",
+        },
+        {
+          title: "Naval Dock (permitted from a distance)",
+          image: `${HARBOUR_SHARED_DIR}/Naval-dock-mumbai-view-harbour-cruise-speed-boat.jpg`,
+          description:
+            "Catch a distant view of the naval dock while cruising along the permitted harbour route.",
+        },
+        {
+          title: "Sunset by the Harbour",
+          image: `${HARBOUR_SHARED_DIR}/sunset-view-harbour-cruise-mumbai-vishal-speed-boat-service.jpg`,
+          description:
+            "Enjoy golden-hour sunset views over the harbour and the Mumbai skyline.",
+        },
+      ],
+    },
+    faqHeading: "FAQs about Speed Boat Shared Rides",
+    places: [
+      {
+        name: "Alibaug (Mandwa)",
+        image: `${ALIBAUG_SHARED_DIR}/mandwa-port-speed-boat-pool-shared-ride.jpg`,
+        imageAlt: "Mandwa port where shared speed boat rides from Mumbai arrive",
+        description:
+          "Escape from mumbai into the nature of Alibaug, just 25 mins ride from Gateway of India.",
+      },
+      {
+        name: "Elephanta Caves",
+        image: `${ELEPHANTA_DIR}/mumbai-elephanta-caves-vishal-boat-service.jpg`,
+        imageAlt: "Elephanta Caves near Alibaug reached by speed boat from Mumbai",
+        description:
+          "Explore the history of India with ancient rock carvings of monument of Elephanta Caves.",
+      },
+      {
+        name: "Mumbai Harbour",
+        image: `${MUMBAI_DIR}/Mumbai Harbour speed boat tour by vishal boat service.jpg`,
+        imageAlt: "Alibaug fort sea tours near Mandwa jetty",
+        description:
+          "A historic sea fort a short ride from the jetty, best visited around low tide.",
+      },
+      {
+        name: "Bird Feeding En Route",
+        image: `${ALIBAUG_DIR}/FEED THE birds on the way to ALIBAUG MANDWA that fly around your boat. book from vishal boat service_.jpg`,
+        imageAlt: "Seabirds flying around a speed boat on the Mumbai to Mandwa route",
+        description:
+          "Seabirds circle the boat mid-route — a favourite moment on the Mumbai to Mandwa crossing.",
+      },
+      {
+        name: "Beachside Restaurants",
+        image: `${ALIBAUG_DIR}/by the beach Restauants at alibaug for tourist-use speed boats to visit-book vishal boat service_.jpg`,
+        imageAlt: "Beachside restaurants in Alibaug visited by speed boat travellers",
+        description:
+          "Alibaug's well-known coastal kitchens, an easy stop after arriving at Mandwa.",
+      },
+      {
+        name: "Villas & Stays",
+        image: `${ALIBAUG_DIR}/aura Alibaug villa saffron stays-book tourist alibaug- vishal boat service_.jpg`,
+        imageAlt: "Villa stays in Alibaug reached by speed boat from Mumbai",
+        description:
+          "Weekend villas and resorts across Alibaug, a short drive from Mandwa Jetty.",
+      },
+    ],
+    essentials: {
+      title: "Our Shared Harbour Cruise is ideal for:",
+      items: [
+        "Domestic Tourists",
+        "International Tourists",
+        "Couples",
+        "Families",
+        "Solo Travellers",
+        "Friends",
+        "Students",
+        "Senior Citizens",
+        "Corporate Visitors",
+        "Weekend Visitors",
+        "Travel Bloggers",
+        "Influencers",
+        "Photographers",
+        "Whether you're visiting Mumbai for the first time or rediscovering your own city, this cruise offers one of the best experiences on the waterfront.",
+      ],
+    },
+    faqs: SHARED_BOAT_FAQS,
+    seo: {
+      title: "Shared Mumbai Harbour Cruise | ₹500 Speed Boat Ride, Gateway of India",
+      description:
+        "Book a shared Mumbai Harbour cruise speed boat ride from Gateway of India, Jetty 5. Approx. 30 minutes at ₹500 per person, daily 4–8 PM. Route, sights and FAQs inside.",
+      keywords: [
+        "Mumbai Harbour cruise",
+        "Mumbai boat cruise",
+        "Mumbai harbour boat ride",
+        "Mumbai sightseeing cruise",
+        "shared Mumbai harbour cruise",
+      ],
+    },
+  },
+  {
+    slug: "shared-speed-boat-tour-elephanta-caves",
+    title: "Shared Speed Boat Tour to Elephanta Caves",
+    destination: "Elephanta Caves",
+    routeLabel: "Gateway of India → Elephanta Island",
+    routeFrom: "Gateway of India, Jetty No. 5",
+    routeTo: "Elephanta Island, Mumbai Harbour",
+    heroImage: `${ELEPHANTA_SHARED_DIR}/Speed boat shared ride to Alibaug from gateway of India in vishal boat service.png`,
+    heroImageAlt: "Speed boat ride from Mumbai to Elephanta Caves",
+    storyImage: `${ELEPHANTA_SHARED_DIR}/elephanta-caves-hindu-temple-hill-carved-india-vishal-boat-service.jpg.webp`,
+    storyImageAlt:
+      "Elephanta Caves rock-cut Hindu temple hill on Elephanta Island",
+    description: [
+      "Visit one of India's most famous UNESCO World Heritage Sites with our Shared Speed Boat Tour to Elephanta Caves.",
+      "Designed especially for foreign tourists, cruise passengers, business travellers, solo travellers, couples, families, and cultural explorers, this premium experience combines fast sea travel with a professionally guided sightseeing tour.",
+      "Unlike crowded public ferries, our Shared Speed Boat reaches Elephanta Island in approximately 20–30 minutes, allowing you to spend more time exploring the magnificent cave temples and less time travelling.",
+      "The complete experience lasts approximately 4 hours, making it the perfect half-day tour while visiting Mumbai.",
+      "Packages start from ₹8,000 per person excluding taxes.",
+    ],
+    quickFacts: {
+      duration: "20–30 minutes each way",
+      departure: "Gateway of India, Jetty No. 5",
+      timings: "Daylight departures; caves 9:00 AM – 5:00 PM, closed Mondays",
+      capacity: "6, 10 & 12 seats",
+    },
+    whyChoose: [
+      {
+        icon: "zap",
+        title: "Much faster than the ferry",
+        text: "Cross to Elephanta Island in 20–30 minutes instead of the one-hour public ferry each way.",
+      },
+      {
+        icon: "landmark",
+        title: "UNESCO World Heritage site",
+        text: "Rock-cut Shiva temple caves from the 5th–8th centuries — one of Maharashtra's great monuments.",
+      },
+      {
+        icon: "users",
+        title: "Family-friendly tour",
+        text: "Shared 6, 10 and 12-seater boats with life jackets for every passenger.",
+      },
+      {
+        icon: "camera",
+        title: "Harbour and Gateway views",
+        text: "Mumbai Harbour on the crossing, and the Gateway of India skyline on your way back.",
+      },
+      {
+        icon: "train",
+        title: "Toy train on the island",
+        text: "A short toy train ride connects Elephanta jetty to the steps below the caves.",
+      },
+      {
+        icon: "shoppingBag",
+        title: "Island market stop",
+        text: "A small flee market lines the walk uphill — handy for snacks, water and souvenirs.",
+      },
+    ],
+    placesHeading: "Places You Can Explore at Elephanta",
+    rideHighlights: {
+      title: "What all you see during the ride?",
+      items: [
+        {
+          title: "Gateway of India",
+          image: `${ELEPHANTA_SHARED_DIR}/speed boat shared ride available from gateway of india for harbour cruise, alibaug , elephanta caves _.jpg`,
+          description:
+            "Enjoy views of the iconic Gateway of India from the sea as you begin your journey.",
+        },
+        {
+          title: "Iconic Taj Hotel",
+          image: `${ELEPHANTA_SHARED_DIR}/iconic taj mahal hotel-view from boat ride to Elephanta Caves`,
+          description:
+            "See the iconic Taj Mahal Palace from the waterfront as the Mumbai skyline comes into view.",
+        },
+        {
+          title: "Mumbai Harbour",
+          image: `${HARBOUR_SHARED_DIR}/gateway-of-india-mumbai-harbour-view-speed-boat-service.jpg`,
+          description:
+            "Take in broad views of Mumbai Harbour and the coastline during the ride across the water.",
+        },
+        {
+          title: "Speed Thrill on Speed Boat",
+          image: `${ELEPHANTA_SHARED_DIR}/speed-boat-shared-ride-to-elephanta-caves.jpg`,
+          description:
+            "Experience the excitement of a fast crossing over Mumbai Harbour on a shared speed boat.",
+        },
+        {
+          title: "Naval Dock",
+          image: `${ELEPHANTA_SHARED_DIR}/naval base view from shared speed boat boat ride in mumbai_.jpg`,
+          description:
+            "Catch a glimpse of the harbour and naval dock area while travelling along the Mumbai coastline.",
+        },
+        {
+          title: "Sunset by the Harbour",
+          image: `${ELEPHANTA_SHARED_DIR}/beautiful-sunset-mumbai-speed-boat-ride-elephanta.jpg`,
+          description:
+            "Enjoy beautiful sunset scenes over Mumbai Harbour when the light turns golden on the water.",
+        },
+        {
+          title: "Caves Tour",
+          image: `${ELEPHANTA_SHARED_DIR}/elephanta-caves-hindu-temple-hill-carved-india-vishal-boat-service.jpg.webp`,
+          description:
+            "Explore the historic cave temples on Elephanta Island, a highlight of the trip.",
+        },
+        {
+          title: "Elephanta Caves Market Shopping",
+          image: `${ELEPHANTA_SHARED_DIR}/Elephanta-shopping-tour-vishal-boat-service.jpg.webp`,
+          description:
+            "Browse the market area near the caves and enjoy the island's local stops.",
+        },
+        {
+          title: "Toy Train Ride",
+          image: `${ELEPHANTA_SHARED_DIR}/Toy-train-vishal-boat-service-elephanta-speed-boat.jpg`,
+          description:
+            "Enjoy the toy train ride available on Elephanta Island during your visit.",
+        },
+      ],
+    },
+    includes: {
+      title: "Your Shared Speed Boat Elephanta Tour includes:",
+      items: [
+        "Shared Speed Boat Transfer",
+        "Return Journey",
+        "Professional English-speaking Guide",
+        "Guided Tour of Elephanta Caves",
+        "Assistance at Gateway of India",
+        "Small Group Experience",
+        "Comfortable Seating",
+        "Departure Timings (subject to schedule)",
+      ],
+    },
+    faqHeading: "FAQs about Speed Boat Shared Rides",
+    places: [
+      {
+        name: "Alibaug (Mandwa)",
+        image: `${ALIBAUG_SHARED_DIR}/mandwa-port-speed-boat-pool-shared-ride.jpg`,
+        imageAlt: "Mandwa port where shared speed boat rides from Mumbai arrive",
+        description:
+          "Escape from mumbai into the nature of Alibaug, just 25 mins ride from Gateway of India.",
+      },
+      {
+        name: "Elephanta Caves",
+        image: `${ELEPHANTA_DIR}/mumbai-elephanta-caves-vishal-boat-service.jpg`,
+        imageAlt: "Elephanta Caves near Alibaug reached by speed boat from Mumbai",
+        description:
+          "Explore the history of India with ancient rock carvings of monument of Elephanta Caves.",
+      },
+      {
+        name: "Mumbai Harbour",
+        image: `${MUMBAI_DIR}/Mumbai Harbour speed boat tour by vishal boat service.jpg`,
+        imageAlt: "Alibaug fort sea tours near Mandwa jetty",
+        description:
+          "A historic sea fort a short ride from the jetty, best visited around low tide.",
+      },
+      {
+        name: "Bird Feeding En Route",
+        image: `${ALIBAUG_DIR}/FEED THE birds on the way to ALIBAUG MANDWA that fly around your boat. book from vishal boat service_.jpg`,
+        imageAlt: "Seabirds flying around a speed boat on the Mumbai to Mandwa route",
+        description:
+          "Seabirds circle the boat mid-route — a favourite moment on the Mumbai to Mandwa crossing.",
+      },
+      {
+        name: "Beachside Restaurants",
+        image: `${ALIBAUG_DIR}/by the beach Restauants at alibaug for tourist-use speed boats to visit-book vishal boat service_.jpg`,
+        imageAlt: "Beachside restaurants in Alibaug visited by speed boat travellers",
+        description:
+          "Alibaug's well-known coastal kitchens, an easy stop after arriving at Mandwa.",
+      },
+      {
+        name: "Villas & Stays",
+        image: `${ALIBAUG_DIR}/aura Alibaug villa saffron stays-book tourist alibaug- vishal boat service_.jpg`,
+        imageAlt: "Villa stays in Alibaug reached by speed boat from Mumbai",
+        description:
+          "Weekend villas and resorts across Alibaug, a short drive from Mandwa Jetty.",
+      },
+    ],
+    essentials: {
+      title: "This tour is highly recommended for:",
+      items: [
+        "International Tourists",
+        "Cruise Ship Passengers",
+        "Luxury Travellers",
+        "Couples",
+        "Families",
+        "Solo Travellers",
+        "Senior Citizens",
+        "Travel Agencies",
+        "Luxury Hotels & Concierge Services",
+        "Corporate Guests",
+        "Photography Enthusiasts",
+        "History & Culture Lovers",
+        "If you're staying in South Mumbai or arriving by cruise ship, this tour is an ideal way to experience one of Maharashtra's most iconic attractions.",
+      ],
+    },
+    faqs: SHARED_BOAT_FAQS,
+    seo: {
+      title: "Speed Boat from Mumbai to Elephanta Caves | Shared Tour",
+      description:
+        "Take a shared speed boat tour from Gateway of India to Elephanta Caves. 20–30 minutes each way to the UNESCO island caves. Route, timings, what to carry and FAQs inside.",
+      keywords: [
+        "Elephanta Caves boat",
+        "Mumbai to Elephanta Caves boat",
+        "Elephanta Caves speed boat",
+        "Elephanta Island boat ride",
+        "Mumbai Elephanta boat tour",
+      ],
+    },
+  },
 ];
 
 export function getBoatTour(slug: string) {
