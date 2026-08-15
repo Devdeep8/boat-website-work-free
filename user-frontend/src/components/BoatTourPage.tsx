@@ -137,10 +137,10 @@ export default function BoatTourPage({ tour }: { tour: BoatTour }) {
             <div className="mx-auto mt-8 grid max-w-5xl gap-4 text-left md:grid-cols-2">
               <div className="rounded-[18px] bg-white p-5 shadow-sm">
                 <h2 className="text-base font-semibold text-[#1d1d1d] md:text-lg">
-                  Shared Speed Boat Ride is Ideal for
+                  {tour.essentials.title}
                 </h2>
                 <ul className="mt-4 space-y-2 text-sm text-[#2a2a2a]">
-                  {tour.essentials.items.slice(0, 10).map((item) => (
+                  {tour.essentials.items.map((item) => (
                     <li key={item} className="flex items-start gap-2">
                       <span className="mt-1 inline-flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[#d9f3e4] text-[10px] font-bold text-[#2f9d68]">
                         ✓
@@ -153,17 +153,26 @@ export default function BoatTourPage({ tour }: { tour: BoatTour }) {
 
               <div className="rounded-[18px] bg-white p-5 shadow-sm">
                 <h2 className="text-base font-semibold text-[#1d1d1d] md:text-lg">
-                  Why Choose Vishal Boat Service
+                  {tour.includes?.title ?? "Why Choose Vishal Boat Service"}
                 </h2>
                 <ul className="mt-4 space-y-2 text-sm text-[#2a2a2a]">
-                  {tour.whyChoose.slice(0, 10).map((item) => (
-                    <li key={item.title} className="flex items-start gap-2">
-                      <span className="mt-1 inline-flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[#d9f3e4] text-[10px] font-bold text-[#2f9d68]">
-                        ✓
-                      </span>
-                      <span>{item.title}</span>
-                    </li>
-                  ))}
+                  {tour.includes
+                    ? tour.includes.items.map((item) => (
+                        <li key={item} className="flex items-start gap-2">
+                          <span className="mt-1 inline-flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[#d9f3e4] text-[10px] font-bold text-[#2f9d68]">
+                            ✓
+                          </span>
+                          <span>{item}</span>
+                        </li>
+                      ))
+                    : tour.whyChoose.slice(0, 10).map((item) => (
+                        <li key={item.title} className="flex items-start gap-2">
+                          <span className="mt-1 inline-flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[#d9f3e4] text-[10px] font-bold text-[#2f9d68]">
+                            ✓
+                          </span>
+                          <span>{item.title}</span>
+                        </li>
+                      ))}
                 </ul>
               </div>
             </div>

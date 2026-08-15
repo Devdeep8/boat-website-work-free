@@ -48,6 +48,7 @@ export type BoatTour = {
   placesHeading: string;
   places: BoatTourPlace[];
   rideHighlights?: RideHighlights | null;
+  includes?: { title: string; items: string[] } | null;
   faqHeading?: string;
   essentials: { title: string; items: string[] };
   faqs: BoatTourFaq[];
@@ -649,6 +650,19 @@ export const BOAT_TOURS: BoatTour[] = [
           description:
             "Enjoy the toy train ride available on Elephanta Island during your visit.",
         },
+      ],
+    },
+    includes: {
+      title: "Your Shared Speed Boat Elephanta Tour includes:",
+      items: [
+        "Shared Speed Boat Transfer",
+        "Return Journey",
+        "Professional English-speaking Guide",
+        "Guided Tour of Elephanta Caves",
+        "Assistance at Gateway of India",
+        "Small Group Experience",
+        "Comfortable Seating",
+        "Departure Timings (subject to schedule)",
       ],
     },
     faqHeading: "FAQs about Speed Boat Shared Rides",
