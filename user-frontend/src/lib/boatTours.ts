@@ -359,7 +359,7 @@ export const BOAT_TOURS: BoatTour[] = [
     routeLabel: "Gateway of India → Mumbai Harbour (round trip)",
     routeFrom: "Gateway of India, Jetty No. 5",
     routeTo: "Mumbai Harbour (round trip)",
-    heroImage: `${HARBOUR_SHARED_DIR}/gateway-of-india-mumbai-harbour-view-speed-boat-service.jpg`,
+    heroImage: `${HARBOUR_SHARED_DIR}/Speed-boat-shared-ride-harbour-cruise-rs500.jpg`,
     heroImageAlt:
       "Gateway of India Mumbai harbour view from a shared speed boat cruise",
     storyImage: `${HARBOUR_SHARED_DIR}/sunset-view-harbour-cruise-mumbai-vishal-speed-boat-service.jpg`,
@@ -541,7 +541,7 @@ export const BOAT_TOURS: BoatTour[] = [
     routeLabel: "Gateway of India → Elephanta Island",
     routeFrom: "Gateway of India, Jetty No. 5",
     routeTo: "Elephanta Island, Mumbai Harbour",
-    heroImage: `${ELEPHANTA_SHARED_DIR}/speed-boat-shared-ride-to-elephanta-caves.jpg`,
+    heroImage: `${ELEPHANTA_SHARED_DIR}/Speed boat shared ride to Alibaug from gateway of India in vishal boat service.png`,
     heroImageAlt: "Speed boat ride from Mumbai to Elephanta Caves",
     storyImage: `${ELEPHANTA_SHARED_DIR}/elephanta-caves-hindu-temple-hill-carved-india-vishal-boat-service.jpg.webp`,
     storyImageAlt:
