@@ -38,11 +38,11 @@ const NAVIGATION: NavigationItem[] = [
   },
   {
     name: "Speed Boat",
-    href: "#packages",
+    href: "/speed-boat-shared-ride-alibaug-mandwa",
     children: [
-      "Bayliner 245",
-      "Gulf Craft 31",
-      "Speed Boat Blue Whale",
+      { name: "Shared Ride to Alibaug (Mandwa)", href: "/speed-boat-shared-ride-alibaug-mandwa" },
+      { name: "Shared Mumbai Harbour Cruise", href: "/shared-mumbai-harbour-cruise" },
+      { name: "Shared Tour to Elephanta Caves", href: "/shared-speed-boat-tour-elephanta-caves" },
     ],
   },
   {
@@ -115,7 +115,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
 
       {/* Top Bar - Locations & Phone */}
-      <div className="bg-gradient-to-r from-[#59b280] to-[#4a9a6d] text-white py-2">
+      <div className="bg-linear-to-r from-brand to-brand-dark text-white py-2">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex flex-wrap items-center justify-between gap-2 text-sm">
 
