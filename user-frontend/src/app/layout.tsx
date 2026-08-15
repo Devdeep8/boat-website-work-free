@@ -20,6 +20,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://vishalboatservice.com"),
+  applicationName: "Vishal Boat Service",
   title: {
     default: "Mumbai Boat Charters | Speed Boats & Yachts",
     template: "%s | Mumbai Boat Charters"
@@ -68,6 +70,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={cn("h-full", "antialiased",poppins.variable, "font-sans", geist.variable)}
     >
       <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4QJBVB27LZ" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-4QJBVB27LZ');
+            `,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

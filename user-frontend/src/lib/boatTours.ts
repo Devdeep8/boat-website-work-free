@@ -65,6 +65,149 @@ const ELEPHANTA_SHARED_DIR = "/Shared Speed Boat Tour to Elephanta Caves";
 const ELEPHANTA_DIR = "/Elephanta Caves";
 const MUMBAI_DIR = "/Mumbai Habour"
 
+const SHARED_BOAT_FAQS: BoatTourFaq[] = [
+  {
+    question: "What is a Shared Speed Boat service from Mumbai to Alibaug?",
+    answer:
+      "A Shared Speed Boat (also known as a Pool Speed Boat) allows passengers to book individual seats instead of hiring the entire boat. It is one of the fastest and most affordable ways to travel from Gateway of India, Mumbai to Mandwa (Alibaug). Unlike public ferries, our shared speed boats carry only 10–12 passengers, offering a quicker, more comfortable, and less crowded journey. Vishal Boat Service operates scheduled departures throughout the day, making it a convenient option for tourists, business travellers, and daily commuters.",
+  },
+  {
+    question: "How long does the Shared Speed Boat take from Mumbai to Mandwa?",
+    answer:
+      "The journey from Gateway of India to Mandwa Jetty takes approximately 20 to 23 minutes, depending on sea conditions and wind direction. It is one of the fastest sea routes between Mumbai and Alibaug, allowing you to save valuable travel time compared to conventional ferry services.",
+  },
+  {
+    question: "How much does a Shared Speed Boat from Mumbai to Alibaug cost?",
+    answer:
+      "Shared Speed Boat tickets start from ₹1,200 per person (one way). Discounted fares are available for same-day return journeys, making it an economical choice for both leisure travellers and professionals commuting to Alibaug. For today's fares and availability, call or WhatsApp +91 87791 63152.",
+  },
+  {
+    question: "Where does the Shared Speed Boat depart from?",
+    answer:
+      "All Shared Speed Boat services depart from Jetty No. 5, Gateway of India, Mumbai, and arrive at Mandwa Jetty, Alibaug. After confirming your booking, our team shares the exact boarding location, reporting time, and directions via WhatsApp for a smooth travel experience.",
+  },
+  {
+    question: "What are the timings for the Shared Speed Boat service?",
+    answer:
+      "Vishal Boat Service operates scheduled departures between 9:00 AM and 6:30 PM, subject to weather and sea conditions. One of our most popular schedules is the 10:00 AM departure from Mumbai and the 3:00 PM return from Mandwa, making it ideal for guests visiting Alibaug for meetings, property visits, sightseeing, or lunch. Please contact us for the latest daily schedule.",
+  },
+  {
+    question: "Who should use the Shared Speed Boat service?",
+    answer:
+      "Our Shared Speed Boat service is perfect for tourists visiting Alibaug, corporate professionals, architects and interior designers, property owners, real estate consultants, villa guests, weekend travellers, families and couples, and friends travelling together. It combines the affordability of a ferry with the speed and comfort of a private boat.",
+  },
+  {
+    question: "Is a Shared Speed Boat faster than the ferry?",
+    answer:
+      "Yes, a Shared Speed Boat usually reaches Mandwa in just 20–23 minutes, while traditional ferry services generally take significantly longer. If you're looking for the fastest way to travel between Mumbai and Alibaug, a Shared Speed Boat is an excellent choice.",
+  },
+  {
+    question: "Can I book only one seat on the speed boat?",
+    answer:
+      "Yes, you don't need to hire the entire boat. Simply book the number of seats you require. Whether you're travelling alone, as a couple, or with a small group, our Shared Speed Boat service allows you to enjoy fast sea travel without paying for a private charter.",
+  },
+  {
+    question: "Is advance booking required for Shared Speed Boats?",
+    answer:
+      "Yes, seats are limited on every departure, and weekends, holidays, and peak travel periods often sell out quickly. We recommend booking in advance to secure your preferred departure time.",
+  },
+  {
+    question: "Can I book a same-day return Shared Speed Boat?",
+    answer:
+      "Yes, many guests travel to Alibaug in the morning and return to Mumbai the same evening. Our same-day return option is especially popular among business travellers, architects, property buyers, resort guests, day tourists, and people visiting Alibaug for lunch or meetings. Special return fares may be available when both journeys are booked together.",
+  },
+  {
+    question: "Is luggage allowed on Shared Speed Boats?",
+    answer:
+      "Yes, passengers can carry 1 cabin luggage each on board. If you're travelling with oversized bags, photography equipment, golf clubs, wedding items, or business materials, please let us know while booking so we can advise you accordingly.",
+  },
+  {
+    question: "Are Shared Speed Boats safe?",
+    answer:
+      "Yes, passenger safety is our highest priority. Our boats are operated by experienced captains, equipped with life jackets for every passenger, and comply with applicable maritime safety requirements. Operations are also subject to weather and sea conditions to ensure safe travel.",
+  },
+  {
+    question: "Can foreign tourists book Shared Speed Boats?",
+    answer:
+      "Absolutely. International visitors frequently use our Shared Speed Boat service to travel between Mumbai and Alibaug because it is fast, convenient, and offers a more comfortable experience than larger passenger ferries. Our team is experienced to assist foreign tourists with bookings and travel information. We have catered to over 3000+ foreign travellers on this route.",
+  },
+  {
+    question: "Which is better: a Shared Speed Boat or a Private Speed Boat?",
+    answer:
+      "It depends on your travel requirements. A Shared Speed Boat is ideal if you're travelling alone or in a small group and want a cost-effective way to reach Alibaug. A Private Speed Boat Charter offers complete flexibility, privacy, and departure times of your choice, making it ideal for families, corporate groups, weddings, VIP guests, and special occasions. Our team can help you choose the best option based on your budget and group size.",
+  },
+  {
+    question: "Can I use the Shared Speed Boat service for business travel?",
+    answer:
+      "Yes, many professionals use our Shared Speed Boat service for regular business travel between Mumbai and Alibaug. Our passengers include architects, interior designers, real estate developers, villa owners, construction consultants, corporate executives, resort managers, and event planners. The quick travel time makes it possible to complete meetings in Alibaug and return to Mumbai on the same day.",
+  },
+  {
+    question: "Does the Shared Speed Boat operate during the monsoon?",
+    answer:
+      "Operations depend on weather forecasts and sea conditions. Passenger safety always comes first. If weather conditions are not suitable, departures may be delayed, rescheduled, or temporarily suspended. Please contact our team before travelling during the monsoon season to check the latest service status. Speed boat services are usually shut from May to September of every year due to monsoons and rough weather.",
+  },
+  {
+    question: "Why choose Vishal Boat Service for a Shared Speed Boat to Alibaug?",
+    answer:
+      "Vishal Boat Service is a trusted provider of Shared Speed Boat services between Mumbai and Mandwa, offering fast travel, transparent pricing, and professional customer support. When you book with us, you enjoy daily scheduled departures, travel time of approximately 20–23 minutes, comfortable boats with limited passengers, easy WhatsApp booking, assistance at Jetty No. 5, Gateway of India, friendly and experienced crew, and reliable service for tourists and business travellers. Whether you're planning a weekend escape, a property visit, a corporate meeting, or a family outing, our Shared Speed Boat service is one of the quickest and most convenient ways to travel between Mumbai and Alibaug. Call or WhatsApp +91 87791 63152 to book your seats today.",
+  },
+  {
+    question: "What is the Mumbai Harbour Shared Speed Boat Ride?",
+    answer:
+      "Vishal Boat Service offers an affordable Shared Speed Boat Mumbai Harbour Cruise every evening from Gateway of India. Instead of hiring an entire boat, you can book individual seats and enjoy a thrilling 30-minute speed boat ride across Mumbai Harbour. This experience is perfect for tourists, couples, families, photographers, and anyone looking to enjoy the Mumbai skyline from the sea. The ride operates every day from 4:00 PM to 7:00 PM, with departures every 30 minutes. Tickets start from ₹500 per person.",
+  },
+  {
+    question: "How much does the Mumbai Harbour Speed Boat Ride cost?",
+    answer:
+      "Our Mumbai Harbour Shared Speed Boat Ride starts from just ₹500 per person. This is one of the most affordable ways to experience Mumbai Harbour by speed boat without booking an entire private boat. Advance booking is recommended, especially on weekends and holidays.",
+  },
+  {
+    question: "Where does the Mumbai Harbour Speed Boat depart from?",
+    answer:
+      "All harbour cruises depart from Jetty No. 5, Gateway of India, Mumbai. After booking, you'll receive the exact boarding location and reporting time on WhatsApp.",
+  },
+  {
+    question: "What can I see during the Mumbai Harbour Cruise?",
+    answer:
+      "During your cruise, you'll enjoy spectacular views of the Gateway of India, Taj Mahal Palace Hotel, Mumbai Harbour, Arabian Sea, luxury yachts, naval vessels (viewed from permitted areas), Mumbai skyline, and beautiful sunset views during evening departures.",
+  },
+  {
+    question: "Is the Mumbai Harbour Cruise suitable for children?",
+    answer:
+      "Yes, our shared harbour cruise is popular with families, children, senior citizens, tourists, and couples. Life jackets are provided for all passengers.",
+  },
+  {
+    question: "Why book the Shared Harbour Cruise with Vishal Boat Service?",
+    answer:
+      "₹500 per person, departures every 30 minutes, daily service, Gateway of India boarding, comfortable speed boats, easy WhatsApp booking, great sunset views, and a perfect experience for tourists and families.",
+  },
+  {
+    question: "What is included in the Shared Speed Boat Elephanta Tour?",
+    answer:
+      "The package includes a Shared Speed Boat, return transfer, professional English-speaking guide, Elephanta sightseeing, small group experience, assistance at Gateway of India, and a comfortable shared journey. It is one of the quickest and most comfortable ways to visit Elephanta Caves.",
+  },
+  {
+    question: "How long does the Shared Elephanta Tour take?",
+    answer:
+      "The complete experience takes approximately 4 hours, including travel time and sightseeing. The speed boat journey itself takes around 20–30 minutes each way, allowing you to spend more time exploring the caves.",
+  },
+  {
+    question: "Is this tour suitable for foreign tourists?",
+    answer:
+      "Absolutely. Our Shared Speed Boat Elephanta Tour is designed with international travellers in mind. It is ideal for cruise ship passengers, luxury travellers, solo travellers, couples, families, overseas visitors, and business travellers with limited time. The guided experience helps visitors understand the fascinating history and architecture of the UNESCO-listed Elephanta Caves.",
+  },
+  {
+    question: "Why choose a speed boat instead of the ferry?",
+    answer:
+      "Compared to the public ferry, a speed boat offers much faster travel, smaller groups, flexible departures, more comfortable seating, less waiting time, and a better overall experience. This makes it an excellent choice for visitors who want to maximize their sightseeing time.",
+  },
+  {
+    question: "Why choose Vishal Boat Service?",
+    answer:
+      "Vishal Boat Service is trusted by tourists, travel agencies, luxury hotels, corporate travellers, and international visitors for premium boating experiences in Mumbai. Whether you're booking a Shared Speed Boat to Alibaug, a Mumbai Harbour Cruise, or a Guided Elephanta Caves Tour, you'll benefit from experienced captains and crew, well-maintained speed boats, transparent pricing, professional guides, easy WhatsApp booking, and convenient departures from Jetty No. 5, Gateway of India.",
+  },
+];
+
 export const BOAT_TOURS: BoatTour[] = [
   {
     slug: "speed-boat-shared-ride-alibaug-mandwa",
@@ -194,48 +337,7 @@ export const BOAT_TOURS: BoatTour[] = [
         "VVIP clients looking for no-mistake luxury",
       ],
     },
-    faqs: [
-      {
-        question: "What is the speed boat route from Mumbai to Mandwa?",
-        answer:
-          "The shared speed boat runs from Jetty No. 5 at the Gateway of India, Mumbai, directly across Mumbai Harbour to Mandwa Jetty — the main sea gateway to Alibaug. It is the shortest Mumbai–Alibaug sea route.",
-      },
-      {
-        question: "How long does the shared speed boat ride take?",
-        answer:
-          "The crossing takes roughly 20–23 minutes, depending on sea conditions. A regular ferry covers the same Mumbai to Mandwa route in about an hour, so the shared speed boat saves significant travel time.",
-      },
-      {
-        question: "Where does the boat depart from in Mumbai?",
-        answer:
-          "All shared speed boats to Mandwa depart from Jetty No. 5 at the Gateway of India, located opposite the Taj Mahal Palace Hotel. We recommend arriving at least 20 minutes before departure. After booking, we share the exact location and a Google Maps link on WhatsApp.",
-      },
-      {
-        question: "How much does a shared speed boat seat to Mandwa cost?",
-        answer:
-          "A shared seat on the Mumbai to Mandwa speed boat costs ₹1,200 per person. If you prefer a private boat for your own group, exclusive speed boat charters are also available.",
-      },
-      {
-        question: "How can I reach Alibaug from Mandwa Jetty?",
-        answer:
-          "Mandwa Jetty is approximately 20 km from Alibaug town, and taxis, shuttle buses and private vehicles complete the journey in about 25–35 minutes. Many popular beaches and resorts lie between Mandwa and Alibaug, so Mandwa works as the arrival point for the whole region.",
-      },
-      {
-        question: "Is the shared speed boat suitable for families?",
-        answer:
-          "Yes. Families with children and senior citizens regularly travel on this route. Every passenger gets a life jacket, and our experienced captains operate according to local maritime regulations. If someone in your group needs special assistance, tell us while booking.",
-      },
-      {
-        question: "What should I carry for the boat journey?",
-        answer:
-          "Carry a government ID, sunscreen, sunglasses and a cap. Shared-ride passengers are allowed one cabin bag each, so pack light. Water is advisable in summer.",
-      },
-      {
-        question: "What are the timings, and how do I book?",
-        answer:
-          "Shared speed boats to Mandwa operate between 9:00 AM and 7:00 PM, subject to weather and sea conditions. Bookings are easiest over WhatsApp or phone on +91 87791 63152 — advance booking is recommended on weekends and holidays.",
-      },
-    ],
+    faqs: SHARED_BOAT_FAQS,
     seo: {
       title: "Speed Boat Ride from Mumbai to Alibaug (Mandwa) | Shared Boat",
       description:
@@ -263,9 +365,10 @@ export const BOAT_TOURS: BoatTour[] = [
     storyImage: `${HARBOUR_SHARED_DIR}/sunset-view-harbour-cruise-mumbai-vishal-speed-boat-service.jpg`,
     storyImageAlt: "Sunset view on a shared Mumbai Harbour cruise speed boat ride",
     description: [
-      "The Shared Mumbai Harbour Cruise is a 30-minute speed boat ride around Mumbai Harbour, departing from Jetty No. 5 at the Gateway of India. A shared seat costs ₹500 per person, making it one of the most affordable ways to see Mumbai from the water.",
-      "The cruise passes the Gateway of India, the Taj Mahal Palace Hotel and the naval docks, and glides through the working harbour with cargo ships and offshore vessels on the horizon. Evening departures between 4:00 PM and sunset are the most popular, when the Mumbai skyline turns gold over the Arabian Sea.",
-      "It is a relaxed, family-friendly ride — no charter, no planning: you buy a seat, wear a life jacket, and enjoy the city's most cinematic viewpoint. The cruise is also an easy add-on if you are already visiting the Gateway of India or Colaba.",
+      "Experience Mumbai like never before with a Shared Speed Boat Harbour Cruise from the iconic Gateway of India. Instead of hiring an entire speed boat, you can simply book individual seats and enjoy one of Mumbai's most exciting boat rides at an affordable price.",
+      "Whether you're a tourist visiting Mumbai, a couple looking for a romantic sunset ride, a family searching for a memorable evening activity, or a local wanting to experience Mumbai from the sea, our Mumbai Harbour Cruise offers breathtaking views of the city's famous waterfront.",
+      "The cruise departs from Jetty No. 5, Gateway of India, every 30 minutes between 4:00 PM and 7:00 PM, making it one of the easiest and most affordable sightseeing experiences in Mumbai.",
+      "For just ₹500 per person, enjoy a thrilling 30-minute speed boat ride across Mumbai Harbour while taking in spectacular views of the Arabian Sea.",
     ],
     quickFacts: {
       duration: "Approx. 30 minutes",
@@ -276,38 +379,83 @@ export const BOAT_TOURS: BoatTour[] = [
     },
     whyChoose: [
       {
-        icon: "wallet",
-        title: "Mumbai's most affordable cruise",
-        text: "A shared seat on the harbour cruise costs ₹500 per person — the easiest way onto Mumbai's water.",
+        icon: "shield",
+        title: "Highest Safety Standards",
+        text: "9yr + experience with 20000+ happy clients.",
       },
       {
-        icon: "camera",
-        title: "Skyline photo viewpoints",
-        text: "Photograph the Gateway of India, the Taj Mahal Palace and the harbour skyline from angles no land spot offers.",
-      },
-      {
-        icon: "sun",
-        title: "Sunset departures",
-        text: "Evening slots between 4:00 PM and sunset catch the Mumbai skyline at its golden best.",
+        icon: "zap",
+        title: "Fastest Mumbai<->Mandwa transfer",
+        text: "Quick, efficient and comfortable rides across the harbour.",
       },
       {
         icon: "users",
-        title: "Family-friendly ride",
-        text: "Life jackets for every passenger and experienced captains on shared 10 and 12-seater speed boats.",
+        title: "Caters to Small & Large groups with added comfort",
+        text: "Suitable for compact groups and larger parties with a comfortable ride experience.",
+      },
+      {
+        icon: "clock",
+        title: "Fixed daily departures",
+        text: "Regular departures make it easy to plan your trip without a long wait.",
+      },
+      {
+        icon: "whatsapp",
+        title: "Easy WhatsApp booking",
+        text: "Quick and simple booking support through WhatsApp.",
       },
       {
         icon: "mapPin",
-        title: "Easy boarding at Jetty 5",
-        text: "One clearly marked departure point at the Gateway of India, opposite the Taj Mahal Palace Hotel.",
+        title: "Trusted operators at Gateway of India",
+        text: "Reliable service and experienced support at the departure point.",
       },
       {
-        icon: "timer",
-        title: "Fits any schedule",
-        text: "A 30-minute loop that slots easily between sightseeing plans around Colaba and the Gateway.",
+        icon: "anchor",
+        title: "Helper at jetty to guide the guest with boarding",
+        text: "Helpful staff assist guests with boarding and a smooth start to the ride.",
       },
     ],
     placesHeading: "What all you see during the ride?",
-    rideHighlights: null,
+    rideHighlights: {
+      title: "What all you see during the ride?",
+      items: [
+        {
+          title: "Gateway of India",
+          image: `${HARBOUR_SHARED_DIR}/speed boat shared ride available from gateway of india for harbour cruise, alibaug , elephanta caves _.jpg`,
+          description:
+            "Enjoy iconic views of the Gateway of India from the sea during your harbour cruise.",
+        },
+        {
+          title: "Iconic Taj hotel",
+          image: `${HARBOUR_SHARED_DIR}/hotel-taj-view-mumbai-harbour-speed-boat-shared.avif`,
+          description:
+            "See the iconic Taj Mahal Palace from the waterfront as the city skyline opens up.",
+        },
+        {
+          title: "Mumbai Harbour",
+          image: `${HARBOUR_SHARED_DIR}/gateway-of-india-mumbai-harbour-view-speed-boat-service.jpg`,
+          description:
+            "Take in wide views of Mumbai Harbour and the working waterfront from the boat.",
+        },
+        {
+          title: "Speed Thrill on Speed Boat",
+          image: `${HARBOUR_SHARED_DIR}/speed-boat-thrill-ride-mumbai-harbour-ride-shared.jpg`,
+          description:
+            "Experience the excitement of a fast speed boat ride across the harbour.",
+        },
+        {
+          title: "Naval Dock (permitted from a distance)",
+          image: `${HARBOUR_SHARED_DIR}/Naval-dock-mumbai-view-harbour-cruise-speed-boat.jpg`,
+          description:
+            "Catch a distant view of the naval dock while cruising along the permitted harbour route.",
+        },
+        {
+          title: "Sunset by the Harbour",
+          image: `${HARBOUR_SHARED_DIR}/sunset-view-harbour-cruise-mumbai-vishal-speed-boat-service.jpg`,
+          description:
+            "Enjoy golden-hour sunset views over the harbour and the Mumbai skyline.",
+        },
+      ],
+    },
     faqHeading: "FAQs about Speed Boat Shared Rides",
     places: [
       {
@@ -354,52 +502,25 @@ export const BOAT_TOURS: BoatTour[] = [
       },
     ],
     essentials: {
-      title: "Good to know before you board",
+      title: "Our Shared Harbour Cruise is ideal for:",
       items: [
-        "Report at Jetty No. 5, Gateway of India, at least 20 minutes before departure.",
-        "Life jackets are provided for all passengers and worn throughout the ride.",
-        "Evening departures between 4:30 PM and sunset offer the best skyline views.",
-        "Rides operate daily, subject to weather and sea conditions.",
-        "Weekends and holidays are busy — book your seat in advance on +91 87791 63152.",
+        "Domestic Tourists",
+        "International Tourists",
+        "Couples",
+        "Families",
+        "Solo Travellers",
+        "Friends",
+        "Students",
+        "Senior Citizens",
+        "Corporate Visitors",
+        "Weekend Visitors",
+        "Travel Bloggers",
+        "Influencers",
+        "Photographers",
+        "Whether you're visiting Mumbai for the first time or rediscovering your own city, this cruise offers one of the best experiences on the waterfront.",
       ],
     },
-    faqs: [
-      {
-        question: "What is included in the shared Mumbai Harbour cruise?",
-        answer:
-          "The cruise includes a shared seat on an approximately 30-minute speed boat ride around Mumbai Harbour with a life jacket for every passenger. The route covers harbour views of the Gateway of India, the Taj Mahal Palace Hotel and the naval docks from the water.",
-      },
-      {
-        question: "Where does the harbour cruise depart from?",
-        answer:
-          "The cruise departs from Jetty No. 5 at the Gateway of India, opposite the Taj Mahal Palace Hotel. Arrive 20–30 minutes early — the Gateway is one of Mumbai's busiest tourist areas, and taxis or app cabs are easier than parking.",
-      },
-      {
-        question: "How long is the Mumbai Harbour cruise?",
-        answer:
-          "The shared harbour cruise lasts approximately 30 minutes. Private speed boat rides of 30 minutes or one hour, and longer yacht charters, are available if you want more time on the water.",
-      },
-      {
-        question: "What can I see during the harbour cruise?",
-        answer:
-          "Depending on the route and sea conditions, you get water-level views of the Gateway of India, the Taj Mahal Palace Hotel, the naval docks, Mumbai Port, offshore vessels and cargo ships — with the Mumbai skyline behind them.",
-      },
-      {
-        question: "How much does the shared harbour cruise cost?",
-        answer:
-          "A shared seat on the Mumbai Harbour speed boat cruise costs ₹500 per person for approximately 30 minutes on the water.",
-      },
-      {
-        question: "Is the cruise suitable for families?",
-        answer:
-          "Yes. Children, families and senior citizens regularly join the harbour cruise. All passengers wear life jackets, and our experienced captains follow local maritime regulations. Tell us while booking if anyone in your group needs special assistance.",
-      },
-      {
-        question: "What is the best time for the harbour cruise?",
-        answer:
-          "Departures run daily between 4:00 PM and 8:00 PM. The most popular slot is between 4:30 PM and sunset, when the light on the Mumbai skyline and the Arabian Sea is at its best.",
-      },
-    ],
+    faqs: SHARED_BOAT_FAQS,
     seo: {
       title: "Shared Mumbai Harbour Cruise | ₹500 Speed Boat Ride, Gateway of India",
       description:
@@ -426,9 +547,11 @@ export const BOAT_TOURS: BoatTour[] = [
     storyImageAlt:
       "Elephanta Caves rock-cut Hindu temple hill on Elephanta Island",
     description: [
-      "The Shared Speed Boat Tour to Elephanta Caves takes you from the Gateway of India across Mumbai Harbour to Elephanta Island, home of the UNESCO World Heritage rock-cut cave temples dedicated to Lord Shiva.",
-      "A speed boat covers the roughly 10 km crossing in about 20–30 minutes — far quicker than the one-hour public ferry — and a shared seat keeps the journey economical. Boats depart from Jetty No. 5 during the day, giving you time on the island while the caves are open.",
-      "On the island, steps lead up past a small market to the 5th–8th century cave temples with their celebrated sculptures. A toy train runs between the jetty and the steps. Most visitors spend 4–6 hours on the full experience including the crossings, making it an easy half-day trip from Mumbai.",
+      "Visit one of India's most famous UNESCO World Heritage Sites with our Shared Speed Boat Tour to Elephanta Caves.",
+      "Designed especially for foreign tourists, cruise passengers, business travellers, solo travellers, couples, families, and cultural explorers, this premium experience combines fast sea travel with a professionally guided sightseeing tour.",
+      "Unlike crowded public ferries, our Shared Speed Boat reaches Elephanta Island in approximately 20–30 minutes, allowing you to spend more time exploring the magnificent cave temples and less time travelling.",
+      "The complete experience lasts approximately 4 hours, making it the perfect half-day tour while visiting Mumbai.",
+      "Packages start from ₹8,000 per person excluding taxes.",
     ],
     quickFacts: {
       duration: "20–30 minutes each way",
@@ -486,7 +609,7 @@ export const BOAT_TOURS: BoatTour[] = [
         },
         {
           title: "Mumbai Harbour",
-          image: `${ELEPHANTA_SHARED_DIR}/mumbai-elephanta-caves-speed-boat-shared-ride.jpg`,
+          image: `${HARBOUR_SHARED_DIR}/gateway-of-india-mumbai-harbour-view-speed-boat-service.jpg`,
           description:
             "Take in broad views of Mumbai Harbour and the coastline during the ride across the water.",
         },
@@ -574,52 +697,24 @@ export const BOAT_TOURS: BoatTour[] = [
       },
     ],
     essentials: {
-      title: "Good to know before you go",
+      title: "This tour is highly recommended for:",
       items: [
-        "Report at Jetty No. 5, Gateway of India, at least 20 minutes before departure.",
-        "The caves are open 9:00 AM – 5:00 PM and remain closed on Mondays.",
-        "Reaching the caves involves steps — comfortable shoes are essential.",
-        "Carry water, a hat, sunscreen and cash for entry tickets and island purchases.",
-        "Book at least two days ahead where possible — weekends and holidays are busy.",
+        "International Tourists",
+        "Cruise Ship Passengers",
+        "Luxury Travellers",
+        "Couples",
+        "Families",
+        "Solo Travellers",
+        "Senior Citizens",
+        "Travel Agencies",
+        "Luxury Hotels & Concierge Services",
+        "Corporate Guests",
+        "Photography Enthusiasts",
+        "History & Culture Lovers",
+        "If you're staying in South Mumbai or arriving by cruise ship, this tour is an ideal way to experience one of Maharashtra's most iconic attractions.",
       ],
     },
-    faqs: [
-      {
-        question: "How do I travel from Mumbai to Elephanta Caves by boat?",
-        answer:
-          "Shared and private speed boats to Elephanta Island depart from Jetty No. 5 at the Gateway of India. The shared speed boat tour is the quickest option, crossing Mumbai Harbour in about 20–30 minutes, while public ferries take around an hour each way.",
-      },
-      {
-        question: "Where does the boat to Elephanta Caves depart from?",
-        answer:
-          "From Jetty No. 5 at the Gateway of India, opposite the Taj Mahal Palace Hotel. After your booking is confirmed, we share the exact boarding location and a Google Maps pin on WhatsApp.",
-      },
-      {
-        question: "How long does the journey to Elephanta Island take?",
-        answer:
-          "The speed boat crossing takes roughly 20–30 minutes each way, depending on sea conditions. Public ferries take about one hour each way.",
-      },
-      {
-        question: "How much time should I spend at Elephanta Caves?",
-        answer:
-          "Most visitors spend 4–6 hours in total, including both crossings, the walk up to the caves, exploring the sculptures, and the toy train and market on the island. Travelling by speed boat leaves you more time on the island than the ferry does.",
-      },
-      {
-        question: "Are Elephanta Caves suitable for families?",
-        answer:
-          "Yes, families with children regularly visit by speed boat, and life jackets are provided for all passengers. Note that the island involves walking and climbing steps, so wear comfortable footwear; the site is not recommended for wheelchair users or those with serious walking difficulties.",
-      },
-      {
-        question: "What should I carry when visiting Elephanta Island?",
-        answer:
-          "Comfortable walking shoes, a hat or cap, sunglasses, sunscreen, drinking water, a camera or phone, and cash or digital payment for cave entry tickets and island purchases. Food stalls and restaurants are available on the island.",
-      },
-      {
-        question: "How do I book, and how far in advance?",
-        answer:
-          "Book over WhatsApp or phone on +91 87791 63152. Same-day bookings are sometimes possible, but booking at least two days ahead is recommended, especially on weekends and public holidays.",
-      },
-    ],
+    faqs: SHARED_BOAT_FAQS,
     seo: {
       title: "Speed Boat from Mumbai to Elephanta Caves | Shared Tour",
       description:
