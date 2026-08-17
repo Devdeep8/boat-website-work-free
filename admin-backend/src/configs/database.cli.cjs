@@ -25,7 +25,7 @@ const resolveHost = (host) =>
 
 const dbConfig = {
   dialect: 'postgres',
-  database: process.env.DB_NAME || 'api',
+  database: process.env.DB_NAME || 'boat-website-db',
   username: process.env.DB_USERNAME || 'postgres',
   password: process.env.DB_PASSWORD || 'postgres',
   host: resolveHost(process.env.DB_WRITE_HOST || '127.0.0.1'),

@@ -1,12 +1,15 @@
 version: '3.8'
 
 services:
+  # =========================
+  # PostgreSQL
+  # =========================
   postgres:
     image: postgres:15-alpine
-    container_name: crm-postgres
+    container_name: boat-postgres
     restart: always
     environment:
-      POSTGRES_DB: crmdb
+      POSTGRES_DB: boat-website-db
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     ports:
@@ -14,7 +17,7 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres -d crmdb"]
+      test: ["CMD-SHELL", "pg_isready -U postgres -d boat-website-db"]
       interval: 5s
       timeout: 5s
       retries: 20
@@ -22,9 +25,12 @@ services:
     networks:
       - app-network
 
+  # =========================
+  # Redis
+  # =========================
   redis:
     image: redis:7-alpine
-    container_name: crm-redis
+    container_name: boat-redis
     restart: always
     ports:
       - '6379:6379'
@@ -39,11 +45,14 @@ services:
     networks:
       - app-network
 
+  # =========================
+  # User Backend
+  # =========================
   backend:
     build:
       context: ../user-backend
       dockerfile: Dockerfile
-    container_name: crm-backend
+    container_name: user-backend
     restart: always
     env_file:
       - ../user-backend/.env
@@ -66,26 +75,83 @@ services:
     networks:
       - app-network
 
-  frontend:
+  # =========================
+  # User Frontend
+  # =========================
+  # frontend:
+  #   build:
+  #     context: ../user-frontend
+  #     dockerfile: Dockerfile
+  #   container_name: user-frontend
+  #   restart: always
+  #   ports:
+  #     - "3005:3000"
+  #   volumes:
+  #     - ../user-frontend:/app
+  #     - /app/node_modules
+  #     - /app/.next
+  #   environment:
+  #     NODE_ENV: development
+  #     NEXT_PUBLIC_API_URL: http://localhost:3004
+  #     PORT: 3000
+  #   depends_on:
+  #     - backend
+  #   networks:
+  #     - app-network
+
+  # =========================
+  # Admin Backend
+  # =========================
+  admin-backend:
     build:
-      context: ../user-frontend
+      context: ../admin-backend
       dockerfile: Dockerfile
-    container_name: crm-frontend
+    container_name: admin-backend
     restart: always
-    ports:
-      - "3005:3000"
-    volumes:
-      - ../user-frontend:/app
-      - /app/node_modules
-      - /app/.next
+    env_file:
+      - ../admin-backend/.env
     environment:
-      NODE_ENV: development
-      NEXT_PUBLIC_API_URL: http://backend:3004
-      PORT: 3000
+      DB_WRITE_HOST: postgres
+      REDIS_HOST: redis
+      CHOKIDAR_USEPOLLING: true
+      PORT: 3006
+    ports:
+      - "3006:3006"
+    volumes:
+      - ../admin-backend:/app
+      - /app/node_modules
+    command: npm run dev:nodemon
     depends_on:
-      - backend
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
     networks:
       - app-network
+
+  # =========================
+  # Admin Frontend
+  # =========================
+  # admin-frontend:
+  #   build:
+  #     context: ../admin-frontend
+  #     dockerfile: Dockerfile
+  #   container_name: admin-frontend
+  #   restart: always
+  #   ports:
+  #     - "3007:3000"
+  #   volumes:
+  #     - ../admin-frontend:/app
+  #     - /app/node_modules
+  #     - /app/.next
+  #   environment:
+  #     NODE_ENV: development
+  #     NEXT_PUBLIC_API_URL: http://localhost:3006
+  #     PORT: 3000
+  #   depends_on:
+  #     - admin-backend
+  #   networks:
+  #     - app-network
 
 volumes:
   postgres_data:
