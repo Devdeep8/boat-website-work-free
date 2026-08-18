@@ -209,6 +209,102 @@ const SHARED_BOAT_FAQS: BoatTourFaq[] = [
   },
 ];
 
+const PRIVATE_ELEPHANTA_FAQS: BoatTourFaq[] = [
+  {
+    question: "What is a Private Speed Boat Charter to Elephanta Caves?",
+    answer:
+      "A Private Speed Boat Charter to Elephanta Caves gives you exclusive use of the boat for your family or group. You can choose your own departure time and enjoy a comfortable journey from Gateway of India to Elephanta Island without sharing the boat.",
+  },
+  {
+    question: "How much does a private speed boat to Elephanta Caves cost?",
+    answer:
+      "Our charter packages start from ₹20,000 for up to 6 passengers and ₹30,000 for up to 12 passengers. The package includes a private speed boat for a 4-hour round trip between Gateway of India and Elephanta Caves.",
+  },
+  {
+    question: "How long does the Elephanta Speed Boat Tour take?",
+    answer:
+      "The complete experience takes approximately 4 hours, including speed boat transfers, time to explore the caves, and the return journey to Gateway of India.",
+  },
+  {
+    question: "Is the boat completely private?",
+    answer:
+      "Yes, once you book a charter, the speed boat is reserved exclusively for your group. This is ideal for families, VIP guests, photographers, and travellers who prefer privacy.",
+  },
+  {
+    question: "Can a guide be arranged?",
+    answer:
+      "Yes, professional English-speaking guides can be arranged to explain the history, architecture, and mythology of the UNESCO-listed Elephanta Caves. This service is especially popular with international tourists.",
+  },
+  {
+    question: "Is this suitable for cruise passengers?",
+    answer:
+      "Yes, many guests arriving in Mumbai on international cruise ships choose our private speed boat tours because they save valuable time compared to public ferries. Our flexible schedules can often be coordinated with cruise itineraries.",
+  },
+  {
+    question: "Can photographers and film crews hire the boat?",
+    answer:
+      "Yes, private charters are available for destination photography, documentary filming, travel shows, commercial shoots, and Bollywood productions. Our team can assist with logistics and permissions where required.",
+  },
+  {
+    question: "Why book a Private Elephanta Charter?",
+    answer:
+      "Faster than public ferries, a fully private experience, flexible timings, direct departure from Gateway of India, comfortable seating, perfect for families and foreign tourists, and premium service. Call or WhatsApp +91 87791 63152.",
+  },
+];
+
+const PRIVATE_ALIBAUG_FAQS: BoatTourFaq[] = [
+  {
+    question: "What is a Private Speed Boat Charter to Alibaug?",
+    answer:
+      "A Private Speed Boat Charter offers an exclusive transfer between Gateway of India and Mandwa Jetty (Alibaug). Unlike shared rides, you hire the entire boat and choose your preferred departure time. It's the fastest and most convenient way to travel between Mumbai and Alibaug.",
+  },
+  {
+    question: "How much does a private speed boat to Alibaug cost?",
+    answer:
+      "Our charter prices start from ₹8,000 for a 6-seater speed boat (one way) and ₹13,000 for a 12-seater speed boat (one way). Discounted pricing is available for same-day return bookings.",
+  },
+  {
+    question: "Which boats are available?",
+    answer:
+      "We offer 6-seater, 10-seater, and 12-seater speed boats. Our team recommends the best option based on your group size and luggage. There are bigger boats on the water, but these boats are the most used and practical ones to hire.",
+  },
+  {
+    question: "How long does it take to reach Mandwa?",
+    answer:
+      "The journey usually takes 20 to 23 minutes, depending on sea conditions. Private speed boats are one of the fastest ways to travel from Mumbai to Alibaug.",
+  },
+  {
+    question: "Can I choose my own departure time?",
+    answer:
+      "Yes, one of the biggest advantages of a Private Speed Boat Charter is complete flexibility. You can choose your preferred departure and return time, subject to availability.",
+  },
+  {
+    question: "Is this service suitable for corporate travel?",
+    answer:
+      "Absolutely, many companies use our private speed boats for client visits, site inspections, leadership meetings, resort conferences, team offsites, and executive travel. We can also provide GST invoices for eligible corporate bookings.",
+  },
+  {
+    question: "Can I hire a boat for weddings?",
+    answer:
+      "Yes, Private Speed Boat Charters are widely used for destination weddings, bride & groom transfers, guest transportation, VIP family members, and wedding planners. We can coordinate multiple boats for larger events.",
+  },
+  {
+    question: "Can I carry luggage?",
+    answer:
+      "Yes, reasonable luggage is allowed. If you're travelling with wedding décor, AV equipment, golf bags, bicycles, or production gear, let us know in advance so we can recommend the right boat.",
+  },
+  {
+    question: "Can the boat be hired for Bollywood film shoots?",
+    answer:
+      "Yes, our speed boats are frequently hired for Bollywood films, OTT productions, commercials, music videos, celebrity shoots, and brand campaigns. We assist with scheduling and operational coordination for marine filming.",
+  },
+  {
+    question: "Why choose Vishal Boat Service for a Private Speed Boat Charter?",
+    answer:
+      "Vishal Boat Service is trusted by families, luxury travellers, wedding planners, corporates, celebrities, and film production houses for professional speed boat charters from Gateway of India. When you book with us, you receive an exclusive private boat, flexible departure timings, a fast 20–23 minute crossing, multiple boat sizes, an experienced crew with VVIP clients, transparent pricing, assistance at Jetty No. 5, easy WhatsApp booking, and reliable service trusted across Mumbai and Alibaug. Call or WhatsApp +91 87791 63152.",
+  },
+];
+
 export const BOAT_TOURS: BoatTour[] = [
   {
     slug: "speed-boat-shared-ride-alibaug-mandwa",
@@ -871,7 +967,7 @@ export const BOAT_TOURS: BoatTour[] = [
         "VVIP clients looking for no mistake luxury",
       ],
     },
-    faqs: SHARED_BOAT_FAQS,
+    faqs: PRIVATE_ALIBAUG_FAQS,
     seo: {
       title: "Speed Boat Charter Ride to Alibaug (Mandwa)",
       description:
@@ -1243,7 +1339,7 @@ export const BOAT_TOURS: BoatTour[] = [
         "If you're staying in South Mumbai or arriving by cruise ship, this tour is an ideal way to experience one of Maharashtra's most iconic attractions.",
       ],
     },
-    faqs: SHARED_BOAT_FAQS,
+    faqs: PRIVATE_ELEPHANTA_FAQS,
     seo: {
       title: "Private Speed Boat for Elephanta Caves VVIP Tour",
       description:

@@ -346,14 +346,14 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
   return (
     <>
       <Header />
-      <main className="bg-brand-secondary pt-[78px] md:pt-[110px]">
+      <main className="bg-brand-secondary pt-19.5 md:pt-27.5">
         <div className="w-full">
           <section className="w-full overflow-hidden bg-brand-primary shadow-brand-soft">
-            <div className="relative min-h-[360px] w-full overflow-hidden md:min-h-[520px] lg:min-h-[640px]">
+            <div className="relative min-h-90 w-full overflow-hidden md:min-h-130 lg:min-h-[640px]">
               <Image src={destination.image} alt={destination.imageAlt} fill priority className="object-cover" />
               <div className="absolute inset-0 bg-[rgba(30,41,59,0.12)]" />
               <div className="absolute inset-x-0 bottom-0 flex justify-center px-4 pb-4 md:px-8 md:pb-8">
-                <div className="w-full max-w-[980px] border-[3px] border-[#b84ae5] bg-white/80 px-4 py-4 text-center shadow-[0_20px_45px_rgba(0,0,0,0.18)] backdrop-blur-sm md:px-8 md:py-6">
+                <div className="w-full max-w-245 border-[3px] border-[#b84ae5] bg-white/80 px-4 py-4 text-center shadow-[0_20px_45px_rgba(0,0,0,0.18)] backdrop-blur-sm md:px-8 md:py-6">
                   <p className="font-poppins text-[10px] font-semibold uppercase tracking-[0.28em] text-[#1d7d64] sm:text-xs md:text-sm">
                     {destination.eyebrow}
                   </p>

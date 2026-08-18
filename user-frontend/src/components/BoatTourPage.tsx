@@ -218,7 +218,7 @@ export default function BoatTourPage({ tour }: { tour: BoatTour }) {
             </h2>
 
             <div className="mx-auto mt-6 max-w-4xl space-y-3">
-              {tour.faqs.slice(0, 5).map((faq) => (
+              {tour.faqs.map((faq) => (
                 <details
                   key={faq.question}
                   className="group rounded-[12px] border border-white/10 bg-white/8 p-3 text-left text-white open:bg-white/10"
