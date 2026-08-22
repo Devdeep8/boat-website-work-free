@@ -181,6 +181,33 @@ const config = convict({
     }
   },
 
+  cloudinary: {
+    cloudName: {
+      doc: 'Cloudinary cloud name',
+      format: String,
+      default: '',
+      env: 'CLOUDINARY_CLOUD_NAME'
+    },
+    apiKey: {
+      doc: 'Cloudinary API key',
+      format: String,
+      default: '',
+      env: 'CLOUDINARY_API_KEY'
+    },
+    apiSecret: {
+      doc: 'Cloudinary API secret',
+      format: String,
+      default: '',
+      env: 'CLOUDINARY_API_SECRET'
+    },
+    uploadPreset: {
+      doc: 'Unsigned upload preset used by the admin frontend',
+      format: String,
+      default: 'admin_blogs_unsigned',
+      env: 'CLOUDINARY_UPLOAD_PRESET'
+    }
+  },
+
   webApp: {
     baseUrl: {
       default: '',

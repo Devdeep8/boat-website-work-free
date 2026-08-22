@@ -3,6 +3,7 @@ import { Router } from 'express';
 import BlogsController from '@controllers/blogs.controller.js';
 import asyncHandler from '@src/utils/async-handler.js';
 import contextMiddleware from '@src/rest-resources/middlewares/context.middleware.js';
+import isAdminAuthenticated from '@src/rest-resources/middlewares/isAdminAuthenticated.middleware.js';
 import requestValidationMiddleware from '@src/rest-resources/middlewares/requestValidation.middleware.js';
 import {
   getBlogsSchema,
@@ -45,6 +46,7 @@ router.get(
 router.post(
   '/',
   contextMiddleware(true),
+  isAdminAuthenticated(),
   requestValidationMiddleware(createBlogSchema),
   asyncHandler(BlogsController.createBlog)
 );
@@ -57,6 +59,7 @@ router.post(
 router.put(
   '/:id',
   contextMiddleware(true),
+  isAdminAuthenticated(),
   requestValidationMiddleware(updateBlogSchema),
   asyncHandler(BlogsController.updateBlog)
 );
@@ -69,6 +72,7 @@ router.put(
 router.delete(
   '/:id',
   contextMiddleware(true),
+  isAdminAuthenticated(),
   requestValidationMiddleware(getBlogByIdSchema),
   asyncHandler(BlogsController.deleteBlog)
 );

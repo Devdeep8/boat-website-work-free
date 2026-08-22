@@ -48,7 +48,7 @@ services:
   # =========================
   # User Backend
   # =========================
-  backend:
+  user-backend:
     build:
       context: ../user-backend
       dockerfile: Dockerfile

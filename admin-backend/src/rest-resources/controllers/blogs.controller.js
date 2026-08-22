@@ -28,9 +28,13 @@ class BlogsController {
 
   /**
    * POST /api/v1/blogs
+   * authorId defaults to the authenticated admin.
    */
   static async createBlog(req, res, next) {
-    const result = await CreateBlogHandler.execute({ ...req.body }, req.context);
+    const result = await CreateBlogHandler.execute(
+      { authorId: req.context?.adminId, ...req.body },
+      req.context
+    );
     sendResponse({ req, res, next }, result, 'Blog created successfully');
   }
 

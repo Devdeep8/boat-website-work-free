@@ -2,6 +2,7 @@
 import { Op } from 'sequelize';
 import { BaseHandler } from '@src/libs/base.handler.js';
 import { AppError } from '@src/errors/app.error.js';
+import { cloudinaryService } from '@src/utils/cloudinary.service.js';
 
 const BLOG_AUTHOR_ATTRIBUTES = ['id', 'name', 'email', 'role'];
 
@@ -29,6 +30,7 @@ const normalizeImages = (images = []) => {
 
     return {
       url: image.url,
+      publicId: image.publicId || null,
       altText: image.altText || null,
       isCover,
       sortOrder: image.sortOrder ?? index
@@ -190,6 +192,9 @@ export class UpdateBlogHandler extends BaseHandler {
       throw AppError.notFound('Blog not found', { meta: { resourceId: id } });
     }
 
+    // Snapshot the current images so we can clean up replaced ones after the update
+    const previousImages = Array.isArray(blog.images) ? [...blog.images] : [];
+
     const patch = {};
 
     if (updates.title !== undefined) patch.title = updates.title;
@@ -226,6 +231,19 @@ export class UpdateBlogHandler extends BaseHandler {
       blogId: id,
       fields: Object.keys(patch)
     });
+
+    // Images were replaced -> delete the removed ones from Cloudinary.
+    // Runs after the DB update and never throws (cleanup must not fail the update).
+    if (updates.images !== undefined) {
+      try {
+        await cloudinaryService.deleteRemovedImages(previousImages, updates.images || []);
+      } catch (error) {
+        this.logger.warn('Cloudinary cleanup after blog update failed', {
+          blogId: id,
+          error: error.message
+        });
+      }
+    }
 
     return Blog.findByPk(id, {
       include: [{

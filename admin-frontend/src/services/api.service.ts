@@ -2,7 +2,7 @@
 // Base HTTP client for the admin backend API.
 // Auth tokens live in httpOnly cookies set by the backend — no localStorage.
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3006";
+export const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3006";
 
 /** Normalized API error thrown by `apiRequest`. */
 export class ApiError extends Error {

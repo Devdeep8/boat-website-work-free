@@ -17,16 +17,6 @@ export const requestMiddleware = (req, res, next) => {
   req.logger = Logger.child({ traceId });
   req.logger.info('Incoming Request', { method: req.method, url: req.url, traceId, startTime, ip: clientIp });
 
-  res.on('finish', () => {
-    const duration = Date.now() - startTime;
-    req.logger.info('Request Completed', {
-      method: req.method,
-      url: req.url,
-      statusCode: res.statusCode,
-      durationMs: duration,
-      ip: clientIp
-    });
-  });
 
   next();
 };

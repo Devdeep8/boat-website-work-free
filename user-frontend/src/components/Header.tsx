@@ -70,6 +70,10 @@ const NAVIGATION: NavigationItem[] = [
     name: "Contact",
     href: "/contact",
   },
+  {
+     name: "Blogs",
+     href: "/blogs"
+  }
 ];
 
 const CONTACT_INFO = {

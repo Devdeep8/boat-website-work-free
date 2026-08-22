@@ -9,6 +9,8 @@ const blogImageSchema = {
   additionalProperties: false,
   properties: {
     url: { type: 'string', minLength: 1, maxLength: 2048 },
+    // Cloudinary public id — stored so updates can delete replaced assets
+    publicId: { type: ['string', 'null'], maxLength: 300 },
     altText: { type: ['string', 'null'], maxLength: 300 },
     isCover: { type: 'boolean' },
     sortOrder: { type: 'integer', minimum: 0 }

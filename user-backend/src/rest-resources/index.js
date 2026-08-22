@@ -55,6 +55,8 @@ app.use(cors({
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
 }));
 
+// Catch-All 404 handler for unmatched routes
+
 // Mount trace ID logger context middleware
 app.use(requestMiddleware);
 
@@ -73,8 +75,8 @@ app.use(cookieParser());
 
 app.use(routes);
 
-// Catch-All 404 handler for unmatched routes
 app.use(async (req, res) => {
+  req.logger.info('Route Not Found', { method: req.method, url: req.url });
   res.status(404).json({ status: 'Not Found' });
 });
 

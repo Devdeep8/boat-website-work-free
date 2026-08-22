@@ -4,7 +4,7 @@
 import { IconLoader } from "@tabler/icons-react";
 import { Button } from "@/components/ui/button";
 import { InputControl, PasswordInputControl } from "@/components/form-control";
-import { useLogin } from "@/hooks/useLogin";
+import { useLogin } from "@/views/LoginSignup/hooks/useLogin";
 
 export function LoginForm() {
   const { values, errors, formError, submitting, handleChange, handleSubmit } = useLogin();
