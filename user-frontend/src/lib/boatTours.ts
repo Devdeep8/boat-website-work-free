@@ -65,6 +65,9 @@ const HARBOUR_SHARED_DIR = "/Shared Mumbai Harbour Cruise";
 const ELEPHANTA_SHARED_DIR = "/Shared Speed Boat Tour to Elephanta Caves";
 const ELEPHANTA_DIR = "/Elephanta Caves";
 const MUMBAI_DIR = "/Mumbai Habour"
+const YACHT_ELEPHANTA_DIR = "/private tour yacht for ultra luxury trip to elephanta caves ";
+const Yact_DIR="/private tour yacht for ultra luxury trip to elephanta caves"
+const SPEED_BOAT_2_ELEPHANTA_DIR = "/private tour speed boat elephanta caves";
 
 const SHARED_BOAT_FAQS: BoatTourFaq[] = [
   {
@@ -302,6 +305,49 @@ const PRIVATE_ALIBAUG_FAQS: BoatTourFaq[] = [
     question: "Why choose Vishal Boat Service for a Private Speed Boat Charter?",
     answer:
       "Vishal Boat Service is trusted by families, luxury travellers, wedding planners, corporates, celebrities, and film production houses for professional speed boat charters from Gateway of India. When you book with us, you receive an exclusive private boat, flexible departure timings, a fast 20–23 minute crossing, multiple boat sizes, an experienced crew with VVIP clients, transparent pricing, assistance at Jetty No. 5, easy WhatsApp booking, and reliable service trusted across Mumbai and Alibaug. Call or WhatsApp +91 87791 63152.",
+  },
+];
+
+const PRIVATE_YACHT_ELEPHANTA_FAQS: BoatTourFaq[] = [
+  {
+    question: "What is a Private Yacht Charter to Elephanta Caves?",
+    answer:
+      "A Private Yacht Charter to Elephanta Caves gives you exclusive, ultra-luxury use of a yacht for your family or group. You choose your own departure time and enjoy a fully private, comfortable journey from Gateway of India to Elephanta Island without sharing the boat.",
+  },
+  {
+    question: "How much does a private yacht to Elephanta Caves cost?",
+    answer:
+      "Yacht pricing depends entirely on the level of service, yacht size, and inclusions you choose. Contact our team with your group size and preferences and we'll put together a tailored quote. Call or WhatsApp +91 87791 63152.",
+  },
+  {
+    question: "How long does the Elephanta Yacht Tour take?",
+    answer:
+      "The complete experience takes approximately 4 hours, including yacht transfers, time to explore the caves, and the return journey to Gateway of India.",
+  },
+  {
+    question: "Is the yacht completely private?",
+    answer:
+      "Yes, once you book a charter, the yacht is reserved exclusively for your group. This is ideal for families, VIP guests, photographers, and travellers who prefer a fully private, ultra-luxury experience.",
+  },
+  {
+    question: "Can a guide be arranged?",
+    answer:
+      "Yes, professional English-speaking guides can be arranged to explain the history, architecture, and mythology of the UNESCO-listed Elephanta Caves. This service is especially popular with international tourists.",
+  },
+  {
+    question: "Is this suitable for cruise passengers?",
+    answer:
+      "Yes, many guests arriving in Mumbai on international cruise ships choose our private yacht tours because they save valuable time compared to public ferries, while adding a premium touch to their visit. Our flexible schedules can often be coordinated with cruise itineraries.",
+  },
+  {
+    question: "Can photographers and film crews hire the yacht?",
+    answer:
+      "Yes, private yacht charters are available for destination photography, documentary filming, travel shows, commercial shoots, and Bollywood productions. Our team can assist with logistics and permissions where required.",
+  },
+  {
+    question: "Why book a Private Yacht Charter to Elephanta Caves?",
+    answer:
+      "Faster than public ferries, a fully private and ultra-luxury experience, flexible timings, direct departure from Gateway of India, comfortable seating, and a premium service tailored to your group. Call or WhatsApp +91 87791 63152.",
   },
 ];
 
@@ -1739,6 +1785,383 @@ export const BOAT_TOURS: BoatTour[] = [
         "Elephanta Caves speed boat",
         "Elephanta Island boat ride",
         "Mumbai Elephanta boat tour",
+      ],
+    },
+  },
+  {
+    slug: "private-yacht-elephanta-caves-vvip-tour",
+    title: "Private Yacht for Elephanta Caves VVIP Tour",
+    destination: "Elephanta Caves",
+    routeLabel: "Gateway of India → Elephanta Island",
+    routeFrom: "Gateway of India, Jetty No. 5",
+    routeTo: "Elephanta Island, Mumbai Harbour",
+    heroImage: `${YACHT_ELEPHANTA_DIR}/yacht-rental-ride-elephanta-caves-gateway-of-india-vishal-boat-service-ultra-luxury-elephanta-tour.png`,
+    heroImageAlt: "Private yacht for an ultra-luxury Elephanta Caves VVIP tour",
+    storyImage: `${ELEPHANTA_SHARED_DIR}/Yacht rental ride to Elephanta Caves  from gateway of India in vishal boat service ultra luxury elephanta tour.png`,
+    storyImageAlt:
+      "Elephanta Caves rock-cut Hindu temple hill on Elephanta Island",
+    description: [
+      "At Vishal Boat Service we understand the level of services you are looking for. With 8+ Year+ experience of providing Speed Boat & yacht services for Elephanta Caves to the elite of India, Corporates, Schools & foreigners from countries like USA, Australia, Germany, UK, UAE, Saudi Arabia, France etc.",
+      "Visit one of India's most famous UNESCO World Heritage Sites with our private yacht Tour to Elephanta Caves.",
+      "Designed especially for foreign tourists, cruise passengers, business travellers, solo travellers, couples, families, and cultural explorers, this premium experience combines a professionally guided sightseeing tour with a fully private and comfortable yacht experience that you prefer.",
+      "Unlike crowded public ferries, our private Speed Boat reaches Elephanta Island in approximately 20–30 minutes, allowing you to spend more time exploring the magnificent cave temples and less time in traveling.",
+      "The complete experience lasts approximately 4 hours, making it the perfect half-day tour while visiting Mumbai.",
+      "Range of speed boat and yacht options are available to choose from.",
+      "Prices completely depend on the level of services that the client chooses.",
+    ],
+    quickFacts: {
+      duration: "20–30 minutes each way",
+      departure: "Gateway of India, Jetty No. 5",
+      timings: "Flexible daylight departures",
+      capacity: "As per yacht chosen",
+    },
+    whyChoose: [
+      {
+        icon: "zap",
+        title: "Much faster than the ferry",
+        text: "Cross to Elephanta Island in 20–30 minutes instead of the one-hour public ferry each way.",
+      },
+      {
+        icon: "landmark",
+        title: "UNESCO World Heritage site",
+        text: "Rock-cut Shiva temple caves from the 5th–8th centuries — one of Maharashtra's great monuments.",
+      },
+      {
+        icon: "users",
+        title: "Ultra-luxury, fully private yacht",
+        text: "A fully private yacht experience with life jackets for every passenger, tailored to the level of service you prefer.",
+      },
+      {
+        icon: "camera",
+        title: "Harbour and Gateway views",
+        text: "Mumbai Harbour on the crossing, and the Gateway of India skyline on your way back.",
+      },
+      {
+        icon: "train",
+        title: "Toy train on the island",
+        text: "A short toy train ride connects Elephanta jetty to the steps below the caves.",
+      },
+      {
+        icon: "shoppingBag",
+        title: "Island market stop",
+        text: "A small flee market lines the walk uphill — handy for snacks, water and souvenirs.",
+      },
+    ],
+    placesHeading: "Places You Can Explore at Elephanta",
+    rideHighlights: {
+      title: "What all you see during the ride?",
+      items: [
+        {
+          title: "Gateway of India",
+          image: `${ELEPHANTA_SHARED_DIR}/speed boat shared ride available from gateway of india for harbour cruise, alibaug , elephanta caves _.jpg`,
+          description:
+            "Enjoy views of the iconic Gateway of India from the sea as you begin your journey.",
+        },
+        {
+          title: "Iconic Taj Hotel",
+          image: `${ELEPHANTA_SHARED_DIR}/iconic taj mahal hotel-view from boat ride to Elephanta Caves`,
+          description:
+            "See the iconic Taj Mahal Palace from the waterfront as the Mumbai skyline comes into view.",
+        },
+        {
+          title: "Mumbai Harbour",
+          image: `${HARBOUR_SHARED_DIR}/gateway-of-india-mumbai-harbour-view-speed-boat-service.jpg`,
+          description:
+            "Take in broad views of Mumbai Harbour and the coastline during the ride across the water.",
+        },
+        {
+          title: "Speed Thrill on Speed Boat",
+          image: `${ELEPHANTA_SHARED_DIR}/speed-boat-shared-ride-to-elephanta-caves.jpg`,
+          description:
+            "Experience the excitement of the crossing over Mumbai Harbour on your private ride.",
+        },
+        {
+          title: "Naval Dock",
+          image: `${ELEPHANTA_SHARED_DIR}/naval base view from shared speed boat boat ride in mumbai_.jpg`,
+          description:
+            "Catch a glimpse of the harbour and naval dock area while travelling along the Mumbai coastline.",
+        },
+        {
+          title: "Sunset by the Harbour",
+          image: `${ELEPHANTA_SHARED_DIR}/beautiful-sunset-mumbai-speed-boat-ride-elephanta.jpg`,
+          description:
+            "Enjoy beautiful sunset scenes over Mumbai Harbour when the light turns golden on the water.",
+        },
+        {
+          title: "Caves Tour",
+          image: `${ELEPHANTA_SHARED_DIR}/elephanta-caves-hindu-temple-hill-carved-india-vishal-boat-service.jpg.webp`,
+          description:
+            "Explore the historic cave temples on Elephanta Island, a highlight of the trip.",
+        },
+        {
+          title: "Elephanta Caves Market Shopping",
+          image: `${ELEPHANTA_SHARED_DIR}/Elephanta-shopping-tour-vishal-boat-service.jpg.webp`,
+          description:
+            "Browse the market area near the caves and enjoy the island's local stops.",
+        },
+        {
+          title: "Toy Train Ride",
+          image: `${ELEPHANTA_SHARED_DIR}/Toy-train-vishal-boat-service-elephanta-speed-boat.jpg`,
+          description:
+            "Enjoy the toy train ride available on Elephanta Island during your visit.",
+        },
+      ],
+    },
+    includes: {
+      title: "Your charter Speed Boat Elephanta Tour includes:",
+      items: [
+        "Charter Speed Boat Transfer",
+        "Return Journey",
+        "Professional English-speaking Guide",
+        "Guided Tour of Elephanta Caves",
+        "Assistance at Gateway of India",
+        "Small Group Experience",
+        "Comfortable Seating",
+        "Departure Timings (subject to schedule)",
+      ],
+    },
+    faqHeading: "FAQs about Yacht Charter Rides",
+    places: [
+      {
+        name: "Alibaug (Mandwa)",
+        image: `${ALIBAUG_SHARED_DIR}/mandwa-port-speed-boat-pool-shared-ride.jpg`,
+        imageAlt: "Mandwa port where shared speed boat rides from Mumbai arrive",
+        description:
+          "Escape from mumbai into the nature of Alibaug, just 25 mins ride from Gateway of India.",
+      },
+      {
+        name: "Elephanta Caves",
+        image: `${ELEPHANTA_DIR}/mumbai-elephanta-caves-vishal-boat-service.jpg`,
+        imageAlt: "Elephanta Caves near Alibaug reached by speed boat from Mumbai",
+        description:
+          "Explore the history of India with ancient rock carvings of monument of Elephanta Caves.",
+      },
+      {
+        name: "Mumbai Harbour",
+        image: `${MUMBAI_DIR}/Mumbai Harbour speed boat tour by vishal boat service.jpg`,
+        imageAlt: "Alibaug fort sea tours near Mandwa jetty",
+        description:
+          "A historic sea fort a short ride from the jetty, best visited around low tide.",
+      },
+    ],
+    essentials: {
+      title: "This tour is highly recommended for:",
+      items: [
+        "International Tourists",
+        "Cruise Ship Passengers",
+        "Luxury Travellers",
+        "Couples",
+        "Families",
+        "Solo Travellers",
+        "Senior Citizens",
+        "Travel Agencies",
+        "Luxury Hotels & Concierge Services",
+        "Corporate Guests",
+        "Photography Enthusiasts",
+        "History & Culture Lovers",
+        "If you're staying in South Mumbai or arriving by cruise ship, this tour is an ideal way to experience one of Maharashtra's most iconic attractions.",
+      ],
+    },
+    faqs: PRIVATE_YACHT_ELEPHANTA_FAQS,
+    seo: {
+      title: "Private Yacht for Elephanta Caves VVIP Tour",
+      description:
+        "Book a private, ultra-luxury yacht tour from Gateway of India to Elephanta Caves. 20–30 minutes each way, full privacy, professional guide, and service tailored to your group.",
+      keywords: [
+        "Elephanta Caves private yacht",
+        "yacht tour Elephanta Caves",
+        "Mumbai to Elephanta Caves yacht",
+        "luxury yacht Elephanta Caves",
+        "Gateway of India to Elephanta yacht",
+      ],
+    },
+  },
+    {
+    slug: "private-speed-boat-elephanta-caves-vvip-tour",
+    title: "Private Speed Boat for Elephanta Caves VVIP Tour",
+    destination: "Elephanta Caves",
+    routeLabel: "Gateway of India → Elephanta Island",
+    routeFrom: "Gateway of India, Jetty No. 5",
+    routeTo: "Elephanta Island, Mumbai Harbour",
+    heroImage: `${SPEED_BOAT_2_ELEPHANTA_DIR}/speed-boat-shared-ride-alibaug-gateway-of-india-vishal-boat-service.png`,
+    heroImageAlt: "Private speed boat for an Elephanta Caves VVIP tour",
+    storyImage: `${ELEPHANTA_SHARED_DIR}/elephanta-caves-hindu-temple-hill-carved-india-vishal-boat-service.jpg.webp`,
+    storyImageAlt:
+      "Elephanta Caves rock-cut Hindu temple hill on Elephanta Island",
+    description: [
+      "At Vishal Boat Service we understand the level of services you are looking for. With 8+ Year+ experience of providing Speed Boat & yacht services for Elephanta Caves to the elite of India, Corporates, Schools & foreigners from countries like USA, Australia, Germany, UK, UAE, Saudi Arabia, France etc.",
+      "Visit one of India's most famous UNESCO World Heritage Sites with our private Speed Boat Tour to Elephanta Caves.",
+      "Designed especially for foreign tourists, cruise passengers, business travellers, solo travellers, couples, families, and cultural explorers, this premium experience combines fast sea travel with a professionally guided sightseeing tour that you prefer.",
+      "Unlike crowded public ferries, our private Speed Boat reaches Elephanta Island in approximately 20–30 minutes, allowing you to spend more time exploring the magnificent cave temples and less time travelling.",
+      "The complete experience lasts approximately 4 hours, making it the perfect half-day tour while visiting Mumbai.",
+      "Range of speed boat and yacht options are available to choose from.",
+      "Packages start from ₹20,000 per boat excluding taxes.",
+    ],
+    quickFacts: {
+      duration: "20–30 minutes each way",
+      departure: "Gateway of India, Jetty No. 5",
+      timings: "Flexible daylight departures",
+      capacity: "6, 10 & 12 seats",
+      priceFrom: "₹20,000 per boat",
+    },
+    whyChoose: [
+      {
+        icon: "zap",
+        title: "Much faster than the ferry",
+        text: "Cross to Elephanta Island in 20–30 minutes instead of the one-hour public ferry each way.",
+      },
+      {
+        icon: "landmark",
+        title: "UNESCO World Heritage site",
+        text: "Rock-cut Shiva temple caves from the 5th–8th centuries — one of Maharashtra's great monuments.",
+      },
+      {
+        icon: "users",
+        title: "Family-friendly tour",
+        text: "Private 6, 10 and 12-seater boats with life jackets for every passenger.",
+      },
+      {
+        icon: "camera",
+        title: "Harbour and Gateway views",
+        text: "Mumbai Harbour on the crossing, and the Gateway of India skyline on your way back.",
+      },
+      {
+        icon: "train",
+        title: "Toy train on the island",
+        text: "A short toy train ride connects Elephanta jetty to the steps below the caves.",
+      },
+      {
+        icon: "shoppingBag",
+        title: "Island market stop",
+        text: "A small flee market lines the walk uphill — handy for snacks, water and souvenirs.",
+      },
+    ],
+    placesHeading: "Places You Can Explore at Elephanta",
+    rideHighlights: {
+      title: "What all you see during the ride?",
+      items: [
+        {
+          title: "Gateway of India",
+          image: `${ELEPHANTA_SHARED_DIR}/speed boat shared ride available from gateway of india for harbour cruise, alibaug , elephanta caves _.jpg`,
+          description:
+            "Enjoy views of the iconic Gateway of India from the sea as you begin your journey.",
+        },
+        {
+          title: "Iconic Taj Hotel",
+          image: `${ELEPHANTA_SHARED_DIR}/iconic taj mahal hotel-view from boat ride to Elephanta Caves`,
+          description:
+            "See the iconic Taj Mahal Palace from the waterfront as the Mumbai skyline comes into view.",
+        },
+        {
+          title: "Mumbai Harbour",
+          image: `${HARBOUR_SHARED_DIR}/gateway-of-india-mumbai-harbour-view-speed-boat-service.jpg`,
+          description:
+            "Take in broad views of Mumbai Harbour and the coastline during the ride across the water.",
+        },
+        {
+          title: "Speed Thrill on Speed Boat",
+          image: `${ELEPHANTA_SHARED_DIR}/speed-boat-shared-ride-to-elephanta-caves.jpg`,
+          description:
+            "Experience the excitement of a fast crossing over Mumbai Harbour on a private speed boat.",
+        },
+        {
+          title: "Naval Dock",
+          image: `${ELEPHANTA_SHARED_DIR}/naval base view from shared speed boat boat ride in mumbai_.jpg`,
+          description:
+            "Catch a glimpse of the harbour and naval dock area while travelling along the Mumbai coastline.",
+        },
+        {
+          title: "Sunset by the Harbour",
+          image: `${ELEPHANTA_SHARED_DIR}/beautiful-sunset-mumbai-speed-boat-ride-elephanta.jpg`,
+          description:
+            "Enjoy beautiful sunset scenes over Mumbai Harbour when the light turns golden on the water.",
+        },
+        {
+          title: "Caves Tour",
+          image: `${ELEPHANTA_SHARED_DIR}/elephanta-caves-hindu-temple-hill-carved-india-vishal-boat-service.jpg.webp`,
+          description:
+            "Explore the historic cave temples on Elephanta Island, a highlight of the trip.",
+        },
+        {
+          title: "Elephanta Caves Market Shopping",
+          image: `${ELEPHANTA_SHARED_DIR}/Elephanta-shopping-tour-vishal-boat-service.jpg.webp`,
+          description:
+            "Browse the market area near the caves and enjoy the island's local stops.",
+        },
+        {
+          title: "Toy Train Ride",
+          image: `${ELEPHANTA_SHARED_DIR}/Toy-train-vishal-boat-service-elephanta-speed-boat.jpg`,
+          description:
+            "Enjoy the toy train ride available on Elephanta Island during your visit.",
+        },
+      ],
+    },
+    includes: {
+      title: "Your charter Speed Boat Elephanta Tour includes:",
+      items: [
+        "Charter Speed Boat Transfer",
+        "Return Journey",
+        "Professional English-speaking Guide",
+        "Guided Tour of Elephanta Caves",
+        "Assistance at Gateway of India",
+        "Small Group Experience",
+        "Comfortable Seating",
+        "Departure Timings (subject to schedule)",
+      ],
+    },
+    faqHeading: "FAQs about Speed Boat Charter Rides",
+    places: [
+      {
+        name: "Alibaug (Mandwa)",
+        image: `${ALIBAUG_SHARED_DIR}/mandwa-port-speed-boat-pool-shared-ride.jpg`,
+        imageAlt: "Mandwa port where shared speed boat rides from Mumbai arrive",
+        description:
+          "Escape from mumbai into the nature of Alibaug, just 25 mins ride from Gateway of India.",
+      },
+      {
+        name: "Elephanta Caves",
+        image: `${ELEPHANTA_DIR}/mumbai-elephanta-caves-vishal-boat-service.jpg`,
+        imageAlt: "Elephanta Caves near Alibaug reached by speed boat from Mumbai",
+        description:
+          "Explore the history of India with ancient rock carvings of monument of Elephanta Caves.",
+      },
+      {
+        name: "Mumbai Harbour",
+        image: `${MUMBAI_DIR}/Mumbai Harbour speed boat tour by vishal boat service.jpg`,
+        imageAlt: "Alibaug fort sea tours near Mandwa jetty",
+        description:
+          "A historic sea fort a short ride from the jetty, best visited around low tide.",
+      },
+    ],
+    essentials: {
+      title: "This tour is highly recommended for:",
+      items: [
+        "International Tourists",
+        "Cruise Ship Passengers",
+        "Luxury Travellers",
+        "Couples",
+        "Families",
+        "Solo Travellers",
+        "Senior Citizens",
+        "Travel Agencies",
+        "Luxury Hotels & Concierge Services",
+        "Corporate Guests",
+        "Photography Enthusiasts",
+        "History & Culture Lovers",
+        "If you're staying in South Mumbai or arriving by cruise ship, this tour is an ideal way to experience one of Maharashtra's most iconic attractions.",
+      ],
+    },
+    faqs: PRIVATE_ELEPHANTA_FAQS,
+    seo: {
+      title: "Private Speed Boat for Elephanta Caves VVIP Tour",
+      description:
+        "Take a private speed boat VVIP tour from Gateway of India to Elephanta Caves. 20–30 minutes each way, full-boat privacy, professional guide, and flexible departure timings.",
+      keywords: [
+        "Elephanta Caves private speed boat VVIP",
+        "Mumbai to Elephanta Caves VVIP tour",
+        "Elephanta VVIP speed boat charter",
+        "private speed boat Elephanta Caves",
+        "Gateway of India Elephanta VVIP tour",
       ],
     },
   },

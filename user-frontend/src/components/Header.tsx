@@ -50,11 +50,17 @@ const NAVIGATION: NavigationItem[] = [
   },
   {
     name: "Yachts",
-    href: "#packages",
+    href: "/private-speed-boat-for-elephanta-caves-vvip-tour",
     children: [
-      "Jeanneau 54",
-      "Grand Soliel 45",
-      "Lagoon 560",
+      {
+        name : "Private Speed Boat For Elephanta Caves VVIP Tour",
+        href : "/private-speed-boat-elephanta-caves-vvip-tour"
+      },
+      {
+      name : "Private Yacht for Elephanta Caves VVIP Tour",
+      href : "/private-yacht-elephanta-caves-vvip-tour"
+      }
+    
     ],
   },
   {
