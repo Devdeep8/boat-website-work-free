@@ -179,14 +179,14 @@ export default function Header() {
       </div>
 
       {/* Main Navigation */}
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+      <div className="border-t border-white/10 bg-[#0c5a4d]">
+        <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
 
           {/* Logo */}
           <Logo variant="light" />
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-6">
+          <nav className="hidden items-center justify-center gap-1 lg:flex">
             {NAVIGATION.map((item) => (
               <div
                 key={item.name}
@@ -198,13 +198,13 @@ export default function Header() {
               >
                 <Link
                   href={item.href}
-                  className="text-gray-700 hover:text-[#59b280] font-medium font-poppins text-sm transition-colors py-2"
+                  className="group flex items-center gap-1.5 rounded-md px-3 py-2 text-sm font-medium text-white/90 transition-all duration-200 hover:bg-white/10 hover:text-white"
                 >
-                  {item.name}
+                  <span className="font-poppins">{item.name}</span>
 
                   {item.children && (
                     <svg
-                      className="inline-block w-4 h-4 ml-1"
+                      className="h-4 w-4 transition-transform duration-200 group-hover:rotate-180"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -223,17 +223,17 @@ export default function Header() {
                 <AnimatePresence>
                   {activeDropdown === item.name && item.children && (
                     <motion.div
-                      initial={{ opacity: 0, y: -10 }}
+                      initial={{ opacity: 0, y: -8 }}
                       animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -10 }}
-                      transition={{ duration: 0.2 }}
-                      className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-100 py-2"
+                      exit={{ opacity: 0, y: -8 }}
+                      transition={{ duration: 0.18 }}
+                      className="absolute left-1/2 top-full z-50 mt-2 w-72 -translate-x-1/2 rounded-xl border border-gray-200 bg-white p-2 shadow-xl"
                     >
                       {item.children.map((child) => (
                         <Link
                           key={getChildName(child)}
                           href={getChildHref(child)}
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#59b280] font-poppins transition-colors"
+                          className="block rounded-lg px-3 py-2 text-sm text-slate-700 transition-colors hover:bg-slate-100 hover:text-[#59b280]"
                         >
                           {getChildName(child)}
                         </Link>
