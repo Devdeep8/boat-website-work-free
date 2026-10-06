@@ -130,24 +130,24 @@ export default function Header() {
       {/* Top Bar - Locations & Phone */}
       <div className="bg-linear-to-r from-brand to-brand-dark text-white py-2">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="flex flex-wrap items-center justify-between gap-2 text-sm">
+          <div className="flex flex-wrap items-center justify-center gap-2 text-sm sm:justify-between">
 
             {/* Locations */}
-            <div className="flex items-center gap-3 ">
+            <div className="flex flex-wrap items-center justify-center gap-2 sm:justify-start">
               {LOCATIONS.map((location, index) => (
                 <div
                   key={location.name}
-                  className="flex items-center gap-3"
+                  className="flex items-center gap-2"
                 >
                   <Link
                     href={location.href}
-                    className="font-poppins hover:underline text-white  whitespace-nowrap"
+                    className="font-poppins hover:underline text-white"
                   >
                     {location.name}
                   </Link>
 
                   {index < LOCATIONS.length - 1 && (
-                    <span className="text-white">|</span>
+                    <span className="text-white/80">|</span>
                   )}
                 </div>
               ))}
