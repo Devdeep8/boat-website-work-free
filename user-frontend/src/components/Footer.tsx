@@ -156,6 +156,15 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
             <p className="font-poppins">
               © {new Date().getFullYear()} {FOOTER_DATA.company.name}. All rights reserved.
+              <span className="mx-2">|</span>Website designed by{" "}
+              <a
+                href="https://www.mixspacestudio.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[#59b280] transition-colors"
+              >
+                MixSpace Studio
+              </a>
             </p>
             <div className="flex items-center gap-4 font-poppins">
               <Link href="/privacy" className="hover:text-[#59b280] transition-colors">
