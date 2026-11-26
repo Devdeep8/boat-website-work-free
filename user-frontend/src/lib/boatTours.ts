@@ -158,12 +158,12 @@ const SHARED_BOAT_FAQS: BoatTourFaq[] = [
   {
     question: "What is the Mumbai Harbour Shared Speed Boat Ride?",
     answer:
-      "Vishal Boat Service offers an affordable Shared Speed Boat Mumbai Harbour Cruise every evening from Gateway of India. Instead of hiring an entire boat, you can book individual seats and enjoy a thrilling 30-minute speed boat ride across Mumbai Harbour. This experience is perfect for tourists, couples, families, photographers, and anyone looking to enjoy the Mumbai skyline from the sea. The ride operates every day from 4:00 PM to 7:00 PM, with departures every 30 minutes. Tickets start from ₹500 per person.",
+      "Vishal Boat Service offers an affordable Shared Speed Boat Mumbai Harbour Cruise every evening from Gateway of India. Instead of hiring an entire boat, you can book individual seats and enjoy a thrilling 30-minute speed boat ride across Mumbai Harbour. This experience is perfect for tourists, couples, families, photographers, and anyone looking to enjoy the Mumbai skyline from the sea. The ride operates every day from 4:00 PM to 7:00 PM, with departures every 30 minutes. Tickets start from ₹600 per person.",
   },
   {
     question: "How much does the Mumbai Harbour Speed Boat Ride cost?",
     answer:
-      "Our Mumbai Harbour Shared Speed Boat Ride starts from just ₹500 per person. This is one of the most affordable ways to experience Mumbai Harbour by speed boat without booking an entire private boat. Advance booking is recommended, especially on weekends and holidays.",
+      "Our Mumbai Harbour Shared Speed Boat Ride starts from just ₹600 per person. This is one of the most affordable ways to experience Mumbai Harbour by speed boat without booking an entire private boat. Advance booking is recommended, especially on weekends and holidays.",
   },
   {
     question: "Where does the Mumbai Harbour Speed Boat depart from?",
@@ -183,7 +183,7 @@ const SHARED_BOAT_FAQS: BoatTourFaq[] = [
   {
     question: "Why book the Shared Harbour Cruise with Vishal Boat Service?",
     answer:
-      "₹500 per person, departures every 30 minutes, daily service, Gateway of India boarding, comfortable speed boats, easy WhatsApp booking, great sunset views, and a perfect experience for tourists and families.",
+      "₹600 per person, departures every 30 minutes, daily service, Gateway of India boarding, comfortable speed boats, easy WhatsApp booking, great sunset views, and a perfect experience for tourists and families.",
   },
   {
     question: "What is included in the Shared Speed Boat Elephanta Tour?",
@@ -502,7 +502,7 @@ export const BOAT_TOURS: BoatTour[] = [
     routeLabel: "Gateway of India → Mumbai Harbour (round trip)",
     routeFrom: "Gateway of India, Jetty No. 5",
     routeTo: "Mumbai Harbour (round trip)",
-    heroImage: `${HARBOUR_SHARED_DIR}/Speed-boat-shared-ride-harbour-cruise-rs500.jpg`,
+    heroImage: `${HARBOUR_SHARED_DIR}/Speed-boat-shared-ride-harbour-cruise-rs600.jpg`,
     heroImageAlt:
       "Gateway of India Mumbai harbour view from a shared speed boat cruise",
     storyImage: `${HARBOUR_SHARED_DIR}/sunset-view-harbour-cruise-mumbai-vishal-speed-boat-service.jpg`,
@@ -511,13 +511,13 @@ export const BOAT_TOURS: BoatTour[] = [
       "Experience Mumbai like never before with a Shared Speed Boat Harbour Cruise from the iconic Gateway of India. Instead of hiring an entire speed boat, you can simply book individual seats and enjoy one of Mumbai's most exciting boat rides at an affordable price.",
       "Whether you're a tourist visiting Mumbai, a couple looking for a romantic sunset ride, a family searching for a memorable evening activity, or a local wanting to experience Mumbai from the sea, our Mumbai Harbour Cruise offers breathtaking views of the city's famous waterfront.",
       "The cruise departs from Jetty No. 5, Gateway of India, every 30 minutes between 4:00 PM and 7:00 PM, making it one of the easiest and most affordable sightseeing experiences in Mumbai.",
-      "For just ₹500 per person, enjoy a thrilling 30-minute speed boat ride across Mumbai Harbour while taking in spectacular views of the Arabian Sea.",
+      "For just ₹600 per person, enjoy a thrilling 30-minute speed boat ride across Mumbai Harbour while taking in spectacular views of the Arabian Sea.",
     ],
     quickFacts: {
       duration: "Approx. 30 minutes",
       departure: "Gateway of India, Jetty No. 5",
       timings: "4:00 PM – 8:00 PM, daily",
-      priceFrom: "₹500 per person",
+      priceFrom: "₹600 per person",
       capacity: "10 & 12 seats",
     },
     whyChoose: [
@@ -665,9 +665,9 @@ export const BOAT_TOURS: BoatTour[] = [
     },
     faqs: SHARED_BOAT_FAQS,
     seo: {
-      title: "Shared Mumbai Harbour Cruise | ₹500 Speed Boat Ride, Gateway of India",
+      title: "Shared Mumbai Harbour Cruise | ₹600 Speed Boat Ride, Gateway of India",
       description:
-        "Book a shared Mumbai Harbour cruise speed boat ride from Gateway of India, Jetty 5. Approx. 30 minutes at ₹500 per person, daily 4–8 PM. Route, sights and FAQs inside.",
+        "Book a shared Mumbai Harbour cruise speed boat ride from Gateway of India, Jetty 5. Approx. 30 minutes at ₹600 per person, daily 4–8 PM. Route, sights and FAQs inside.",
       keywords: [
         "Mumbai Harbour cruise",
         "Mumbai boat cruise",
@@ -1035,7 +1035,7 @@ export const BOAT_TOURS: BoatTour[] = [
     routeLabel: "Gateway of India → Mumbai Harbour (round trip)",
     routeFrom: "Gateway of India, Jetty No. 5",
     routeTo: "Mumbai Harbour (round trip)",
-    heroImage: `${HARBOUR_SHARED_DIR}/Speed-boat-shared-ride-harbour-cruise-rs500.jpg`,
+    heroImage: `${HARBOUR_SHARED_DIR}/Speed-boat-shared-ride-harbour-cruise-rs600.jpg`,
     heroImageAlt:
       "Gateway of India Mumbai harbour view from a charter speed boat cruise",
     storyImage: `${HARBOUR_SHARED_DIR}/sunset-view-harbour-cruise-mumbai-vishal-speed-boat-service.jpg`,
@@ -1406,7 +1406,7 @@ export const BOAT_TOURS: BoatTour[] = [
     routeLabel: "Gateway of India → Mumbai Harbour (round trip)",
     routeFrom: "Gateway of India, Jetty No. 5",
     routeTo: "Mumbai Harbour (round trip)",
-    heroImage: `${HARBOUR_SHARED_DIR}/Speed-boat-shared-ride-harbour-cruise-rs500.jpg`,
+    heroImage: `${HARBOUR_SHARED_DIR}/Speed-boat-shared-ride-harbour-cruise-rs600.jpg`,
     heroImageAlt:
       "Gateway of India Mumbai harbour view from a shared speed boat cruise",
     storyImage: `${HARBOUR_SHARED_DIR}/sunset-view-harbour-cruise-mumbai-vishal-speed-boat-service.jpg`,
@@ -1415,13 +1415,13 @@ export const BOAT_TOURS: BoatTour[] = [
       "Experience Mumbai like never before with a Shared Speed Boat Harbour Cruise from the iconic Gateway of India. Instead of hiring an entire speed boat, you can simply book individual seats and enjoy one of Mumbai's most exciting boat rides at an affordable price.",
       "Whether you're a tourist visiting Mumbai, a couple looking for a romantic sunset ride, a family searching for a memorable evening activity, or a local wanting to experience Mumbai from the sea, our Mumbai Harbour Cruise offers breathtaking views of the city's famous waterfront.",
       "The cruise departs from Jetty No. 5, Gateway of India, every 30 minutes between 4:00 PM and 7:00 PM, making it one of the easiest and most affordable sightseeing experiences in Mumbai.",
-      "For just ₹500 per person, enjoy a thrilling 30-minute speed boat ride across Mumbai Harbour while taking in spectacular views of the Arabian Sea.",
+      "For just ₹600 per person, enjoy a thrilling 30-minute speed boat ride across Mumbai Harbour while taking in spectacular views of the Arabian Sea.",
     ],
     quickFacts: {
       duration: "Approx. 30 minutes",
       departure: "Gateway of India, Jetty No. 5",
       timings: "4:00 PM – 8:00 PM, daily",
-      priceFrom: "₹500 per person",
+      priceFrom: "₹600 per person",
       capacity: "10 & 12 seats",
     },
     whyChoose: [
@@ -1569,9 +1569,9 @@ export const BOAT_TOURS: BoatTour[] = [
     },
     faqs: SHARED_BOAT_FAQS,
     seo: {
-      title: "Shared Mumbai Harbour Cruise | ₹500 Speed Boat Ride, Gateway of India",
+      title: "Shared Mumbai Harbour Cruise | ₹600 Speed Boat Ride, Gateway of India",
       description:
-        "Book a shared Mumbai Harbour cruise speed boat ride from Gateway of India, Jetty 5. Approx. 30 minutes at ₹500 per person, daily 4–8 PM. Route, sights and FAQs inside.",
+        "Book a shared Mumbai Harbour cruise speed boat ride from Gateway of India, Jetty 5. Approx. 30 minutes at ₹600 per person, daily 4–8 PM. Route, sights and FAQs inside.",
       keywords: [
         "Mumbai Harbour cruise",
         "Mumbai boat cruise",

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Instrument_Serif, Poppins, Geist } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { SITE_URL } from "@/lib/site";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -20,7 +21,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://vishalboatservice.com"),
+  metadataBase: new URL(SITE_URL),
   applicationName: "Vishal Boat Service",
   title: {
     default: "Mumbai Boat Charters | Speed Boats & Yachts",
@@ -37,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://mumbaiboatcharters.com",
+    url: SITE_URL,
     siteName: "Mumbai Boat Charters",
     title: "Mumbai Boat Charters | Speed Boats & Yachts",
     description: "Premium speed boat and yacht charters in Mumbai. Book via WhatsApp for instant confirmation.",
@@ -48,7 +49,7 @@ export const metadata: Metadata = {
     description: "Premium speed boat and yacht charters in Mumbai. Book via WhatsApp for instant confirmation.",
   },
   alternates: {
-    canonical: "https://mumbaiboatcharters.com"
+    canonical: SITE_URL
   },
   robots: {
     index: true,
@@ -89,7 +90,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@type": "LocalBusiness",
               "name": "Mumbai Boat Charters",
               "description": "Premium speed boat and yacht charters in Mumbai offering harbour cruises, Mandwa/Alibaug transfers, and Elephanta tours.",
-              "url": "https://mumbaiboatcharters.com",
+              "url": SITE_URL,
               "telephone": "+918779163152",
               "address": {
                 "@type": "PostalAddress",

@@ -68,7 +68,7 @@ export const DESTINATIONS: Destination[] = [
       {
         question: "How much does a Mumbai Harbour Speed Boat ride cost?",
         answer:
-          "Vishal Boat Service operates scheduled Mumbai Harbour Speed Boat Rides every day between 4:00 PM and 8:00 PM.\n* ₹500 per person\n* Approximately 30 minutes\n* Daily departures\n* Advance booking recommended on weekends and holidays\nPrivate speed boats and customized harbour cruises are also available for families, couples, and groups.",
+          "Vishal Boat Service operates scheduled Mumbai Harbour Speed Boat Rides every day between 4:00 PM and 8:00 PM.\n* ₹600 per person\n* Approximately 30 minutes\n* Daily departures\n* Advance booking recommended on weekends and holidays\nPrivate speed boats and customized harbour cruises are also available for families, couples, and groups.",
       },
       {
         question: "How can I hire a private yacht for a Mumbai Harbour Cruise?",

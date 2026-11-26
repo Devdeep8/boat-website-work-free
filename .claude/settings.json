@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -m 15 https://www.vishalboat.com/robots.txt)",
+      "Bash(curl -s -m 15 https://www.vishalboat.com/sitemap.xml)"
+    ]
+  }
+}

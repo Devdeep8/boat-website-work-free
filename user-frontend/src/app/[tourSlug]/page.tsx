@@ -2,12 +2,11 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import BoatTourPage from "@/components/BoatTourPage";
 import { BOAT_TOURS, getBoatTour } from "@/lib/boatTours";
+import { SITE_URL } from "@/lib/site";
 
 type TourPageProps = {
   params: Promise<{ tourSlug: string }>;
 };
-
-const SITE_URL = "https://vishalboatservice.com";
 
 export function generateStaticParams() {
   return BOAT_TOURS.map((tour) => ({ tourSlug: tour.slug }));

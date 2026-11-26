@@ -76,9 +76,9 @@ const MUMBAI_HOW_TO_REACH = [
     duration: "30 mins & 1 Hour",
     boardingPoint: "Gateway of India, Jetty 5",
     capacity: "10 & 12 PAX",
-    price: "Starting Price: Rs. 500/person",
+    price: "Starting Price: Rs. 600/person",
     timings: "4pm to 7pm",
-    image: publicPath('/Mumbai Habour/12 seater speed boat with best speed boat rental service vishal boat service for harbour cruise starting at rs 500 per person_.jpg'),
+    image: publicPath('/Mumbai Habour/12 seater speed boat with best speed boat rental service vishal boat service for harbour cruise starting at rs 600 per person_.jpg'),
   },
   {
     title: "Yacht",
@@ -291,7 +291,7 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
         duration: "30 mins & 1 Hour",
         timings: "4pm to 7pm",
         capacity: "10 & 12 PAX",
-        price: "Starting Price: Rs. 500/person",
+        price: "Starting Price: Rs. 600/person",
       },
       Yacht: {
         title: "Yacht",
